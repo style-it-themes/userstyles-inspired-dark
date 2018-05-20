@@ -1,0 +1,2281 @@
+@-moz-document domain("userstyles.org") {
+/*! Name:    Userstyles-Dark */
+/*! Version: Version: 1.00 beta */
+/*! Author:  the-j0k3r */
+/*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
+/*! License   CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+body, #nav-view {
+    color: #aaa !important;
+    background: #222 !important;
+}
+
+.header.button.no-select {
+	color: #ccc !important;
+}
+
+#navigation {
+	color: #ccc !important;
+    background: #222 !important;
+}
+
+.navigation_title {
+	color: #ccc !important;
+}
+
+.navigation_link:hover {
+	background: #444 !important;
+}
+
+#navigation .linksBox:first-child .logo_navigation_link,
+#navigation .linksBox:last-child .logo_navigation_link,
+div.linksBox:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1),
+div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1) {
+	filter: invert(100%) hue-rotate(180deg) !important;
+}
+
+.linksBox .navigation_link:last-child, #title_div {
+	box-shadow: 0 1px 0 0 #333;
+}
+
+.linksBox {
+	color: #ccc !important;
+	border-bottom: none !important
+}
+
+a {
+	color: #5c81ba !important;
+}
+
+a:hover, a.TextColor:hover,
+a:hover .TextColor {
+    color: #6b9ae2 !important;
+}
+
+a.TextColor, a .TextColor {
+    color: #f50000 !important;
+}
+
+p, h1, h2, h3, p, .P {
+	color: #aaa !important;
+}
+
+#title_long a, #title_long a:active,
+#title_long a:hover, #title_long a:visited,
+.style_author_long {
+	color: #aaa !important;
+}
+
+#title_long a:visited {
+  color: #9e9e9e !important;
+}
+
+.style_card_long {
+	box-shadow: inset 0 -1px 0 0 #444 !important;
+}
+
+.style_description_long {
+	color: #666 !important;
+}
+
+.screenshot_wrapper {
+	border-bottom: 1px solid #666 !important;
+}
+
+.view_details, .css_button {
+	background-color: #595b61 !important;
+	color: #3db1ff !important;
+}
+
+.view_details:hover, .css_button:hover {
+	background-color: #434549 !important;
+	color: #3498db !important;
+}
+
+.eye_image {
+	background: url("https://userstyles.org/ui/images/icons/eye.svg") !important;
+	filter: invert(80%) !important;
+}
+
+#send_feedback_button, .white_button, .customize_button {
+	box-shadow: 0 1px 2px 0 rgba(255, 255, 255, .2) !important;
+	background: #f9f9f9 !important;
+}
+
+#send_feedback_button:hover, .white_button:hover, .customize_button:hover {
+	box-shadow: 0 4px 5px 0 rgba(160, 160, 160, .77) !important;
+	background: #e9e9e9 !important;
+}
+
+.customize_button .customize_button_text {
+	color: #333 !important;
+}
+
+.see_more {
+	background-color: #404040 !important;
+	color: #3498db !important;
+}
+
+.see_more:hover {
+	background-color: #333 !important;
+}
+
+.style_category_card_wrapper {
+	background-color: #191919!important;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.style_category_card_wrapper:hover {
+	box-shadow: 0 12px 25px 0 rgba(255, 255, 255, .2);
+	transform: translate(0, -4px);
+}
+
+#category_style_card_title:hover,
+#category_style_card_title {
+	color: #ccc !important;
+}
+
+h4:first-child > a:first-child,
+h4:first-child > a:first-child {
+	color: #888 !important;
+}
+
+h4:first-child > a:first-child:hover,
+h4:first-child > a:first-child:hover {
+	color: #ccc !important;
+}
+
+#search_input {
+	background-color: #000 !important;
+	border: none !important;
+}
+
+#input_text_search {
+	color: #ccc !important;
+	border: none !important;
+}
+
+#user_name, #user_email, #user_homepage, #user_paypal_email,
+td:first-child > input:first-child, #style_pledgie_id,
+#style_short_description, #example-url {
+	background: #000 !important;
+	border: 1px solid #555 !important;
+	color: #ccc !important;
+}
+
+input.DateBox, input.InputBox,
+input.SmallInput, textarea {
+    color: #eee !important;
+     background: #000 !important;
+    border: 1px solid #444 !important;
+    padding: 3px !important;
+}
+
+.ui-datepicker {
+    background: #222;
+    border: 1px solid #999 !important;
+}
+
+#new-setting {
+    border: none !important;
+	box-shadow: none !important;
+}
+
+#user_name:focus, #user_email:focus, #user_homepage:focus, #user_paypal_email:focus,
+#issue_full_name:focus, #issue_email:focus, #issue_user_name:focus,
+#style_short_description:focus, #style_pledgie_id:focus,
+#example-url:focus, input.DateBox:focus,
+input.InputBox:focus, input.SmallInput:focus,
+#search_input:focus, #style_short_description:focus,
+input.SmallInput:focus, input.InputBox:focus,
+textarea:focus, td:first-child > input:first-child:focus {
+    background: #191919 !important;
+}
+
+.Button {
+    background: #333;
+    border: 1px solid #ccc;
+    box-shadow:none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border-color: #666 !important;
+    color: #ddd !important;
+	text-shadow: none !important;
+}
+
+.Button:hover {
+    background: #444 !important;
+    color: #ccc !important;
+    border-color: #777 !important;
+}
+
+.Button.Active,
+.ButtonGroup.Open .Button.Handle,
+.Button:focus,
+.Button:active {
+    border-color: #aaa !important;
+    background: #555 !important;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+input[type="reset"], input[type="button"], input[type="submit"] {
+	color: #ccc !important;
+	padding: 3px 6px 6px 6px !important;
+	background: #333 !important;
+	border: 1px solid #555 !important;
+	border-radius: 3px !important;
+}
+
+input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover {
+	color: #eee !important;
+	background: #444 !important;
+}
+
+.form-controls > tbody > tr > th,
+table.form-controls, .form-controls > tbody > tr > td, textarea {
+	border-color: #444 !important;
+}
+
+.NavButton {
+    color: #eee !important;
+    text-shadow: 0 0 1px #000 !important;
+    background: #444 !important;
+    border: 1px solid #555 !important;
+    box-shadow: 0 1px 1px #222 !important;
+}
+
+.ButtonGroup.Open .NavButton.Handle {
+    background: #eee !important;
+}
+
+.NavButton.Handle .Sprite,
+.Button.Handle .Sprite {
+    border-color: #fff transparent transparent transparent !important;
+}
+
+.ActivateSlider {
+    display: inline-block;
+    background: #bbb;
+    /*background: rgba(0, 0, 0, .2);*/
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .5) inset;
+    border: solid 1px #ccc;
+}
+
+.Deleted {
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+}
+
+/* Note: Warning, Alert & Info are simple boxes that can be used to wrap message
+   strings & imply importance. */
+span.Warning,
+div.Warning {
+    background: #5a4949;
+    border: 2px solid #fbb;
+    color: #d00;
+}
+
+.Count {
+    background: #444 !important;
+    color: #fff !important;
+}
+
+.Alert {
+    background: #d00;
+    color: #fff;
+}
+
+.Alert a {
+    color: #fff;
+}
+
+.Alert a:hover {
+    text-decoration: underline;
+}
+
+.Info {
+    background: #222 !important;
+    border: 2px solid #eee;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    color: #888;
+}
+
+.Pager span {
+    color: #777;
+}
+
+.Pager .Highlight {
+    color: #eee !important;
+}
+
+/* Small UserPhoto() images */
+a.Small:hover {
+    text-decoration: none;
+}
+
+a.Small img {
+    background: #ddd !important;
+}
+
+/* Note: The MessageModule (in /applications/dashboard/modules) wraps all messages
+  that it renders in a div with this DismissMessage class. */
+/* Messages */
+.DismissMessage a.Dismiss {
+    color: #777;
+}
+
+.DismissMessage a.Dismiss:hover {
+    background: #333 !important;
+    color: #fff !important;
+}
+
+.DismissMessage {
+    color: #000;
+}
+
+.DismissMessage.Info {
+    background: #f3f4f8;
+    border: 1px solid #ddd;
+}
+
+.DismissMessage.Warning {
+    background: #ffebe9;
+    border: 1px solid #FFCCC9;
+}
+
+.DismissMessage.Box {
+    background: #fff8ce;
+    border: 1px solid #c5bea4;
+}
+
+.CasualMessage {
+    background: #CFECFF;
+    border: 1px solid #ABDAFB;
+    color: #1E79A7;
+}
+
+.InfoMessage {
+    background: #F6F6F6;
+    border: 1px solid #ddd;
+}
+
+.AlertMessage {
+    background: #fff8ce;
+    border: 1px solid #DEDDAF;
+}
+
+.WarningMessage {
+    background: #470700;
+    border: 1px solid #ff2518;
+	color: #ddd !important;
+}
+
+/* ================= Header */
+#Head {
+    background: #4f638b !important;
+}
+
+#Head a {
+    color: #ccc !important;
+}
+
+.SiteSearch .Button {
+    background: url('https://forum.userstyles.org/applications/dashboard/design/images/sprites.png') 0 -196px no-repeat transparent !important;
+    top: 7px !important;
+	filter: invert(100%) !important;
+	border: none !important;
+}
+
+.SiteSearch .Button:hover {
+    background: url('https://forum.userstyles.org/applications/dashboard/design/images/sprites.png') 0 -196px no-repeat transparent !important;
+	filter: invert(100%) brightness(150%) !important;
+}
+
+/* Option (dropdown) Menus, Bookmark stars, admin checkboxes */
+.CategoryLink {
+    background: #CFECFF;
+}
+
+div.Discussion:hover .OptionsTitle,
+.Item:hover .OptionsTitle {
+   filter: invert(50%)
+}
+
+div.Discussion:hover .OptionsTitle:hover,
+.Item:hover .OptionsTitle:hover {
+   filter: invert(70%)
+}
+
+.Open > .OptionsTitle {
+	filter: invert(50%)
+}
+
+.Flyout:before,
+.Flyout:after {
+    border-bottom: 7px solid #777 !important;
+    border-left: 7px solid transparent !important;
+    border-right: 7px solid transparent !important;
+}
+
+.Flyout:after {
+    border-bottom: 7px solid #222 !important;
+}
+
+.MenuItems {
+    border: 1px solid #777;
+    background: #222;
+}
+
+.MenuItems a, .MenuItems a:link, .MenuItems a:visited, .MenuItems a:active {
+    color: #ccc !Important;
+}
+
+.MenuItems a:hover {
+    color: #eee !Important;
+    background-color: #004D9F !Important;
+}
+
+.MenuItems a:hover .Gloss {
+    color: #de2323 !important;
+}
+
+.MenuItems hr {
+    border-bottom: 1px solid #777;
+}
+
+.MenuItems.Up:before,
+.MenuItems.Up:after {
+    border-top: 7px solid #777 !important;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.MenuItems.Up:after {
+    border-top: 7px solid #c41111 !important;
+    bottom: -6px;
+}
+
+.FlyoutMenu {
+    width: 300px;
+    background: #222 !important;
+    color: #ccc !important;
+    border: solid 1px #777 !important;
+}
+
+.FlyoutMenu a {
+    color: #00419b;
+}
+
+.DropHandle {
+    border-width: 4px !important;
+    border-color: #000 transparent transparent transparent !important;
+}
+
+.Box dl dt {
+    font-size: 12px;
+    float: left;
+    width: 80px;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Box dl dd {
+    font-size: 12px;
+    margin-left: 80px;
+}
+
+/* Hiding until we figure out what to do with GuestWelcomeModule */
+.MeButton {
+	filter: invert(100%) !important;
+    border: solid 1px transparent;
+}
+.MeButton:hover {
+	filter: invert(100%) !important;
+    background: #999 !important;
+}
+
+.PanelActivity {
+    border-top: 1px solid #abdafb;
+}
+
+.PanelActivity li {
+    background: #e3f4ff;
+    border-bottom: 1px solid #abdafb;
+    color: #555;
+}
+
+.PanelActivity li a {
+    font-size: 13px;
+}
+
+.PanelActivity li a.Name {
+    margin-right: 2px;
+}
+
+.PanelActivity span {
+    padding: 0 4px;
+}
+
+.PanelActivity p {
+    padding: 0 4px;
+    display: inline;
+    font-size: 90%;
+}
+
+.PanelActivity li em {
+    padding-left: 5px;
+    color: #777;
+    font-size: 80%;
+}
+
+.PanelActivity li .Story {
+    font-size: 85%;
+}
+
+/* Compatibility for old custom themes that overrode this value */
+
+#Panel .FilterMenu li,
+.PanelInfo li {
+    border-bottom: 1px solid #333 !important;
+}
+
+#Panel .FilterMenu li:first-child,
+.PanelInfo li:first-child {
+    border-top: 1px solid #333 !important;
+}
+
+/** Make standard items a bit more condensed when in the panel. **/
+
+.PanelInfo .Meta strong {
+    display: inline;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background: #FF0;
+    color: #000;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 3px;
+    line-height: 1;
+}
+
+.PanelInfo .Parent {
+    text-align: left;
+    font-weight: bold;
+    background: none;
+    color: #333;
+    padding: 2px 0;
+}
+
+#Panel .FilterMenu .Active,
+.PanelInfo .Active {
+    background: rgba(51, 51, 51, .51) !important;
+    font-weight: bold;
+}
+
+#Content .FilterMenu li.Active a {
+    border-bottom: 2px solid #ddd !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+#Content .BoxFilter a {
+    margin: 0 10px 0 0;
+    padding: 4px 0;
+    display: block;
+}
+
+#Content .BoxFilter .Active a {
+    color: #000;
+    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.Icons img {
+    display: block;
+    height: 44px;
+    width: 44px;
+    overflow: hidden;
+    background: #c4cde0;
+    color: #c4cde0;
+    text-indent: 50px;
+}
+
+/* ================================================ DataList */
+/* Note: DataList is used in search results, vanilla discussions & drafts */
+.SearchForm .InputBox {
+    border: solid 1px #666 !important;
+}
+
+.DataList, .DataList .Item, .NarrowList .Item {
+	border-bottom: 1px solid #333 !important;
+}
+
+.ItemDiscussion .Meta,
+.DataList .Meta {
+    color: #888 !important;
+}
+
+.HasNew {
+    background: #ffc800;
+    color: #000;
+    padding-left: 3px;
+	padding-right: 3px;
+}
+
+.Item.Read {
+    background: #292929 !important;
+}
+
+.Item.Checked {
+    background: #ffc !important;
+}
+
+.DataList a.Delete {
+    color: #c01f1f !important;
+}
+
+.DataList a.Delete:hover {
+    background: #333 !important;
+    color: #aaa !important;
+}
+
+/* Condensed datalists make the main link & excerpt inline. */
+.DataList .Unfollow {
+    background: #444 !important;
+}
+
+.DataList .Unfollow a {
+    color: #888 !important;
+}
+
+.Item .Inset {
+    border-top: 1px solid #bec8cc;
+    padding: 5px 0;
+}
+
+.PopList .Item {
+    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* /me actions */
+.Hero {
+    background: #f7f7f7;
+    background: rgba(0, 0, 0, .03);
+}
+
+.Activities li.Condensed .Excerpt {
+    color: #000 !important;
+}
+
+.Activities .DataList li {
+    background: #f3f3f3;
+    background: rgba(0, 0, 0, 0.05);
+    margin-bottom: 2px;
+    padding: 6px;
+}
+
+.Activities a.CommentLink,
+.Activities a.CommentLink:hover {
+    background: #222 !important;
+    color: #bbb !important;
+    border: 1px solid #aaa;
+}
+
+.Comment {
+	background: #222 !important;
+}
+
+body.Post .Popup a.Close {
+    color: #1e79a7;
+}
+
+.emoji {
+    margin-top: -2px;
+    margin-bottom: -3px; /* account for image padding */
+}
+
+blockquote.Quote, blockQuote.UserQuote {
+    background: #333;
+    border-left: 4px solid #555;
+}
+
+.Message small {
+    color: #777;
+}
+
+code, pre {
+    background: #ff9;
+    border: 1px solid #eec;
+	color: #333;
+	padding: 1px
+}
+
+mark {
+    background: #cf9900;
+	color: #000;
+}
+
+/* =============================================================== Categories */
+.ChildCategories {
+    border-top: 1px dotted #ddd;
+    display: block;
+}
+
+.RssButton {
+    color: transparent;
+}
+
+/* ============================================================= Profile Page */
+a.ChangePicture {
+    background: #333;
+    color: #fff;
+}
+
+.PhotoWrap:hover a.ChangePicture {
+    display: block;
+}
+
+a.ChangePicuture:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* BGColor on profile forms */
+body.Profile.EditMode #Content form {
+    background: #202020 !important;
+}
+
+.PreferenceGroup > thead:nth-child(1) > tr:nth-child(1) > td:nth-child(1),
+.PreferenceGroup > thead:nth-child(1) > tr:nth-child(1) > td:nth-child(2),
+.PreferenceGroup > thead:nth-child(1) > tr:nth-child(1) > td:nth-child(3),
+.PreferenceGroup > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(2),
+.PreferenceGroup > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(3) {
+	background-color: #202020 !important;
+	color: #ccc !important;
+}
+
+/* Invitations Form */
+#Form_Invitation table th:hover,
+table.PreferenceGroup td:hover {
+	background-color: #333 !important;
+	color: #eee !important;
+}
+
+table.PreferenceGroup th,
+table.PreferenceGroup td,
+#Form_Invitation th,
+#Form_Invitation td {
+	background-color: #202020 !important;
+    border-bottom: 1px solid #333 !important;
+	border-top: none !important;
+	border-right: none !important;
+	border-left: none !important;
+}
+
+.CurrentPicture table td, form.Thumbnail table td {
+	border: none !important;
+}
+
+/* About in content area */
+.ContentColumn .About h2 {
+    display: none;
+}
+
+dl.About dt {
+    color: #666 !important;
+    background: url('https://forum.userstyles.org/applications/dashboard/design/images/profile-sprites.png') 2px -139px no-repeat transparent !important;
+}
+
+/* ======================================================== Thumbnail Cropper */
+.jcropper-holder {
+    border: 1px black solid;
+}
+
+.jcrop-vline, .jcrop-hline {
+    font-size: 0;
+    position: absolute;
+    background: white url('https://forum.userstyles.org/applications/dashboard/design/images/jcrop.gif') top left repeat;
+}
+
+.jcrop-handle {
+    border: 1px #eee solid;
+    background-color: #333;
+}
+
+.jcrop-tracker {
+    *background-color: gray;
+}
+
+.custom .jcrop-vline,
+.custom .jcrop-hline {
+    background: yellow;
+}
+
+.custom .jcrop-handle {
+    border-color: black;
+    background-color: #C7BB00;
+}
+
+/* ===================== CommentForm */
+.Preview {
+    background: #222 !important;
+    color: #ccc !important;
+}
+
+/* ===================== Popups */
+div.Popup .Body {
+    background: #fff;
+    padding: 10px;
+    float: left; /* Put this here b/c background of form was not descending to bottom of popup. */
+}
+
+a.Close {
+    color: #000;
+}
+
+/* ===================== Footer */
+#footer {
+	background-color: #191919 !important;
+}
+
+#copyrights {
+	color: #ddd;
+}
+
+#rightFooter > div:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+	filter: contrast(80%) brightness(130%)
+}
+
+#Foot {
+    color: #ddd !important;
+}
+
+#Foot a {
+    color: #ccc !important;
+}
+
+#Foot a:hover {
+    color: #aaa !important;
+}
+
+.PoweredByVanilla {
+	filter:	invert(90%) hue-rotate(180deg) brightness(150%) !important;
+}
+
+/* ========== Vanilla ========== */
+
+/* =========== Discussions */
+
+/* Note: The Vanilla Discussion List has the following classes applied to
+  individual list elements and can be styled:
+  + Bookmarked: the user has bookmarked that topic
+  + Announcement: the discussion has been announced
+  + Mine: the user created the discussion
+  + New: there are new comments since the last viewed the discussion
+*/
+a.Bookmark:hover,
+a.Bookmarked:hover,
+a.Bookmarking:hover {
+	filter: invert(100%)
+}
+
+.Tag {
+    background: #666 !important;
+    color: #eee;
+}
+
+.Tag a {
+    color: #eee;
+}
+
+.Tag.Closed {
+    background: #444;
+}
+
+.Tag.Category {
+    background: #857e50;
+    font-weight: normal;
+}
+
+.Tag.Category a {
+    color: #000;
+}
+
+.Tag.Tag-Banned {
+    background-color: #C70028;
+}
+
+/* ============= Category & Discussions Table Views */
+.DataTable {
+	background: #c0c !important;
+}
+
+.DataTable td {
+    border-bottom: 1px solid #ddd !important;
+}
+
+.MiniPager {
+    display: inline-block;
+    margin-left: 3px;
+    font-size: 11px;
+    color: #333;
+}
+
+tr.CategoryHeading td {
+    font-weight: bold;
+    background: #222 !important;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+/* Discussion Sorter */
+
+.DiscussionSorter:hover {
+    cursor: pointer;
+    background: #e02424;
+}
+
+.DiscussionSorter .Selected {
+    border: 1px solid rgba(169, 38, 38, 0) !important;
+}
+
+.DiscussionSorter .Open .Selected {
+    border: 1px solid #999 !important;
+    border-bottom: none !important;
+}
+
+#single_discussion {
+	box-shadow: 0 1px 0 0 #444, 0 0 0 0 #444;
+}
+
+.SpRSS {
+    background: url("https://forum.userstyles.org/applications/dashboard/design/images/sprites.png") no-repeat -27px -46px transparent;
+    display: inline-block;
+    height: 14px;
+    vertical-align: middle;
+    width: 14px;
+}
+
+.DiscussionForm label {
+    color: #666 !important;
+}
+
+.FormWrapper {
+    background: #333 !important;
+}
+
+.StructuredForm input.hasDatepicker, .StructuredForm input.hasDatepicker:focus {
+    background-image: url('https://forum.userstyles.org/applications/dashboard/design/images/calendar.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 24px;
+}
+/* ======== Conversations =========== */
+.ac_results {
+    padding: 0;
+    border: 1px solid #d7d8da;
+    border-top: 0;
+    background-color: #9c0505 !important;
+    overflow: hidden;
+    z-index: 99999;
+}
+
+.ac_results li {
+    margin: 0;
+    padding: 5px;
+    cursor: default;
+    display: block;
+    /*
+   if width will be 100% horizontal scrollbar will apear
+   when scroll mode will be used
+   */
+    /*width: 100%;*/
+    font-size: 12px;
+    /*
+   it is very important, if line-height not setted or setted
+   in relative units scroll will be broken in firefox
+   */
+    line-height: 16px;
+    overflow: hidden;
+    border-bottom: 1px solid #d7d8da;
+    text-align: left;
+}
+
+.ac_lastitem {
+    border-bottom: 0 !important;
+}
+
+.ac_results strong {
+    font-weight: bold;
+    background: #c7e2ff;
+}
+
+.ac_over strong {
+    font-weight: bold;
+    background: #216ebf;
+}
+
+.ac_over {
+    background: #004D9F;
+    color: #fff;
+}
+
+/* ========= New Conversation Form */
+#ConversationForm label {
+    color: #999 !important;
+}
+
+/* Upload Progress Bar */
+.UploadProgress {
+    color: #fff;
+    text-shadow: 0 1px 1px #333;
+    border: 1px solid #0c3c7e;
+}
+
+/* Container */
+.Border {
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background: #222 !important;
+    padding: 10px;
+}
+
+/* Tabs */
+ul.Tabs li a {
+    border: 1px solid #aaa;
+    background: #eee;
+    color: #888;
+}
+
+ul.Tabs li a:hover {
+    background: #f5f5f5;
+    color: #444;
+}
+
+ul.Tabs li a.Active {
+    padding: 2px 8px;
+    background: #fff;
+    color: #000;
+}
+
+/* ==== Entry Screens */
+span.Incorrect {
+    color: red;
+}
+
+.PasswordStrength .Background {
+    background-color: #e8e8e8;
+  }
+
+.PasswordStrength .Strength {
+    background-color: #c81818;
+}
+
+.PasswordStrength .Separator {
+    background-color: #fff;
+}
+
+.PasswordStrength.Score-0 .StrengthText {
+    color: #888888;
+}
+
+.PasswordStrength.Score-1 .Strength {
+    background-color: #C81818;
+    width: 20%;
+}
+
+.PasswordStrength.Score-1 .StrengthText {
+    color: #C81818;
+}
+
+.PasswordStrength.Score-2 .Strength {
+    background-color: #FF891D;
+    width: 40%;
+}
+
+.PasswordStrength.Score-2 .StrengthText {
+    color: #FF891D;
+}
+
+.PasswordStrength.Score-3 .Strength {
+    background-color: #FFAC1D;
+    width: 60%;
+}
+
+.PasswordStrength.Score-3 .StrengthText {
+    color: #FFAC1D;
+}
+
+.PasswordStrength.Score-4 .Strength {
+    background-color: #A6C060;
+    width: 80%;
+}
+
+.PasswordStrength.Score-4 .StrengthText {
+    color: #A6C060;
+}
+
+.PasswordStrength.Score-5 .Strength {
+    background-color: #27B30F;
+    width: 100%;
+}
+
+.PasswordStrength.Score-5 .StrengthText {
+    color: #27B30F;
+}
+
+/* Handshake */
+body#dashboard_entry_handshake ul.NewAccount {
+    float: left;
+    width: 315px;
+    margin-right: 44px;
+    border-right: 1px solid #A5D0E7;
+}
+
+body#dashboard_entry_handshake .Info {
+    border: 1px solid #A5D0E7 !important;
+    background: #D3F0FF !important;
+    color: #02475A !important;
+}
+
+body#dashboard_entry_handshake #Content h2 {
+    color: #02475A !important;
+}
+
+/* Leaving Page */
+.FinePrint {
+    color: #777;
+}
+
+/* Do not customize these unless you enjoy pain. */
+/* Error messages that get displayed on forms throughout the application. */
+.Errors ul {
+    border: 1px solid #ff2518 !important;
+    background: #470700 !important;
+}
+
+.Errors a {
+    color: #ddd !important;
+}
+
+.Errors ul li {
+    color: #ddd !important;
+    background: #470700 !important;
+}
+
+div.Popup .Errors ul {
+    border: 1px solid #ff2518 !important;
+}
+
+.Errors pre,
+.Errors pre * {
+    background: #949000 !important;
+    color: #333 !important;
+}
+
+/* Note: InformMessages are "growl" style messages that appear in a fixed
+position on the page to notify users of things like drafts being saved, etc. */
+.InformMessages .InformMessage {
+    color: #fff !important;
+    text-shadow: 0 1px 1px #000;
+    background: rgb(0, 0, 0) !important;
+}
+
+.InformMessages .InformMessage:hover {
+    background: #333;
+}
+
+.InformMessages .InformMessage a {
+    color: #aff;
+}
+
+.InformMessages .InformMessage a:hover {
+    color: #cff;
+    text-decoration: underline;
+}
+
+.InformMessages .InformMessage a.Close {
+    background: transparent;
+    color: #ddd;
+}
+
+.InformMessages .InformMessage a.Close span {
+    display: inline;
+}
+
+.InformMessages .InformMessage a.Close:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* iPad/iPhone */
+@media only screen and (device-width: 768px), only screen and (max-device-width: 480px) {
+    .InformMessages .InformMessage a.Close {
+        color: #fff;
+        display: block;
+    }
+
+    .Item .OptionsTitle {
+        visibility: visible;
+    }
+}
+
+/* Small screens */
+.InformMessages .Actions a.CancelAction {
+    color: #aaa;
+}
+
+/* Inform Sprites */
+/* ====== Embedded Discussion & Comment Customizations */
+
+.EmbedCommentForm {
+    border-top: 1px solid #c0c !important;
+}
+
+.EmbedCommentForm .Author {
+    display: inline-block;
+    font-size: 11px;
+    color: #777;
+    padding: 0 8px 0 0;
+}
+
+/* = Regarding */
+
+.RegardingEvent {
+    padding: 10px;
+    padding-left: 38px;
+    color: #fff !important;
+    text-shadow: 0 1px 1px #000;
+    background: rgb(0, 0, 0) !important;
+}
+
+.RegardingEvent a.ReportedUser,
+.RegardingEvent a.ReportingUser {
+    color: #CFECFF;
+}
+
+.RegardingEvent .RegardingTime {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #B1B1B1;
+}
+
+.RegardingActions .ActionButton {
+    color: #fff !important;
+    text-shadow: 0 1px 1px #000;
+    background: rgb(0, 0, 0) !important;
+}
+
+.RegardingActions .ActionButton a {
+    color: #CFECFF;
+}
+
+.SpEditProfile {
+	filter: invert(100%) !important;
+}
+
+/* === Reaction Sprites === */
+.ReactSprite {
+    background-image: url("http://cdn.vanillaforums.com/images/sprites-14-000000.png") !important;
+	filter: invert(100%) !important;
+ }
+
+/* Switch to the white icons when hovering over a menuitem sprite */
+.MenuItems a:hover .ReactSprite,
+.MenuItems a:hover .Sprite {
+    background-image: url('http://cdn.vanillaforums.com/images/sprites-14-fff.png');
+}
+
+/* Switch to bordered icons for user reaction overlays */
+.UserReactionWrap .ReactSprite {
+    background-image: url('http://cdn.vanillaforums.com/images/sprites-14-000-bordered.png');
+}
+
+/* Embedded Video Preview Hide/Reveal */
+.Video.YouTube .VideoPreview:after {
+    background: url('http://cdn.vanillaforums.com/images/youtube-overlay-button.png') 0 -44px no-repeat transparent;
+}
+
+/* Token input */
+
+ul.token-input-list {
+    border: 1px solid #444 !important;
+    color: #333 !important;
+    background-color: #191919 !important;
+}
+
+ul.token-input-list-focus,
+ul.token-input-list-focus input {
+    background: #dc1a1a !important;
+}
+
+li.token-input-input-token {
+	filter: invert(90%) !important;
+}
+
+li.token-input-token {
+    border: 1px solid #666 !important;
+    background-color: #444 !important;
+	color: #eee !important;
+}
+
+li.token-input-token.not-allowed {
+    background-color: #FFC2C2;
+    color: #C91313;
+    border: 1px solid #FF3232;
+}
+
+li.token-input-token.not-allowed span {
+    color: #C91313;
+}
+
+li.token-input-selected-token {
+    background-color: #777 !important;
+}
+
+li.token-input-selected-token.not-allowed {
+    background-color: red;
+    color: #ffffff;
+    border: 1px solid #FF3232;
+}
+
+li.token-input-selected-token.not-allowed span {
+    color: #ffffff;
+}
+
+div.token-input-dropdown {
+    background-color: #444 !important;
+    border: 1px solid #777 !important;
+}
+
+div.token-input-dropdown ul li {
+    background-color: #444 !important;
+}
+
+div.token-input-dropdown ul li.token-input-dropdown-item {
+    background-color: #444 !important;
+}
+
+div.token-input-dropdown ul li.token-input-dropdown-item2 {
+    background-color: #444 !important;
+}
+
+div.token-input-dropdown ul li.token-input-selected-dropdown-item {
+    background-color: #666 !important;
+}
+/**
+ * At mentions in core, moved from advanced editor.
+ */
+.atwho-view {
+    font: normal 14px/1.7em 'lucida grande', 'Lucida Sans Unicode', tahoma, sans-serif;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.atwho-view .cur {
+    background: #1E79A7;
+    color: #fff;
+}
+
+.atwho-view .cur small {
+    color: #fff;
+}
+
+.atwho-view strong {
+    color: #1E79A7;
+}
+
+.atwho-view .cur strong {
+    color: #fff;
+    font-weight: bold;
+}
+
+.atwho-view ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.atwho-view small {
+    color: #777;
+}
+/**
+ * Socialcons
+ */
+.SocialIcon {
+    color: #fff !important;
+}
+
+.SocialIcon .Text {
+    padding: 0 15px 0 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.SocialIcon-Facebook,
+.SocialIcon-Facebook.HasText .Icon {
+    background-color: #36609e;
+}
+
+.SocialIcon-Facebook:hover {
+    background-color: #294978;
+}
+
+.SocialIcon-Twitter,
+.SocialIcon-Twitter.HasText .Icon {
+    background-color: #2aa8df;
+}
+
+.SocialIcon-Twitter:hover {
+    background-color: #1c8aba;
+}
+
+.SocialIcon-Google,
+.SocialIcon-Google.HasText .Icon {
+    background-color: #da5442;
+}
+
+.SocialIcon-Google:hover {
+    background-color: #c33926;
+}
+
+.SocialIcon-OpenID,
+.SocialIcon-OpenID.HasText .Icon {
+    background-color: #f7921c;
+}
+
+.SocialIcon-OpenID:hover {
+    background-color: #d87808;
+}
+
+.SocialIcon-LinkedIn,
+.SocialIcon-LinkedIn.HasText .Icon {
+    background-color: #066c9a;
+}
+
+.SocialIcon-LinkedIn:hover {
+    background-color: #044a69;
+}
+
+.SocialIcon-Disqus,
+.SocialIcon-Disqus.HasText .Icon {
+    background-color: #2e9fff;
+}
+
+.SocialIcon-Disqus:hover {
+    background-color: #0087fa;
+}
+
+.SocialIcon-GitHub,
+.SocialIcon-GitHub.HasText .Icon {
+    background-color: #6b9ecf;
+}
+
+.SocialIcon-GitHub:hover {
+    background-color: #4485c3;
+}
+/*
+## Alerts
+
+.alert-info    - Informative alert
+.alert-warning - Warning alert
+.alert-danger  - Danger alert
+
+Styleguide Alerts
+*/
+.item-attachment .alert {
+    color: #222;
+    background-color: #d8ecfc;
+    border-color: #d8ecfc;
+}
+
+.item-attachment .alert a {
+    color: #090909;
+}
+
+.item-attachment .alert hr {
+    border-top-color: #c0e0fa;
+}
+
+.item-attachment .alert a {
+    /*   font-weight: bold;*/
+}
+
+/* Informative alert */
+
+.item-attachment .alert-info {
+    color: #222;
+    background-color: #f9edbe;
+    border-color: #f9edbe;
+}
+
+.item-attachment .alert-info a {
+    color: #090909;
+}
+
+.item-attachment .alert-info hr {
+    border-top-color: #f7e7a7;
+}
+
+/* Warning alert */
+
+.item-attachment .alert-warning {
+    color: #222222;
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+.item-attachment .alert-warning a {
+    color: #090909;
+}
+
+.item-attachment .alert-warning hr {
+    border-top-color: #e6b800;
+}
+
+/* Danger alert */
+
+.item-attachment .alert-danger {
+    color: #fff;
+    background-color: #b90000;
+    border-color: #b90000;
+}
+
+.item-attachment .alert-danger a {
+    color: #e6e6e6;
+}
+
+.item-attachment .alert-danger hr {
+    border-top-color: #a00000;
+}
+/*
+## Base item
+Styleguide Item
+*/
+.item-attachment .item-meta {
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+
+.advancedsettings_shown {
+	background-color: #292929 !important;
+	color: #ccc !important;
+}
+
+/* Base color scheme bg */
+div.setting_div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+	background: #444 !important;
+}
+
+.text_setting_input,
+.option-user-url {
+	background: #111 !important;
+	border: 1px solid #555 !important;
+	color: #ccc !important;
+}
+
+.style-setting-option {
+	border: 1px solid #aaa !important;
+}
+
+.title_setting {
+	color: #ccc !important;
+	font-weight: bold;
+}
+
+.option-user-upload.upload_image_label {
+	color: #ccc !important;
+}
+
+select {
+	border-color: #999 !important;
+	background-color: #111 !important;
+	color: #eee !important;
+}
+
+#notes_textarea {
+	background-color: #111 !important;
+	color: #ccc !important;
+}
+
+.Attachment:hover .FileHover {
+	background: #333 !important;
+	border: 1px solid #555 !important;
+}
+}
+
+@-moz-document domain("userstyles.org") {
+/*! Name:    Userstyles-Dark */
+/*! Author:  the-j0k3r */
+/*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
+/*! License   CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+#overlay-info {
+	background-color: rgba(36, 36, 36, .98) !important;
+	border-radius: 0px !important;
+}
+
+#landing_page_div .top_landing_page_div {
+	background-color: #222 !important;
+	color: #ccc !important;
+}
+
+#landing_page_div .bottom_landing_page_div {
+	background-color: #222 !important;
+}
+
+.phone_image_div {
+	background: url("https://userstyles.org/ui/images/phone-image.png") !important;
+	filter: invert(73%) hue-rotate(180deg) contrast(180%) !important;
+}
+
+#landing_page_div .overlay_background .typeform_container {
+	filter: invert(100%) hue-rotate(180deg) brightness(120%) !important;
+}
+
+#landing_page_div .overlay_background {
+	background-color: rgba(23, 23, 23, .9);
+}
+
+.close_typeform_button {
+	filter: invert(100%) !important;
+}
+
+#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_subtitle,
+#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_text,
+#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_helpus,
+.android_feature_title,
+div.android_feature_div:nth-child(1) > div:nth-child(2) > div:nth-child(2),
+div.android_feature_div:nth-child(2) > div:nth-child(2) > div:nth-child(2),
+div.android_feature_div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
+	color: #aaa !important;
+}
+
+.btn-auth {
+	border: 1px solid #999;
+	color: #ccc;
+	background: #111;
+}
+
+.btn-auth:hover,
+.btn-auth:focus,
+.btn-auth:active {
+	color: #ccc;
+	text-decoration: none
+}
+
+.btn-facebook {
+	border-color: #29447e;
+	border-bottom-color: #1a356e;
+	color: #fff;
+	background-color: #5872a7;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#637bad), to(#5872a7));
+	background-image: -webkit-linear-gradient(#637bad, #5872a7);
+	background-image: -moz-linear-gradient(#637bad, #5872a7);
+	background-image: -ms-linear-gradient(#637bad, #5872a7);
+	background-image: -o-linear-gradient(#637bad, #5872a7);
+	background-image: linear-gradient(#637bad, #5872a7);
+	-webkit-box-shadow: inset 0 1px 0 #879ac0;
+	box-shadow: inset 0 1px 0 #879ac0
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus {
+	color: #fff;
+	background-color: #3b5998
+}
+
+.btn-facebook:active {
+	color: #fff;
+	background: #4f6aa3;
+	-webkit-box-shadow: inset 0 1px 0 #45619d;
+	box-shadow: inset 0 1px 0 #45619d
+}
+
+.btn-facebook:before {
+	border-right: 1px solid #465f94;
+	margin: 0 1em 0 -1em;
+	background-position: 0 0
+}
+
+.btn-github {
+	border-color: #d4d4d4;
+	background: #ececec;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+	background-image: -webkit-linear-gradient(#f4f4f4, #ececec);
+	background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+	background-image: -ms-linear-gradient(#f4f4f4, #ececec);
+	background-image: -o-linear-gradient(#f4f4f4, #ececec);
+	background-image: linear-gradient(#f4f4f4, #ececec)
+}
+
+.btn-github:hover,
+.btn-github:focus {
+	border-color: #518cc6;
+	border-bottom-color: #2a65a0;
+	color: #fff;
+	background-color: #599bdc;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+	background-image: -webkit-linear-gradient(#599bdc, #3072b3);
+	background-image: -moz-linear-gradient(#599bdc, #3072b3);
+	background-image: -ms-linear-gradient(#599bdc, #3072b3);
+	background-image: -o-linear-gradient(#599bdc, #3072b3);
+	background-image: linear-gradient(#599bdc, #3072b3)
+}
+
+.btn-github:active {
+	border-color: #2a65a0;
+	border-bottom-color: #518cc6;
+	color: #fff;
+	background: #3072b3;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+	background: -webkit-linear-gradient(#3072b3, #599bdc);
+	background: -moz-linear-gradient(#3072b3, #599bdc);
+	background: -ms-linear-gradient(#3072b3, #599bdc);
+	background: -o-linear-gradient(#3072b3, #599bdc);
+	background: linear-gradient(#3072b3, #599bdc)
+}
+
+.btn-google {
+	border-color: #3079ed !important;
+	color: #fff !important;
+	background: #4787ed;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#4787ed));
+	background-image: -webkit-linear-gradient(#4d90fe, #4787ed);
+	background-image: -moz-linear-gradient(#4d90fe, #4787ed);
+	background-image: -ms-linear-gradient(#4d90fe, #4787ed);
+	background-image: -o-linear-gradient(#4d90fe, #4787ed);
+	background-image: linear-gradient(#4d90fe, #4787ed)
+}
+
+.btn-google:hover,
+.btn-google:focus,
+.btn-google:active {
+	color: #fff !important;
+	background-color: #357ae8 !important;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#357ae8));
+	background-image: -webkit-linear-gradient(#4d90fe, #357ae8);
+	background-image: -moz-linear-gradient(#4d90fe, #357ae8);
+	background-image: -ms-linear-gradient(#4d90fe, #357ae8);
+	background-image: -o-linear-gradient(#4d90fe, #357ae8);
+	background-image: linear-gradient(#4d90fe, #357ae8)
+}
+
+.btn-google:active {
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3)
+}
+
+.btn-google:before {
+	background-color: #e6e6e6 !important;
+}
+
+.btn-openid {
+	background: #f5f5f5 !important;
+}
+
+.btn-openid:hover,
+.btn-openid:focus {
+	border-color: #777 !important;
+	background: #fcfcfc !important
+}
+
+.btn-openid:active {
+	background: #f5f5f5 !important;
+}
+
+.btn-twitter {
+	border-color: #a6cde6;
+	color: #327695;
+	background: #cfe4f0;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f5f7), to(rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(#f1f5f7, rgba(255, 255, 255, 0));
+	background-image: -moz-linear-gradient(#f1f5f7, rgba(255, 255, 255, 0));
+	background-image: -ms-linear-gradient(#f1f5f7, rgba(255, 255, 255, 0));
+	background-image: -o-linear-gradient(#f1f5f7, rgba(255, 255, 255, 0));
+	background-image: linear-gradient(#f1f5f7, rgba(255, 255, 255, 0));
+	-webkit-box-shadow: inset 0 1px 0 #fff;
+	box-shadow: inset 0 1px 0 #fff
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus,
+.btn-twitter:active {
+	color: #327695;
+	border-color: #8dc2e4;
+	background-color: #cadde9
+}
+
+.btn-twitter:active {
+	background: #cadde9;
+	-webkit-box-shadow: inset 0 1px 0 #bbd6e7;
+	box-shadow: inset 0 1px 0 #bbd6e7
+}
+
+.btn-windows:hover,
+.btn-windows:focus {
+	border-color: #777;
+	background: #fcfcfc
+}
+
+.btn-windows:active {
+	background: #f5f5f5
+}
+
+.btn-yahoo {
+	border-color: #ffb305;
+	background: #ffc426;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0))
+}
+
+.btn-yahoo:hover,
+.btn-yahoo:focus {
+	background-color: #fabf20 !important
+}
+
+.btn-yahoo:active {
+	border-color: #f09700 !important;
+	background-image: none !important;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3) !important;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3) !important;
+}
+
+.btn-auth:before {
+	background-image: url(https://userstyles.org/assets/buttons/auth-icons-cb2522baf5ba2231dd9e21545772f72544378a415f6744fa6b423ed0baa43565.png)
+}
+
+.sub-title {
+	color: #ccc !important;
+}
+
+pre {
+	border: 1px dashed #eee !important;
+	padding: 10px;
+	overflow: auto;
+}
+
+#headline,
+#applies_link,
+#information_key_left,
+#infomation_value_left,
+#information_key,
+#information_value,
+.text_style_page,
+#share_div {
+	color: #ccc !important;
+}
+
+.div-arrow {
+	background-color: #444 !important;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08) !important;
+	border: solid 1px #555 !important;
+}
+
+.pageNumber {
+	color: #ddd !important;
+}
+
+table {
+	border-collapse: collapse !important
+}
+
+#screenshots {
+	border: 1px solid #DDD !important;
+}
+
+.no-screenshots {
+	margin-top: 35px;
+	color: gray;
+	text-align: center
+}
+
+.install-status {
+	color: white !important;
+}
+
+.install-status a,
+.install-status a:visited,
+.install-status a:active {
+	color: white !important;
+}
+
+.install {
+	background-color: #489615;
+	background-image: -moz-linear-gradient(#84c63c, #489615);
+	background-image: -webkit-linear-gradient(#84c63c, #489615);
+	background-image: -o-linear-gradient(#84c63c, #489615);
+	background-image: linear-gradient(#84c63c, #489615);
+	cursor: pointer
+}
+
+.install:hover {
+	background-color: #5caa29 !important;
+	background-image: -moz-linear-gradient(#98da50, #5caa29) !important;
+	background-image: -webkit-linear-gradient(#98da50, #5caa29) !important;
+	background-image: -o-linear-gradient(#98da50, #5caa29) !important;
+	background-image: linear-gradient(#98da50, #5caa29) !important;
+}
+
+.no-install {
+	background-color: #e63e33;
+	background-image: -moz-linear-gradient(#e63e33, #c82015);
+	background-image: -webkit-linear-gradient(#e63e33, #c82015);
+	background-image: -o-linear-gradient(#e63e33, #c82015);
+	background-image: linear-gradient(#e63e33, #c82015);
+	cursor: default
+}
+
+.install-info {
+	background-color: blue !important;
+	background-image: -moz-linear-gradient(#008bc7, #0064aa) !important;
+	background-image: -webkit-linear-gradient(#008bc7, #0064aa) !important;
+	background-image: -o-linear-gradient(#008bc7, #0064aa) !important;
+	background-image: linear-gradient(#008bc7, #0064aa) !important;
+	cursor: default !important
+}
+
+#left-sidebar > * {
+	background-color: #d1eeee !important;
+}
+
+#advanced-search {
+	border-bottom: 1px solid gray !important;
+}
+
+section#obsoletion-message {
+	background-color: #ff6347;
+	border-radius: 3px;
+	margin-bottom: 2em;
+	padding-right: 15px
+}
+
+label.rating {
+	border-color: #DDD !important;
+}
+
+label.rating:hover {
+	background-color: #FF7 !important;
+}
+
+#account-link {
+	color: white !important;
+	margin-right: 1em
+}
+
+.data-table th,
+.data-table td {
+	border: 1px solid black;
+}
+
+.ad-note span {
+	background-color: #eeeed2;
+	padding: 2px;
+	border-radius: 7px 7px 0 0
+}
+
+#left-sidebar .ad {
+	background-color: transparent
+}
+
+.paypal-donate-image {
+	width: 110px;
+	height: 23px
+}
+
+a.btn-auth:visited {
+	color: #222
+}
+
+a.btn-facebook:visited,
+a.btn-google:visited {
+	color: white
+}
+
+a.btn-twitter:visited {
+	color: #327695
+}
+
+.btn-password {
+	border-color: #777 !important;
+	background: #000 !important;
+}
+
+.btn-password:hover,
+.btn-password:focus {
+	border-color: #777 !important;
+	background: #333 !important;
+}
+
+.btn-password:active {
+	background: #333 !important;
+}
+
+#discussions .good-rating {
+	list-style-image: url(https://userstyles.org/assets/reviews/good-df758b70add644e2f557e9dc75a592b69deb03ca3136de7b2cc3b5f1695bcf09.gif)
+}
+
+#discussions .bad-rating {
+	list-style-image: url(https://userstyles.org/assets/reviews/bad-3be76cde5b6257834ef094aa948693862feb4a608da7dad3fad7939ff628d66c.gif)
+}
+
+#discussions .ok-rating {
+	list-style-image: url(https://userstyles.org/assets/reviews/ok-126eec5cb6a11c6e195e55892a82630072ff46dc707f71b378b2b8d679f5ced0.png)
+}
+
+#discussions .no-rating {
+	list-style-image: url(https://userstyles.org/assets/reviews/question-b26b16a0770515533db6ed7104e367c6de9c2fe4e66ecd2a7c6074451de055ae.png)
+}
+
+.more {
+	border-top: 1px solid #92b3e5;
+}
+
+.listing-no-screenshot {
+	background-color: #EEE;
+	border-radius: 5px
+}
+
+.style-brief-text > a,
+.style-brief-text > a:visited,
+.style-brief-text > a:active {
+	color: #3498db !important;
+	text-decoration: none !important;
+}
+
+.notice {
+	background-color: yellow;
+}
+
+.style-warning {
+	background-color: #ff6
+}
+
+.errorExplanation {
+    border: 1px solid #ff2518 !important;
+    background: #470700 !important;
+}
+
+.notice {
+	background-color: #FF6
+}
+
+.deletion-reason {
+	color: red
+}
+
+.style1 {
+	color: #cff !important;
+}
+
+.install-bg {
+	background-color: #000 !important;
+}
+
+@media(max-width:900px) {
+	#left-sidebar {
+		float: none !important;
+		width: auto !important;
+		margin-left: 5px !important;
+		margin-top: 1em !important
+	}
+
+	#content-wrapper {
+		float: none !important;
+		width: auto !important
+	}
+
+	#main-article {
+		margin-left: 5px !important;
+		margin-right: 5px !important
+	}
+
+	#left-sidebar .ad {
+		display: none
+	}
+
+	#search-terms,
+	#search-submit,
+	#show-advanced-search {
+		float: none !important
+	}
+
+	#search-terms {
+		width: 85% !important
+	}
+
+	#show-advanced-search {
+		text-align: left !important
+	}
+
+	nav form {
+		margin-bottom: .5em !important
+	}
+}
+
+@media(max-width:600px) {
+	.listing-left-info {
+		float: none !important;
+		width: auto !important
+	}
+
+	.screenshot-thumbnail {
+		text-align: left !important
+	}
+
+	.style-brief-text {
+		margin-left: 0 !important
+	}
+
+	.style-brief,
+	#browse-middle-ad {
+		padding-top: 15px !important;
+		border-bottom: 2px solid gray !important;
+		padding-bottom: 2em !important
+	}
+
+	.style-brief:last-of-type {
+		padding-bottom: 5px !important
+	}
+
+	.style-brief-stats span {
+		display: inline !important
+	}
+
+	.style-brief-stats span::after {
+		content: "|" !important
+	}
+
+	.style-brief-stats span:last-child::after {
+		content: "" !important
+	}
+
+	#style-author-info {
+		margin-left: 0 !important
+	}
+
+	#left-info {
+		float: none !important;
+		width: auto !important
+	}
+
+	#main-style-info-area {
+		margin-left: 0 !important
+	}
+
+	#info-tables th {
+		min-width: 150px !important
+	}
+
+	#social {
+		height: auto !important
+	}
+
+	h1 {
+		font-size: 1.25em !important
+	}
+}
+
+.welcome-logo {
+	height: 105px;
+	border-radius: 4px;
+	background-color: #2b7fb7;
+	background-image: url(https://userstyles.org/assets/welcome-logo-43ae76249135f00c9fbc9cc7ba6d199f7bac494f89e45fdcc2ec30eaeb34d4e2.svg)
+}
+
+.welcome-logo-text {
+	color: #fff;
+}
+
+.welcome-paragraph {
+	color: #333;
+}
+
+.welcome-video-text {
+	color: #7e8890;
+}
+
+.uninstall-main-text {
+	color: #4a4a4a;
+}
+
+.uninstall-additional-text {
+	color: #4a4a4a;
+}
+
+.uninstall-reinstall-button {
+	background-color: #3498db;
+}
+
+.uninstall-reinstall-button-text {
+	color: #fff;
+}
+
+#reinstall-link a {
+	color: #fff;
+	text-decoration: none
+}
+
+.uninstall-link {
+	color: #3498db;
+}
+
+#uninstall-link a {
+	color: #3498db;
+	text-decoration: none
+}
+
+a.selected {
+	color: white !important;
+	z-index: 100
+}
+
+.popup-message {
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+.popup-message p,
+.popup-message.div {
+	border-bottom: 1px solid #efefef;
+}
+
+.contact-input {
+	background-color: #000 !important;
+	border: solid 1px #555 !important;
+}
+
+.contact-font {
+	color: #ccc !important;
+}
+
+.contact-bold-font {
+	color: #ccc;
+}
+
+.contact-input-large {
+	background-color: #000 !important;
+	border: solid 1px #555 !important;
+}
+
+.contact-submit-button {
+	color: #eee !important;
+	background-color: #ffed84 !important;
+	height: 30px;
+	margin-top: -3px !important;
+}
+
+.statistic table,
+th,
+td {
+	border: 1px solid grey
+}
+
+.style_card {
+	background-color: #111 !important;
+}
+}
