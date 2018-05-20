@@ -1,9 +1,9 @@
 @-moz-document domain("userstyles.org") {
 /*! Name:    Userstyles-Dark */
-/*! Version: Version: 1.00 beta */
+/*! Version: Version: 1.01 beta */
 /*! Author:  the-j0k3r */
 /*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
-/*! License   CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+/*! License  CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
 body, #nav-view {
     color: #aaa !important;
     background: #222 !important;
@@ -46,8 +46,7 @@ a {
 	color: #5c81ba !important;
 }
 
-a:hover, a.TextColor:hover,
-a:hover .TextColor {
+a:hover, a.TextColor:hover, a:hover .TextColor {
     color: #6b9ae2 !important;
 }
 
@@ -129,17 +128,14 @@ p, h1, h2, h3, p, .P {
 	transform: translate(0, -4px);
 }
 
-#category_style_card_title:hover,
-#category_style_card_title {
+#category_style_card_title:hover, #category_style_card_title {
 	color: #ccc !important;
 }
 
-h4:first-child > a:first-child,
 h4:first-child > a:first-child {
 	color: #888 !important;
 }
 
-h4:first-child > a:first-child:hover,
 h4:first-child > a:first-child:hover {
 	color: #ccc !important;
 }
@@ -162,8 +158,7 @@ td:first-child > input:first-child, #style_pledgie_id,
 	color: #ccc !important;
 }
 
-input.DateBox, input.InputBox,
-input.SmallInput, textarea {
+input.DateBox, input.InputBox, input.SmallInput, textarea {
     color: #eee !important;
      background: #000 !important;
     border: 1px solid #444 !important;
@@ -208,10 +203,8 @@ textarea:focus, td:first-child > input:first-child:focus {
     border-color: #777 !important;
 }
 
-.Button.Active,
-.ButtonGroup.Open .Button.Handle,
-.Button:focus,
-.Button:active {
+.Button.Active, .ButtonGroup.Open .Button.Handle,
+.Button:focus, .Button:active {
     border-color: #aaa !important;
     background: #555 !important;
     box-shadow: none !important;
@@ -371,7 +364,7 @@ a.Small img {
 	color: #ddd !important;
 }
 
-/* ================= Header */
+/* ================= Header  =============== */
 #Head {
     background: #4f638b !important;
 }
@@ -397,13 +390,11 @@ a.Small img {
     background: #CFECFF;
 }
 
-div.Discussion:hover .OptionsTitle,
-.Item:hover .OptionsTitle {
+div.Discussion:hover .OptionsTitle, .Item:hover .OptionsTitle {
    filter: invert(50%)
 }
 
-div.Discussion:hover .OptionsTitle:hover,
-.Item:hover .OptionsTitle:hover {
+div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
    filter: invert(70%)
 }
 
@@ -411,8 +402,7 @@ div.Discussion:hover .OptionsTitle:hover,
 	filter: invert(50%)
 }
 
-.Flyout:before,
-.Flyout:after {
+.Flyout:before, .Flyout:after {
     border-bottom: 7px solid #777 !important;
     border-left: 7px solid transparent !important;
     border-right: 7px solid transparent !important;
@@ -444,8 +434,7 @@ div.Discussion:hover .OptionsTitle:hover,
     border-bottom: 1px solid #777;
 }
 
-.MenuItems.Up:before,
-.MenuItems.Up:after {
+.MenuItems.Up:before, .MenuItems.Up:after {
     border-top: 7px solid #777 !important;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
@@ -602,7 +591,7 @@ div.Discussion:hover .OptionsTitle:hover,
     text-indent: 50px;
 }
 
-/* ================================================ DataList */
+/* ======= DataList  ===========*/
 /* Note: DataList is used in search results, vanilla discussions & drafts */
 .SearchForm .InputBox {
     border: solid 1px #666 !important;
@@ -677,8 +666,7 @@ div.Discussion:hover .OptionsTitle:hover,
     padding: 6px;
 }
 
-.Activities a.CommentLink,
-.Activities a.CommentLink:hover {
+.Activities a.CommentLink, .Activities a.CommentLink:hover {
     background: #222 !important;
     color: #bbb !important;
     border: 1px solid #aaa;
@@ -713,12 +701,18 @@ code, pre {
 	padding: 1px
 }
 
+pre {
+	border: 1px dashed #eee !important;
+	padding: 10px;
+	overflow: auto;
+}
+
 mark {
     background: #cf9900;
 	color: #000;
 }
 
-/* =============================================================== Categories */
+/* ========== Categories =========== */
 .ChildCategories {
     border-top: 1px dotted #ddd;
     display: block;
@@ -728,7 +722,7 @@ mark {
     color: transparent;
 }
 
-/* ============================================================= Profile Page */
+/* ========== Profile Page =========== */
 a.ChangePicture {
     background: #333;
     color: #fff;
@@ -789,7 +783,7 @@ dl.About dt {
     background: url('https://forum.userstyles.org/applications/dashboard/design/images/profile-sprites.png') 2px -139px no-repeat transparent !important;
 }
 
-/* ======================================================== Thumbnail Cropper */
+/* ========= Thumbnail Cropper  =========== */
 .jcropper-holder {
     border: 1px black solid;
 }
@@ -819,13 +813,13 @@ dl.About dt {
     background-color: #C7BB00;
 }
 
-/* ===================== CommentForm */
+/* =========== CommentForm =========== */
 .Preview {
     background: #222 !important;
     color: #ccc !important;
 }
 
-/* ===================== Popups */
+/* ============= Popups =========== */
 div.Popup .Body {
     background: #fff;
     padding: 10px;
@@ -836,7 +830,7 @@ a.Close {
     color: #000;
 }
 
-/* ===================== Footer */
+/* =========== Footer =========== */
 #footer {
 	background-color: #191919 !important;
 }
@@ -867,7 +861,7 @@ a.Close {
 
 /* ========== Vanilla ========== */
 
-/* =========== Discussions */
+/* =========== Discussions ============= */
 
 /* Note: The Vanilla Discussion List has the following classes applied to
   individual list elements and can be styled:
@@ -908,7 +902,7 @@ a.Bookmarking:hover {
     background-color: #C70028;
 }
 
-/* ============= Category & Discussions Table Views */
+/* =========== Category & Discussions Table Views =========== */
 .DataTable {
 	background: #c0c !important;
 }
@@ -972,7 +966,7 @@ tr.CategoryHeading td {
     background-position: center right;
     padding-right: 24px;
 }
-/* ======== Conversations =========== */
+/* ======== Conversations ======== */
 .ac_results {
     padding: 0;
     border: 1px solid #d7d8da;
@@ -1022,7 +1016,7 @@ tr.CategoryHeading td {
     color: #fff;
 }
 
-/* ========= New Conversation Form */
+/* ========= New Conversation Form ========= */
 #ConversationForm label {
     color: #999 !important;
 }
@@ -1061,7 +1055,7 @@ ul.Tabs li a.Active {
     color: #000;
 }
 
-/* ==== Entry Screens */
+/* ==== Entry Screens *==== */
 span.Incorrect {
     color: red;
 }
@@ -1170,8 +1164,7 @@ div.Popup .Errors ul {
     border: 1px solid #ff2518 !important;
 }
 
-.Errors pre,
-.Errors pre * {
+.Errors pre, .Errors pre * {
     background: #949000 !important;
     color: #333 !important;
 }
@@ -1211,7 +1204,7 @@ position on the page to notify users of things like drafts being saved, etc. */
     color: #fff;
 }
 
-/* iPad/iPhone */
+/* ====== iPad/iPhone  ====== */
 @media only screen and (device-width: 768px), only screen and (max-device-width: 480px) {
     .InformMessages .InformMessage a.Close {
         color: #fff;
@@ -1229,7 +1222,7 @@ position on the page to notify users of things like drafts being saved, etc. */
 }
 
 /* Inform Sprites */
-/* ====== Embedded Discussion & Comment Customizations */
+/* ====== Embedded Discussion & Comment Customizations ====== */
 
 .EmbedCommentForm {
     border-top: 1px solid #c0c !important;
@@ -1307,8 +1300,7 @@ ul.token-input-list {
     background-color: #191919 !important;
 }
 
-ul.token-input-list-focus,
-ul.token-input-list-focus input {
+ul.token-input-list-focus, ul.token-input-list-focus input {
     background: #dc1a1a !important;
 }
 
@@ -1412,8 +1404,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.SocialIcon-Facebook,
-.SocialIcon-Facebook.HasText .Icon {
+.SocialIcon-Facebook, .SocialIcon-Facebook.HasText .Icon {
     background-color: #36609e;
 }
 
@@ -1421,8 +1412,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     background-color: #294978;
 }
 
-.SocialIcon-Twitter,
-.SocialIcon-Twitter.HasText .Icon {
+.SocialIcon-Twitter, .SocialIcon-Twitter.HasText .Icon {
     background-color: #2aa8df;
 }
 
@@ -1430,8 +1420,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     background-color: #1c8aba;
 }
 
-.SocialIcon-Google,
-.SocialIcon-Google.HasText .Icon {
+.SocialIcon-Google, .SocialIcon-Google.HasText .Icon {
     background-color: #da5442;
 }
 
@@ -1439,8 +1428,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     background-color: #c33926;
 }
 
-.SocialIcon-OpenID,
-.SocialIcon-OpenID.HasText .Icon {
+.SocialIcon-OpenID, .SocialIcon-OpenID.HasText .Icon {
     background-color: #f7921c;
 }
 
@@ -1448,8 +1436,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     background-color: #d87808;
 }
 
-.SocialIcon-LinkedIn,
-.SocialIcon-LinkedIn.HasText .Icon {
+.SocialIcon-LinkedIn, .SocialIcon-LinkedIn.HasText .Icon {
     background-color: #066c9a;
 }
 
@@ -1457,8 +1444,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     background-color: #044a69;
 }
 
-.SocialIcon-Disqus,
-.SocialIcon-Disqus.HasText .Icon {
+.SocialIcon-Disqus, .SocialIcon-Disqus.HasText .Icon {
     background-color: #2e9fff;
 }
 
@@ -1466,8 +1452,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
     background-color: #0087fa;
 }
 
-.SocialIcon-GitHub,
-.SocialIcon-GitHub.HasText .Icon {
+.SocialIcon-GitHub, .SocialIcon-GitHub.HasText .Icon {
     background-color: #6b9ecf;
 }
 
@@ -1568,8 +1553,7 @@ div.setting_div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
 	background: #444 !important;
 }
 
-.text_setting_input,
-.option-user-url {
+.text_setting_input, .option-user-url {
 	background: #111 !important;
 	border: 1px solid #555 !important;
 	color: #ccc !important;
@@ -1609,7 +1593,7 @@ select {
 /*! Name:    Userstyles-Dark */
 /*! Author:  the-j0k3r */
 /*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
-/*! License   CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+/*! License  CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
 #overlay-info {
 	background-color: rgba(36, 36, 36, .98) !important;
 	border-radius: 0px !important;
@@ -1657,9 +1641,7 @@ div.android_feature_div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
 	background: #111;
 }
 
-.btn-auth:hover,
-.btn-auth:focus,
-.btn-auth:active {
+.btn-auth:hover, .btn-auth:focus, .btn-auth:active {
 	color: #ccc;
 	text-decoration: none
 }
@@ -1679,8 +1661,7 @@ div.android_feature_div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
 	box-shadow: inset 0 1px 0 #879ac0
 }
 
-.btn-facebook:hover,
-.btn-facebook:focus {
+.btn-facebook:hover, .btn-facebook:focus {
 	color: #fff;
 	background-color: #3b5998
 }
@@ -1709,8 +1690,7 @@ div.android_feature_div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
 	background-image: linear-gradient(#f4f4f4, #ececec)
 }
 
-.btn-github:hover,
-.btn-github:focus {
+.btn-github:hover, .btn-github:focus {
 	border-color: #518cc6;
 	border-bottom-color: #2a65a0;
 	color: #fff;
@@ -1748,9 +1728,7 @@ div.android_feature_div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
 	background-image: linear-gradient(#4d90fe, #4787ed)
 }
 
-.btn-google:hover,
-.btn-google:focus,
-.btn-google:active {
+.btn-google:hover, .btn-google:focus, .btn-google:active {
 	color: #fff !important;
 	background-color: #357ae8 !important;
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#357ae8));
@@ -1774,8 +1752,7 @@ div.android_feature_div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
 	background: #f5f5f5 !important;
 }
 
-.btn-openid:hover,
-.btn-openid:focus {
+.btn-openid:hover, .btn-openid:focus {
 	border-color: #777 !important;
 	background: #fcfcfc !important
 }
@@ -1798,9 +1775,7 @@ div.android_feature_div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
 	box-shadow: inset 0 1px 0 #fff
 }
 
-.btn-twitter:hover,
-.btn-twitter:focus,
-.btn-twitter:active {
+.btn-twitter:hover, .btn-twitter:focus, .btn-twitter:active {
 	color: #327695;
 	border-color: #8dc2e4;
 	background-color: #cadde9
@@ -1812,8 +1787,7 @@ div.android_feature_div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
 	box-shadow: inset 0 1px 0 #bbd6e7
 }
 
-.btn-windows:hover,
-.btn-windows:focus {
+.btn-windows:hover, .btn-windows:focus {
 	border-color: #777;
 	background: #fcfcfc
 }
@@ -1853,20 +1827,8 @@ div.android_feature_div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
 	color: #ccc !important;
 }
 
-pre {
-	border: 1px dashed #eee !important;
-	padding: 10px;
-	overflow: auto;
-}
-
-#headline,
-#applies_link,
-#information_key_left,
-#infomation_value_left,
-#information_key,
-#information_value,
-.text_style_page,
-#share_div {
+#headline, #applies_link, #information_key_left, #infomation_value_left,
+#information_key, #information_value, .text_style_page, #share_div {
 	color: #ccc !important;
 }
 
@@ -1967,8 +1929,7 @@ label.rating:hover {
 	margin-right: 1em
 }
 
-.data-table th,
-.data-table td {
+.data-table th, .data-table td {
 	border: 1px solid black;
 }
 
@@ -1982,17 +1943,11 @@ label.rating:hover {
 	background-color: transparent
 }
 
-.paypal-donate-image {
-	width: 110px;
-	height: 23px
-}
-
 a.btn-auth:visited {
 	color: #222
 }
 
-a.btn-facebook:visited,
-a.btn-google:visited {
+a.btn-facebook:visited, a.btn-google:visited {
 	color: white
 }
 
@@ -2005,8 +1960,7 @@ a.btn-twitter:visited {
 	background: #000 !important;
 }
 
-.btn-password:hover,
-.btn-password:focus {
+.btn-password:hover, .btn-password:focus {
 	border-color: #777 !important;
 	background: #333 !important;
 }
@@ -2047,12 +2001,13 @@ a.btn-twitter:visited {
 	text-decoration: none !important;
 }
 
-.notice {
-	background-color: yellow;
+.notice, .style-warning {
+	background-color: #413100 !important;
+	border: 1px solid #b88900 !important;
 }
 
-.style-warning {
-	background-color: #ff6
+.notice p, .style-warning p {
+	color: #ddd !important;
 }
 
 .errorExplanation {
@@ -2060,12 +2015,8 @@ a.btn-twitter:visited {
     background: #470700 !important;
 }
 
-.notice {
-	background-color: #FF6
-}
-
 .deletion-reason {
-	color: red
+	color: red;
 }
 
 .style1 {
@@ -2098,9 +2049,7 @@ a.btn-twitter:visited {
 		display: none
 	}
 
-	#search-terms,
-	#search-submit,
-	#show-advanced-search {
+	#search-terms, #search-submit, #show-advanced-search {
 		float: none !important
 	}
 
@@ -2269,9 +2218,7 @@ a.selected {
 	margin-top: -3px !important;
 }
 
-.statistic table,
-th,
-td {
+.statistic table, th, td {
 	border: 1px solid grey
 }
 
