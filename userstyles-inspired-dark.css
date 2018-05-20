@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name:    Userstyles-Dark */
-/*! Version: 1.02 beta */
+/*! Version: 1.03 beta */
 /*! Author:  the-j0k3r */
 /*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License  CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -264,9 +264,9 @@ table.form-controls, .form-controls > tbody > tr > td, textarea {
    strings & imply importance. */
 span.Warning,
 div.Warning {
-    background: #5a4949;
-    border: 2px solid #fbb;
-    color: #d00;
+    background: #3c201d !important;
+    border: 2px solid #fa736b !important;
+    color: #ddd !important;
 }
 
 .Count {
@@ -275,12 +275,13 @@ div.Warning {
 }
 
 .Alert {
-    background: #d00;
-    color: #fff;
+    border: 1px solid #ff2518 !important;
+    background: #470700 !important;
+    color: #ddd !important;
 }
 
 .Alert a {
-    color: #fff;
+    color: #ddd !important;
 }
 
 .Alert a:hover {
@@ -821,7 +822,7 @@ dl.About dt {
 
 /* ============= Popups =========== */
 div.Popup .Body {
-    background: #fff;
+    background: #333 !important;
     padding: 10px;
     float: left; /* Put this here b/c background of form was not descending to bottom of popup. */
 }
