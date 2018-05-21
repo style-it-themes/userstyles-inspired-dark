@@ -13,7 +13,7 @@ A userstyles website/forums dark style, that attempts refine styling throughout 
 
 
 :asterisk: Full coverage entails that both are fully covered, its not bug free,  
-there are elements elements that were likely missed.
+there are elements that were likely missed.
 
 ## I Found a Bug
 
