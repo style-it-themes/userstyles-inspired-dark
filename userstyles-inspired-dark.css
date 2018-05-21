@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name:    Userstyles-Dark */
-/*! Version: 1.04 beta */
+/*! Version: 1.05 beta */
 /*! Author:  the-j0k3r */
 /*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License  CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -48,6 +48,14 @@ a {
 
 a:hover, a.TextColor:hover, a:hover .TextColor {
     color: #6b9ae2 !important;
+}
+
+.text_style_page > a:visited {
+	color: #a6b !important;
+}
+
+.text_style_page > a:visited:hover {
+	color: #ba70cd !important;
 }
 
 a.TextColor, a .TextColor {
@@ -152,7 +160,8 @@ h4:first-child > a:first-child:hover {
 
 #user_name, #user_email, #user_homepage, #user_paypal_email,
 td:first-child > input:first-child, #style_pledgie_id,
-#style_short_description, #example-url {
+#style_short_description, #example-url, #listing-url,
+#widget-title, #user_login, #password, #password_confirmation {
 	background: #000 !important;
 	border: 1px solid #555 !important;
 	color: #ccc !important;
@@ -177,12 +186,12 @@ input.DateBox, input.InputBox, input.SmallInput, textarea {
 
 #user_name:focus, #user_email:focus, #user_homepage:focus, #user_paypal_email:focus,
 #issue_full_name:focus, #issue_email:focus, #issue_user_name:focus,
-#style_short_description:focus, #style_pledgie_id:focus,
-#example-url:focus, input.DateBox:focus,
-input.InputBox:focus, input.SmallInput:focus,
-#search_input:focus, #style_short_description:focus,
-input.SmallInput:focus, input.InputBox:focus,
-textarea:focus, td:first-child > input:first-child:focus {
+#style_short_description:focus, #style_pledgie_id:focus, #example-url:focus,
+input.DateBox:focus, input.InputBox:focus, input.SmallInput:focus,
+#search_input:focus, #style_short_description:focus, input.SmallInput:focus,
+input.InputBox:focus, textarea:focus, td:first-child > input:first-child:focus,
+#listing-url:focus, #widget-title:focus, #user_login:focus, #password:focus,
+#password_confirmation:focus {
     background: #191919 !important;
 }
 
@@ -687,8 +696,8 @@ body.Post .Popup a.Close {
 }
 
 blockquote.Quote, blockQuote.UserQuote {
-    background: #333;
-    border-left: 4px solid #555;
+    background: #313131 !important;
+    border-left: 4px solid #666 !important;
 }
 
 .Message small {
@@ -696,21 +705,22 @@ blockquote.Quote, blockQuote.UserQuote {
 }
 
 code, pre {
-    background: #ff9;
-    border: 1px solid #eec;
-	color: #333;
-	padding: 1px
+    background: #6d5837 !important;
+	color: #ddd !important;
+}
+
+code {
+	border: none !important;
 }
 
 pre {
-	border: 1px dashed #eee !important;
-	padding: 10px;
-	overflow: auto;
+	border: 1px dashed #a98956 !important;
+	overflow: auto !important;
 }
 
 mark {
-    background: #cf9900;
-	color: #000;
+    background: #cf9900 !important;
+	color: #000 !important;
 }
 
 /* ========== Categories =========== */
@@ -958,7 +968,8 @@ tr.CategoryHeading td {
 }
 
 .FormWrapper {
-    background: #333 !important;
+    background: #191919 !important;
+	border: 1px solid #444 !important;
 }
 
 .StructuredForm input.hasDatepicker, .StructuredForm input.hasDatepicker:focus {
@@ -1310,9 +1321,13 @@ li.token-input-input-token {
 }
 
 li.token-input-token {
-    border: 1px solid #666 !important;
+    border: 1px solid #777 !important;
     background-color: #444 !important;
 	color: #eee !important;
+}
+
+li.token-input-token p {
+	color: #ddd !important;
 }
 
 li.token-input-token.not-allowed {
@@ -1950,11 +1965,11 @@ label.rating:hover {
 }
 
 a.btn-auth:visited {
-	color: #222
+	color: #222 !important;
 }
 
 a.btn-facebook:visited, a.btn-google:visited {
-	color: white
+	color: white !important;
 }
 
 a.btn-twitter:visited {
@@ -1996,8 +2011,8 @@ a.btn-twitter:visited {
 }
 
 .listing-no-screenshot {
-	background-color: #EEE;
-	border-radius: 5px
+	background-color: #292929 !important;
+	border-radius: 5px !important;
 }
 
 .style-brief-text > a,
@@ -2136,18 +2151,18 @@ a.btn-twitter:visited {
 }
 
 .welcome-logo {
-	height: 105px;
-	border-radius: 4px;
-	background-color: #2b7fb7;
+	height: 105px !important;
+	border-radius: 4px !important;
+	background-color: #2b7fb7 !important;
 	background-image: url(https://userstyles.org/assets/welcome-logo-43ae76249135f00c9fbc9cc7ba6d199f7bac494f89e45fdcc2ec30eaeb34d4e2.svg)
 }
 
 .welcome-logo-text {
-	color: #fff;
+	color: #eee !important;
 }
 
 .welcome-paragraph {
-	color: #333;
+	color: #333 !important;
 }
 
 .welcome-video-text {
