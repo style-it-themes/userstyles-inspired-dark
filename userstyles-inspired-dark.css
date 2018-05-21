@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name:    Userstyles-Dark */
-/*! Version: 1.03 beta */
+/*! Version: 1.04 beta */
 /*! Author:  the-j0k3r */
 /*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License  CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -388,19 +388,19 @@ a.Small img {
 
 /* Option (dropdown) Menus, Bookmark stars, admin checkboxes */
 .CategoryLink {
-    background: #CFECFF;
+    background: #CFECFF !important;
 }
 
-div.Discussion:hover .OptionsTitle, .Item:hover .OptionsTitle {
-   filter: invert(50%)
+div.Discussion .OptionsTitle, .Item .OptionsTitle {
+   filter: invert(50%) !important
 }
 
 div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
-   filter: invert(70%)
+   filter: invert(70%) !important;
 }
 
 .Open > .OptionsTitle {
-	filter: invert(50%)
+	filter: invert(50%) !important;
 }
 
 .Flyout:before, .Flyout:after {
@@ -1550,8 +1550,13 @@ Styleguide Item
 }
 
 /* Base color scheme bg */
-div.setting_div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
-	background: #444 !important;
+div.setting_div:nth-child(1) > div:nth-child(2) > div:nth-child(1),
+div.setting_div:nth-child(2) > div:nth-child(2) > div:nth-child(1),
+div.setting_div:nth-child(3) > div:nth-child(2) > div:nth-child(1),
+div.setting_div:nth-child(4) > div:nth-child(2) > div:nth-child(1),
+div.setting_div:nth-child(5) > div:nth-child(2) > div:nth-child(1),
+div.setting_div:nth-child(6) > div:nth-child(2) > div:nth-child(1) {
+	background: #333 !important;
 }
 
 .text_setting_input, .option-user-url {
@@ -2775,7 +2780,7 @@ span.cm-def {
 }
 
 .highlight .c {
-	color: #5F5A60 !important;;
+	color: #5F5A60 !important;
 	font-style: italic !important;
 }
 
@@ -2788,7 +2793,7 @@ span.cm-def {
 }
 
 .highlight .cm {
-	color: #5F5A60 !important;;
+	color: #5F5A60 !important;
 	font-style: italic !important;
 }
 
@@ -2797,12 +2802,12 @@ span.cm-def {
 }
 
 .highlight .c1 {
-	color: #5F5A60 !important;;
+	color: #5F5A60 !important;
 	font-style: italic !important;
 }
 
 .highlight .cs {
-	color: #5F5A60 !important;;
+	color: #5F5A60 !important;
 	font-style: italic !important;
 }
 
