@@ -1,9 +1,9 @@
 @-moz-document domain("userstyles.org") {
-/*! Name:    Userstyles-Dark */
-/*! Version: 1.07 beta */
-/*! Author:  the-j0k3r */
-/*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
-/*! License  CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+/*! Name    : Userstyles-Inspired-Dark */
+/*! Version : 1.08 beta */
+/*! Author  : the-j0k3r */
+/*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
+/*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
 body, #nav-view {
     color: #aaa !important;
     background: #222 !important;
@@ -170,7 +170,8 @@ h4:first-child > a:first-child:hover {
 td:first-child > input:first-child, #style_pledgie_id, #openid,
 #style_short_description, #example-url, #listing-url,
 #widget-title, #user_login, #password, #password_confirmation,
-#login-existing, #password-existing {
+#login-existing, #password-existing, #obsoleting-style-id,
+#edit-style-settings input:not([type]), #edit-style-settings input[type="text"] {
 	background: #000 !important;
 	border: 1px solid #555 !important;
 	color: #ccc !important;
@@ -196,11 +197,11 @@ input.DateBox, input.InputBox, input.SmallInput, textarea {
 #user_name:focus, #user_email:focus, #user_homepage:focus, #user_paypal_email:focus,
 #issue_full_name:focus, #issue_email:focus, #issue_user_name:focus, #openid:focus,
 #style_short_description:focus, #style_pledgie_id:focus, #example-url:focus,
-input.DateBox:focus, input.InputBox:focus, input.SmallInput:focus,
-#search_input:focus, #style_short_description:focus, input.SmallInput:focus,
-input.InputBox:focus, textarea:focus, td:first-child > input:first-child:focus,
-#listing-url:focus, #widget-title:focus, #user_login:focus, #password:focus,
-#password_confirmation:focus, #login-existing:focus, #password-existing:focus {
+input.DateBox:focus, input.InputBox:focus, input.SmallInput:focus, #search_input:focus, #style_short_description:focus, input.SmallInput:focus, input.InputBox:focus,
+textarea:focus, td:first-child > input:first-child:focus, #listing-url:focus,
+#widget-title:focus, #user_login:focus, #password:focus, #password_confirmation:focus,
+#login-existing:focus, #password-existing:focus, #obsoleting-style-id:focus,
+#edit-style-settings input:not([type]):focus, #edit-style-settings input[type="text"]:focus {
     background: #191919 !important;
 }
 
@@ -281,8 +282,8 @@ table.form-controls, .form-controls > tbody > tr > td, textarea {
 /* Note: Warning, Alert & Info are simple boxes that can be used to wrap message
    strings & imply importance. */
 span.Warning, div.Warning {
-    background: #3c201d !important;
-    border: 2px solid #fa736b !important;
+    background: #470700 !important;
+    border: 1px solid #ff2518 !important;
     color: #ddd !important;
 }
 
@@ -360,9 +361,17 @@ a.Small img {
 }
 
 .CasualMessage {
-    background: #CFECFF;
-    border: 1px solid #ABDAFB;
-    color: #1E79A7;
+    background: #01233a !important;
+    border: 1px solid #ABDAFB !important;
+    color: #ABDAFB !important;
+}
+
+.CasualMessage a {
+    color: #5c81ba !important;
+}
+
+.CasualMessage a:hover {
+    color: #6b9ae2 !important;
 }
 
 .InfoMessage {
@@ -528,6 +537,10 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
     border-bottom: 1px solid #333 !important;
 }
 
+ .PanelInfo li {
+    border-bottom: 2px solid #333 !important;
+}
+
 #Panel .FilterMenu li:first-child, .PanelInfo li:first-child {
     border-top: 1px solid #333 !important;
 }
@@ -681,8 +694,13 @@ code, pre {
 	color: #ddd !important;
 }
 
+pre code {
+    background: transparent !important;;
+}
+
 code {
 	border: none !important;
+	outline: none !important;
 }
 
 pre {
@@ -837,6 +855,10 @@ a.Close {
 /* ======== Vanilla ========= */
 .PoweredByVanilla {
 	filter:	invert(90%) hue-rotate(180deg) brightness(150%) !important;
+	/*
+	background-image: url("https://open.vanillaforums.com/applications/dashboard/design/images/vanilla-black.svg") !important;
+	background-size: cover !important;
+	*/
 }
 
 /* ====== Discussions ======= */
@@ -853,7 +875,7 @@ a.Bookmark:hover, a.Bookmarked:hover, a.Bookmarking:hover {
 }
 
 .Tag {
-    background: #666 !important;
+    background: #2A529A !important;
     color: #eee !important;
 }
 
@@ -861,21 +883,21 @@ a.Bookmark:hover, a.Bookmarked:hover, a.Bookmarking:hover {
     color: #eee !important;
 }
 
-.Tag.Closed {
-    background: #444 !important;
+.Tag.Closed, .Tag.Tag-Closed {
+    background: #315d80 !important;
 }
 
 .Tag.Category {
-    background: #857e50 !important;
+    background: #726b3e !important;
     font-weight: normal !important;
 }
 
 .Tag.Category a {
-    color: #000 !important;
+    color: #ddd !important;
 }
 
 .Tag.Tag-Banned {
-    background-color: #C70028 !important;
+    background-color: #780000 !important;
 }
 
 /* =========== Category & Discussions Table Views =========== */
@@ -1549,6 +1571,10 @@ div.setting_div > div > div {
 	border: 1px solid #aaa !important;
 }
 
+.edit-setting {
+	background-color: #191919 !important;
+}
+
 .title_setting {
 	color: #ccc !important;
 	font-weight: bold;
@@ -1576,10 +1602,10 @@ select {
 }
 
 @-moz-document domain("userstyles.org") {
-/*! Name:    Userstyles-Dark */
-/*! Author:  the-j0k3r */
-/*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
-/*! License  CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+/*! Name    : Userstyles-Inspired-Dark */
+/*! Author  : the-j0k3r */
+/*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
+/*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
 #header {
 	background-color: #2e3e49 !important;
 	box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.13), 1px 0 0 0 #cfd6d9 !important;
@@ -2183,8 +2209,7 @@ a.selected {
 	border: 1px solid #444 !important;;
 }
 
-.popup-message p,
-.popup-message.div {
+.popup-message p, .popup-message.div {
 	border-bottom: 1px solid #efefef !important;
 }
 
@@ -2220,18 +2245,40 @@ a.selected {
 .style_card {
 	background-color: #111 !important;
 }
+
+.tooltip_rating_long .tooltiptext_rating_long,
+.tooltip .tooltiptext, .tooltip_rating .tooltiptext_rating {
+	background-color: #fff !important;
+	color: #222 !important;
+	border-radius: 2px !important;
+}
+
+.tooltip_rating_long .tooltiptext_rating_long:after,
+.tooltip .tooltiptext::after, .tooltip_rating .tooltiptext_rating::after {
+	  border-color: #fff transparent transparent transparent;
+}
+
+.tooltip_rating_long:hover .tooltiptext_rating_long,
+.tooltip:hover .tooltiptext, .tooltip_rating:hover .tooltiptext_rating {
+	visibility: visible !important;
+	opacity: 0.7 !important;
+}
 }
 
 @-moz-document domain("userstyles.org") {
-/*! Name:    Userstyles-Dark */
-/*! Author:  the-j0k3r */
-/*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
-/*! Remix    https://github.com/StylishThemes/GitHub-Dark/blob/master/themes/codemirror/twilight.min.css */
-/*! License  CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
-/*! Twilight */
+/*! Name    : Userstyles-Inspired-Dark */
+/*! Author  : the-j0k3r */
+/*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
+/*! Remix   : https://github.com/StylishThemes/GitHub-Dark/blob/master/themes/codemirror/twilight.min.css */
+/*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+/*! Type    : CodeMirror Twilight Theme */
 .CodeMirror {
 	background: #141414 !important;
 	color: #ccc !important;
+	border: 1px solid  #444 !important;
+}
+
+.CodeMirror-focused {
 	border: 1px solid  #888 !important;
 }
 
@@ -2241,24 +2288,151 @@ a.selected {
 
 .CodeMirror-code {
 	margin-bottom: 1.4em !important;
+	outline: none !important;
 }
 
 .CodeMirror-selected {
-	background-color: hsl(200, 0%, 30%) !important;
+	background: #4d4d4d !important;
+	color: #eee !important;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+	background: #4d4d4d !important;
+}
+
+.CodeMirror-crosshair {
+	cursor: crosshair !important;
+}
+
+.CodeMirror ::selection {
+	background: #4d4d4d !important;
+}
+
+.CodeMirror ::-moz-selection {
+	background: #4d4d4d !important;
+}
+
+.cm-force-border {
+	padding-right: .1px !important;
 }
 
 .CodeMirror pre {
 	border: none !important;
-	background: #141414 !important;
+	background: transparent !important;
 }
 
-.blob-code,
-.blob-code-inner {
+.CodeMirror-wrap pre {
+	word-wrap: break-word !important;
+	white-space: pre-wrap !important;
+	word-break: normal !important;
+}
+
+.CodeMirror-gutters {
+	background: #222  !important;
+	border-right: 1px solid #777 !important;
+}
+
+.CodeMirror-guttermarker {
+	color: #fff !important;
+}
+
+.CodeMirror-guttermarker-subtle {
+	color: #aaa !important;
+}
+
+.CodeMirror-linenumber {
+	color: #aaa !important;
+}
+
+.CodeMirror-linenumber:hover {
+	color: #eee !important;
+}
+
+.CodeMirror-cursor {
+	border-left: 7px solid #07ce00 !important;
+}
+
+.CodeMirror-activeline-background {
+	background: #555 !important;
+}
+
+.CodeMirror-matchingbracket {
+	outline: 1px solid #888 !important;
+	color: #fff !important;
+}
+
+.CodeMirror-sizer {
+	position: relative !important;
+	border-right: 30px solid transparent !important;
+}
+
+.CodeMirror-scroll, .CodeMirror-sizer, .CodeMirror-gutter,
+.CodeMirror-gutters, .CodeMirror-linenumber {
+	-moz-box-sizing: content-box !important;
+	box-sizing: content-box !important;
+}
+
+.CodeMirror-measure {
+	position: absolute !important;
+	width: 100% !important;
+	height: 0 !important;
+	overflow: hidden !important;
+	visibility: hidden !important;
+}
+
+.CodeMirror-measure pre {
+	position: static !important;
+}
+
+.CodeMirror-ruler {
+	border-left: 1px solid #ccc !important;
+	position: absolute !important;
+}
+
+.CodeMirror-vscrollbar {
+	right: 0 !important;
+	top: 0 !important;
+	overflow-x: hidden !important;
+	overflow-y: scroll !important;
+}
+
+.CodeMirror-hscrollbar {
+	bottom: 0 !important;
+	left: 0 !important;
+	overflow-y: hidden !important;
+	overflow-x: scroll !important;
+}
+
+.CodeMirror-scrollbar-filler {
+	right: 0 !important;
+	bottom: 0 !important;
+}
+
+.CodeMirror-gutter-filler {
+	left: 0 !important;
+	bottom: 0 !important;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+	position: absolute !important;
+	border-right: none !important;
+	width: 0 !important;
+}
+
+.blob-code, .blob-code-inner {
 	color: #d51c1c !important;
 }
 
 .cm-s-default .cm-qualifier {
- color: #ccc !important;
+	color: #ccc !important;
+}
+
+.cm-tab-wrap-hack:after {
+	content: '' !important;
+}
+
+span.CodeMirror-selectedtext {
+	background: none !important;
 }
 
 .pl-c, .pl-c span {
@@ -2649,40 +2823,6 @@ a.selected {
 
 .pl-entl {
 	color: #ccc !important;
-}
-
-.CodeMirror-gutters {
-	background: #222  !important;
-	border-right: 1px solid #666 !important;
-}
-
-.CodeMirror-guttermarker {
-	color: #fff !important;
-}
-
-.CodeMirror-guttermarker-subtle {
-	color: #aaa !important;
-}
-
-.CodeMirror-linenumber {
-	color: #aaa !important;
-}
-
-.CodeMirror-linenumber:hover {
-	color: #eee !important;
-}
-
-.CodeMirror-cursor {
-	border-left: 7px solid #07ce00 !important;
-}
-
-.CodeMirror-activeline-background {
-	background: #27282E !important;
-}
-
-.CodeMirror-matchingbracket {
-	outline: 1px solid #888 !important;
-	color: #fff !important;
 }
 
 .cm-keyword {
