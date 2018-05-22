@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name:    Userstyles-Dark */
-/*! Version: 1.06 beta */
+/*! Version: 1.07 beta */
 /*! Author:  the-j0k3r */
 /*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License  CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -280,8 +280,7 @@ table.form-controls, .form-controls > tbody > tr > td, textarea {
 
 /* Note: Warning, Alert & Info are simple boxes that can be used to wrap message
    strings & imply importance. */
-span.Warning,
-div.Warning {
+span.Warning, div.Warning {
     background: #3c201d !important;
     border: 2px solid #fa736b !important;
     color: #ddd !important;
@@ -308,13 +307,12 @@ div.Warning {
 
 .Info {
     background: #222 !important;
-    border: 2px solid #eee;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    color: #888;
+    border: 2px solid #555 !important;
+    color: #888 !important;
 }
 
 .Pager span {
-    color: #777;
+    color: #777 !important;
 }
 
 .Pager .Highlight {
@@ -323,7 +321,7 @@ div.Warning {
 
 /* Small UserPhoto() images */
 a.Small:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a.Small img {
@@ -450,7 +448,7 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 }
 
 .MenuItems hr {
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #777 !important;
 }
 
 .MenuItems.Up:before, .MenuItems.Up:after {
@@ -460,19 +458,23 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 }
 
 .MenuItems.Up:after {
-    border-top: 7px solid #c41111 !important;
-    bottom: -6px;
+    border-top: 7px solid #999 !important;
+    bottom: -6px !important;
 }
 
 .FlyoutMenu {
-    width: 300px;
+    width: 300px !important;
     background: #222 !important;
     color: #ccc !important;
-    border: solid 1px #777 !important;
+    border: solid 1px #666 !important;
 }
 
 .FlyoutMenu a {
-    color: #00419b;
+    color: #5c81ba !important;
+}
+
+.FlyoutMenu a:hover {
+    color: #6b9ae2 !important;
 }
 
 .DropHandle {
@@ -489,125 +491,89 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
     white-space: nowrap;
 }
 
-.Box dl dd {
-    font-size: 12px;
-    margin-left: 80px;
-}
-
 /* Hiding until we figure out what to do with GuestWelcomeModule */
 .MeButton {
 	filter: invert(100%) !important;
-    border: solid 1px transparent;
+    border: solid 1px transparent !important;
 }
+
 .MeButton:hover {
 	filter: invert(100%) !important;
-    background: #999 !important;
+    background: #aaa !important;
 }
 
 .PanelActivity {
-    border-top: 1px solid #abdafb;
+    border-top: 1px solid #abdafb !important;
 }
 
 .PanelActivity li {
-    background: #e3f4ff;
-    border-bottom: 1px solid #abdafb;
-    color: #555;
+    background: #333 !important;
+    border-bottom: 1px solid #555 !important;
+    color: #aaa !important;
 }
 
 .PanelActivity li a {
-    font-size: 13px;
-}
-
-.PanelActivity li a.Name {
-    margin-right: 2px;
-}
-
-.PanelActivity span {
-    padding: 0 4px;
-}
-
-.PanelActivity p {
-    padding: 0 4px;
-    display: inline;
-    font-size: 90%;
+    font-size: 13px !important;
 }
 
 .PanelActivity li em {
-    padding-left: 5px;
-    color: #777;
-    font-size: 80%;
-}
-
-.PanelActivity li .Story {
-    font-size: 85%;
+    padding-left: 5px !important;
+    color: #777 !important;
+    font-size: 80% !important;
 }
 
 /* Compatibility for old custom themes that overrode this value */
 
-#Panel .FilterMenu li,
-.PanelInfo li {
+#Panel .FilterMenu li, .PanelInfo li {
     border-bottom: 1px solid #333 !important;
 }
 
-#Panel .FilterMenu li:first-child,
-.PanelInfo li:first-child {
+#Panel .FilterMenu li:first-child, .PanelInfo li:first-child {
     border-top: 1px solid #333 !important;
 }
 
 /** Make standard items a bit more condensed when in the panel. **/
 
 .PanelInfo .Meta strong {
-    display: inline;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    background: #FF0;
-    color: #000;
-    font-size: 9px;
-    font-weight: bold;
-    padding: 3px;
-    line-height: 1;
+    display: inline !important;
+    border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+    -webkit-border-radius: 2px !important;
+    background: #FF0 !important;
+    color: #000 !important;
+    font-size: 9px !important;
+    font-weight: bold !important;
+    padding: 3px !important;
+    line-height: 1 !important;
 }
 
 .PanelInfo .Parent {
-    text-align: left;
-    font-weight: bold;
-    background: none;
-    color: #333;
-    padding: 2px 0;
+    text-align: left !important;
+    font-weight: bold !important;
+    background: none !important;
+    color: #333 !important;
+    padding: 2px 0 !important;
 }
 
 #Panel .FilterMenu .Active,
 .PanelInfo .Active {
     background: rgba(51, 51, 51, .51) !important;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 #Content .FilterMenu li.Active a {
-    border-bottom: 2px solid #ddd !important;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-}
-
-#Content .BoxFilter a {
-    margin: 0 10px 0 0;
-    padding: 4px 0;
-    display: block;
+    border-bottom: 2px solid #555 !important;
 }
 
 #Content .BoxFilter .Active a {
-    color: #000;
-    border-bottom: 2px solid #ddd;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    color: #000 !important;
+    border-bottom: 2px solid #555 !important;
 }
 
 .Icons img {
-    display: block;
-    height: 44px;
-    width: 44px;
-    overflow: hidden;
-    background: #c4cde0;
-    color: #c4cde0;
-    text-indent: 50px;
+    background: #c4cde0 !important;
+    color: #c4cde0 !important;
+    text-indent: 50px !important;
 }
 
 /* ======= DataList  ===========*/
@@ -626,10 +592,10 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 }
 
 .HasNew {
-    background: #ffc800;
-    color: #000;
-    padding-left: 3px;
-	padding-right: 3px;
+    background: #ffc800 !important;
+    color: #000 !important;
+    padding-left: 3px !important;
+	padding-right: 3px !important;
 }
 
 .Item.Read {
@@ -659,36 +625,33 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 }
 
 .Item .Inset {
-    border-top: 1px solid #bec8cc;
-    padding: 5px 0;
+    border-top: 1px solid #bec8cc !important;
+    padding: 5px 0 !important;
 }
 
 .PopList .Item {
-    border-bottom: 1px solid #ddd;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #555 !important;
 }
 
 /* /me actions */
 .Hero {
-    background: #f7f7f7;
-    background: rgba(0, 0, 0, .03);
+    background: #333 !important;
 }
 
 .Activities li.Condensed .Excerpt {
-    color: #000 !important;
+    color: #eee !important;
 }
 
 .Activities .DataList li {
-    background: #f3f3f3;
-    background: rgba(0, 0, 0, 0.05);
-    margin-bottom: 2px;
-    padding: 6px;
+    background: #333 !important;
+    margin-bottom: 2px !important;
+    padding: 6px !important;
 }
 
 .Activities a.CommentLink, .Activities a.CommentLink:hover {
     background: #222 !important;
     color: #bbb !important;
-    border: 1px solid #aaa;
+    border: 1px solid #aaa !important;
 }
 
 .Comment {
@@ -696,7 +659,7 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 }
 
 body.Post .Popup a.Close {
-    color: #1e79a7;
+    color: #1e79a7 !important;
 }
 
 .emoji {
@@ -734,27 +697,30 @@ mark {
 
 /* ========== Categories =========== */
 .ChildCategories {
-    border-top: 1px dotted #ddd;
-    display: block;
+    border-top: 1px dotted #666 !important;
+    display: block !important;
 }
 
 .RssButton {
-    color: transparent;
+    color: transparent !important;
 }
 
 /* ========== Profile Page =========== */
-a.ChangePicture {
-    background: #333;
-    color: #fff;
-}
-
 .PhotoWrap:hover a.ChangePicture {
-    display: block;
+    display: block !important;
 }
 
-a.ChangePicuture:hover {
-    color: #fff;
-    text-decoration: underline;
+a.ChangePicture {
+    background: #333 !important;
+    color: #ddd !important;
+}
+/*
+Fix typo in selector from the default css
+a.ChangePicuture:hover -> a.ChangePicture:hover
+*/
+a.ChangePicture:hover {
+    color: #eee !important;
+    text-decoration: underline !important;
 }
 
 /* BGColor on profile forms */
@@ -762,26 +728,20 @@ body.Profile.EditMode #Content form {
     background: #202020 !important;
 }
 
-.PreferenceGroup > thead:nth-child(1) > tr:nth-child(1) > td:nth-child(1),
-.PreferenceGroup > thead:nth-child(1) > tr:nth-child(1) > td:nth-child(2),
-.PreferenceGroup > thead:nth-child(1) > tr:nth-child(1) > td:nth-child(3),
-.PreferenceGroup > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(2),
-.PreferenceGroup > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(3) {
-	background-color: #202020 !important;
+.PreferenceGroup > thead > tr > td {
+	background-color: #222 !important;
 	color: #ccc !important;
 }
 
-/* Invitations Form */
-#Form_Invitation table th:hover,
-table.PreferenceGroup td:hover {
+/* Iinclude nvitations Form and fix .PreferenceGroup hover */
+.PreferenceGroup > tbody > tr:hover > td,
+#Form_Invitation table th:hover {
 	background-color: #333 !important;
 	color: #eee !important;
 }
 
-table.PreferenceGroup th,
-table.PreferenceGroup td,
-#Form_Invitation th,
-#Form_Invitation td {
+table.PreferenceGroup th, table.PreferenceGroup td,
+#Form_Invitation th, #Form_Invitation td {
 	background-color: #202020 !important;
     border-bottom: 1px solid #333 !important;
 	border-top: none !important;
@@ -795,7 +755,7 @@ table.PreferenceGroup td,
 
 /* About in content area */
 .ContentColumn .About h2 {
-    display: none;
+    display: none !important;
 }
 
 dl.About dt {
@@ -805,32 +765,31 @@ dl.About dt {
 
 /* ========= Thumbnail Cropper  =========== */
 .jcropper-holder {
-    border: 1px black solid;
+    border: 1px black solid !important;
 }
 
 .jcrop-vline, .jcrop-hline {
-    font-size: 0;
-    position: absolute;
-    background: white url('https://forum.userstyles.org/applications/dashboard/design/images/jcrop.gif') top left repeat;
+    font-size: 0 !important;
+    position: absolute !important;
+    background: white url('https://forum.userstyles.org/applications/dashboard/design/images/jcrop.gif') top left repeat !important;
 }
 
 .jcrop-handle {
-    border: 1px #eee solid;
-    background-color: #333;
+    border: 1px #eee solid !important;
+    background-color: #333 !important;
 }
 
 .jcrop-tracker {
-    *background-color: gray;
+    *background-color: #cd1313 !important;
 }
 
-.custom .jcrop-vline,
-.custom .jcrop-hline {
-    background: yellow;
+.custom .jcrop-vline, .custom .jcrop-hline {
+    background: yellow !important;
 }
 
 .custom .jcrop-handle {
-    border-color: black;
-    background-color: #C7BB00;
+    border-color: black !important;
+    background-color: #C7BB00 !important;
 }
 
 /* =========== CommentForm =========== */
@@ -843,11 +802,11 @@ dl.About dt {
 div.Popup .Body {
     background: #333 !important;
     padding: 10px !important;
-    float: left; /* Put this here b/c background of form was not descending to bottom of popup. */
+    float: left !important; /* Put this here b/c background of form was not descending to bottom of popup. */
 }
 
 a.Close {
-    color: #000;
+    color: #000 !important;
 }
 
 /* =========== Footer =========== */
@@ -875,56 +834,53 @@ a.Close {
     color: #aaa !important;
 }
 
+/* ======== Vanilla ========= */
 .PoweredByVanilla {
 	filter:	invert(90%) hue-rotate(180deg) brightness(150%) !important;
 }
 
-/* ========== Vanilla ========== */
-
-/* =========== Discussions ============= */
-
-/* Note: The Vanilla Discussion List has the following classes applied to
+/* ====== Discussions ======= */
+/*
+Note: The Vanilla Discussion List has the following classes applied to
   individual list elements and can be styled:
   + Bookmarked: the user has bookmarked that topic
   + Announcement: the discussion has been announced
   + Mine: the user created the discussion
   + New: there are new comments since the last viewed the discussion
 */
-a.Bookmark:hover,
-a.Bookmarked:hover,
-a.Bookmarking:hover {
-	filter: invert(100%)
+a.Bookmark:hover, a.Bookmarked:hover, a.Bookmarking:hover {
+	filter: invert(100%) !important;
 }
 
 .Tag {
     background: #666 !important;
-    color: #eee;
+    color: #eee !important;
 }
 
 .Tag a {
-    color: #eee;
+    color: #eee !important;
 }
 
 .Tag.Closed {
-    background: #444;
+    background: #444 !important;
 }
 
 .Tag.Category {
-    background: #857e50;
-    font-weight: normal;
+    background: #857e50 !important;
+    font-weight: normal !important;
 }
 
 .Tag.Category a {
-    color: #000;
+    color: #000 !important;
 }
 
 .Tag.Tag-Banned {
-    background-color: #C70028;
+    background-color: #C70028 !important;
 }
 
 /* =========== Category & Discussions Table Views =========== */
 .DataTable {
-	background: #c0c !important;
+	background: #292929 !important;
 }
 
 .DataTable td {
@@ -932,23 +888,22 @@ a.Bookmarking:hover {
 }
 
 .MiniPager {
-    display: inline-block;
-    margin-left: 3px;
-    font-size: 11px;
-    color: #333;
+    display: inline-block !important;
+    margin-left: 3px !important;
+    font-size: 11px !important;
+    color: #eee !important;
 }
 
 tr.CategoryHeading td {
-    font-weight: bold;
+    font-weight: bold !important;
     background: #222 !important;
-    background: rgba(0, 0, 0, 0.03);
 }
 
 /* Discussion Sorter */
 
 .DiscussionSorter:hover {
-    cursor: pointer;
-    background: #e02424;
+    cursor: pointer !important;
+    background: #444 !important;
 }
 
 .DiscussionSorter .Selected {
@@ -961,15 +916,15 @@ tr.CategoryHeading td {
 }
 
 #single_discussion {
-	box-shadow: 0 1px 0 0 #444, 0 0 0 0 #444;
+	box-shadow: 0 1px 0 0 #444, 0 0 0 0 #444 !important;
 }
 
 .SpRSS {
-    background: url("https://forum.userstyles.org/applications/dashboard/design/images/sprites.png") no-repeat -27px -46px transparent;
-    display: inline-block;
-    height: 14px;
-    vertical-align: middle;
-    width: 14px;
+    background: url("https://forum.userstyles.org/applications/dashboard/design/images/sprites.png") no-repeat -27px -46px transparent !important;
+    display: inline-block !important;
+    height: 14px !important;
+    vertical-align: middle !important;
+    width: 14px !important;
 }
 
 .DiscussionForm label {
@@ -982,40 +937,41 @@ tr.CategoryHeading td {
 }
 
 .StructuredForm input.hasDatepicker, .StructuredForm input.hasDatepicker:focus {
-    background-image: url('https://forum.userstyles.org/applications/dashboard/design/images/calendar.png');
-    background-repeat: no-repeat;
-    background-position: center right;
-    padding-right: 24px;
+    background-image: url('https://forum.userstyles.org/applications/dashboard/design/images/calendar.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: center right !important;
+    padding-right: 24px !important;
 }
+
 /* ======== Conversations ======== */
 .ac_results {
-    padding: 0;
-    border: 1px solid #d7d8da;
-    border-top: 0;
-    background-color: #9c0505 !important;
-    overflow: hidden;
-    z-index: 99999;
+    padding: 0 !important;
+    border: 1px solid #555 !important;
+    border-top: 0 !important;
+    background-color: #333 !important;
+    overflow: hidden !important;
+    z-index: 99999 !important;
 }
 
 .ac_results li {
-    margin: 0;
-    padding: 5px;
-    cursor: default;
-    display: block;
+    margin: 0 !important;
+    padding: 5px !important;
+    cursor: default !important;
+    display: block !important;
     /*
    if width will be 100% horizontal scrollbar will apear
    when scroll mode will be used
    */
     /*width: 100%;*/
-    font-size: 12px;
+    font-size: 12px !important;
     /*
    it is very important, if line-height not setted or setted
    in relative units scroll will be broken in firefox
    */
-    line-height: 16px;
-    overflow: hidden;
-    border-bottom: 1px solid #d7d8da;
-    text-align: left;
+    line-height: 16px !important;
+    overflow: hidden !important;
+    border-bottom: 1px solid #555 !important;
+    text-align: left !important;
 }
 
 .ac_lastitem {
@@ -1023,8 +979,8 @@ tr.CategoryHeading td {
 }
 
 .ac_results strong {
-    font-weight: bold;
-    background: #c7e2ff;
+    font-weight: bold !important;
+    background: #c7e2ff !important;
 }
 
 .ac_over strong {
@@ -1198,57 +1154,59 @@ div.Popup .Errors ul {
 position on the page to notify users of things like drafts being saved, etc. */
 .InformMessages .InformMessage {
     color: #fff !important;
-    text-shadow: 0 1px 1px #000;
-    background: rgb(0, 0, 0) !important;
+    text-shadow: 0 1px 1px #fff !important;
+    background: #191919 !important;
+	border: 1px solid #555 !important;
+	white-space: pre !important;
 }
 
 .InformMessages .InformMessage:hover {
-    background: #333;
+    background: #292929 !important;
 }
 
 .InformMessages .InformMessage a {
-    color: #aff;
+    color: #eee !important;
 }
 
 .InformMessages .InformMessage a:hover {
-    color: #cff;
-    text-decoration: underline;
+    color: #fff !important;
+    text-decoration: underline !important;
 }
 
 .InformMessages .InformMessage a.Close {
-    background: transparent;
-    color: #ddd;
+    background: transparent !important;
+    color: #ddd !important;
 }
 
 .InformMessages .InformMessage a.Close span {
-    display: inline;
+    display: inline !important;
 }
 
 .InformMessages .InformMessage a.Close:hover {
-    background: #000;
-    color: #fff;
+    background: #292929 !important;
+    color: #fff !important;
 }
 
 /* ====== iPad/iPhone  ====== */
 @media only screen and (device-width: 768px), only screen and (max-device-width: 480px) {
     .InformMessages .InformMessage a.Close {
-        color: #fff;
-        display: block;
+        color: #eee !important;
+        display: block !important;
     }
 
     .Item .OptionsTitle {
-        visibility: visible;
+        visibility: visible !important;
     }
 }
 
 /* Small screens */
 .InformMessages .Actions a.CancelAction {
-    color: #aaa;
+    color: #aaa !important;
 }
 
 /* Inform Sprites */
 /* ====== Embedded Discussion & Comment Customizations ====== */
-
+/* Added color #c0c so that its obvious where this belongs when I come across it. */
 .EmbedCommentForm {
     border-top: 1px solid #c0c !important;
 }
@@ -1260,19 +1218,19 @@ position on the page to notify users of things like drafts being saved, etc. */
     padding: 0 8px 0 0;
 }
 
-/* = Regarding */
+/* ======= Regarding ======== */
 
 .RegardingEvent {
-    padding: 10px;
-    padding-left: 38px;
+    padding: 10px !important;
+    padding-left: 38px !important;
     color: #fff !important;
-    text-shadow: 0 1px 1px #000;
-    background: rgb(0, 0, 0) !important;
+    text-shadow: 0 1px 1px #000 !important;
+    background: #111 !important;
 }
 
 .RegardingEvent a.ReportedUser,
 .RegardingEvent a.ReportingUser {
-    color: #CFECFF;
+    color: #CFECFF !important;
 }
 
 .RegardingEvent .RegardingTime {
@@ -1283,8 +1241,8 @@ position on the page to notify users of things like drafts being saved, etc. */
 
 .RegardingActions .ActionButton {
     color: #fff !important;
-    text-shadow: 0 1px 1px #000;
-    background: rgb(0, 0, 0) !important;
+    text-shadow: 0 1px 1px #000 !important;
+    background: #111 !important;
 }
 
 .RegardingActions .ActionButton a {
@@ -1302,8 +1260,7 @@ position on the page to notify users of things like drafts being saved, etc. */
  }
 
 /* Switch to the white icons when hovering over a menuitem sprite */
-.MenuItems a:hover .ReactSprite,
-.MenuItems a:hover .Sprite {
+.MenuItems a:hover .ReactSprite, .MenuItems a:hover .Sprite {
     background-image: url('http://cdn.vanillaforums.com/images/sprites-14-fff.png');
 }
 
@@ -1314,7 +1271,7 @@ position on the page to notify users of things like drafts being saved, etc. */
 
 /* Embedded Video Preview Hide/Reveal */
 .Video.YouTube .VideoPreview:after {
-    background: url('http://cdn.vanillaforums.com/images/youtube-overlay-button.png') 0 -44px no-repeat transparent;
+    background: url('http://cdn.vanillaforums.com/images/youtube-overlay-button.png') 0 -44px no-repeat transparent !important;
 }
 
 /* Token input */
@@ -1498,17 +1455,17 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
 Styleguide Alerts
 */
 .item-attachment .alert {
-    color: #222;
-    background-color: #d8ecfc;
-    border-color: #d8ecfc;
+    color: #eee !important;
+    background-color: #414d56 !important;
+    border-color: #69869c !important;
 }
 
 .item-attachment .alert a {
-    color: #090909;
+    color: #eee !important;
 }
 
 .item-attachment .alert hr {
-    border-top-color: #c0e0fa;
+    border-top-color: #69869c !important;
 }
 
 .item-attachment .alert a {
@@ -1518,58 +1475,58 @@ Styleguide Alerts
 /* Informative alert */
 
 .item-attachment .alert-info {
-    color: #222;
-    background-color: #f9edbe;
-    border-color: #f9edbe;
+    color: #222 !important;
+    background-color: #f9edbe !important;
+    border-color: #f9edbe !important;
 }
 
 .item-attachment .alert-info a {
-    color: #090909;
+    color: #090909 !important;
 }
 
 .item-attachment .alert-info hr {
-    border-top-color: #f7e7a7;
+    border-top-color: #f7e7a7 !important;
 }
 
 /* Warning alert */
 
 .item-attachment .alert-warning {
-    color: #222222;
-    background-color: #ffcc00;
-    border-color: #ffcc00;
+    color: #222 !important;
+    background-color: #ffcc00 !important;
+    border-color: #ffcc00 !important;
 }
 
 .item-attachment .alert-warning a {
-    color: #090909;
+    color: #090909 !important;
 }
 
 .item-attachment .alert-warning hr {
-    border-top-color: #e6b800;
+    border-top-color: #e6b800 !important;
 }
 
 /* Danger alert */
 
 .item-attachment .alert-danger {
-    color: #fff;
-    background-color: #b90000;
-    border-color: #b90000;
+    color: #ddd !important;
+    background-color: #470700 !important;
+    border-color: #ff2518 !important;
 }
 
 .item-attachment .alert-danger a {
-    color: #e6e6e6;
+    color: #eee !important;
 }
 
 .item-attachment .alert-danger hr {
-    border-top-color: #a00000;
+    border-top-color: #a00000 !important;
 }
 /*
 ## Base item
 Styleguide Item
 */
 .item-attachment .item-meta {
-    font-size: 12px;
-    line-height: 20px;
-    color: #999;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    color: #999 !important;
 }
 
 .advancedsettings_shown {
@@ -1578,12 +1535,7 @@ Styleguide Item
 }
 
 /* Base color scheme bg */
-div.setting_div:nth-child(1) > div:nth-child(2) > div:nth-child(1),
-div.setting_div:nth-child(2) > div:nth-child(2) > div:nth-child(1),
-div.setting_div:nth-child(3) > div:nth-child(2) > div:nth-child(1),
-div.setting_div:nth-child(4) > div:nth-child(2) > div:nth-child(1),
-div.setting_div:nth-child(5) > div:nth-child(2) > div:nth-child(1),
-div.setting_div:nth-child(6) > div:nth-child(2) > div:nth-child(1) {
+div.setting_div > div > div {
 	background: #333 !important;
 }
 
@@ -1628,23 +1580,30 @@ select {
 /*! Author:  the-j0k3r */
 /*! Repo:     https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License  CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+#header {
+	background-color: #2e3e49 !important;
+	box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.13), 1px 0 0 0 #cfd6d9 !important;
+	border-bottom: 1px solid #222 !important;
+}
+
 #overlay-info {
 	background-color: rgba(36, 36, 36, .98) !important;
 	border-radius: 0px !important;
 }
 
-#landing_page_div .top_landing_page_div {
+#landing_page_div .top_landing_page_div{
 	background-color: #222 !important;
-	color: #ccc !important;
 }
 
 #landing_page_div .bottom_landing_page_div {
-	background-color: #222 !important;
+	background-color: #1e1e1e !important;
 }
-
+/*
+Im almost tempted to fix this image and host it elsewhere only amateurs cant use  transparent gradients
+*/
 .phone_image_div {
 	background: url("https://userstyles.org/ui/images/phone-image.png") !important;
-	filter: invert(73%) hue-rotate(180deg) contrast(180%) !important;
+	filter: invert(90%) hue-rotate(180deg) contrast(110%) !important;
 }
 
 #landing_page_div .overlay_background .typeform_container {
@@ -1655,17 +1614,14 @@ select {
 	background-color: rgba(23, 23, 23, .9) !important;
 }
 
-.close_typeform_button {
-	filter: invert(100%) !important;
+#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_seperator {
+	border-bottom: solid 1px #555 !important;
 }
 
 #landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_subtitle,
 #landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_text,
 #landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_helpus,
-.android_feature_title,
-div.android_feature_div:nth-child(1) > div:nth-child(2) > div:nth-child(2),
-div.android_feature_div:nth-child(2) > div:nth-child(2) > div:nth-child(2),
-div.android_feature_div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
+.android_feature_title, div.android_feature_div > div > div {
 	color: #aaa !important;
 }
 
