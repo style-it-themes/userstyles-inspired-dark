@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles-Inspired-Dark */
-/*! Version : 1.08 beta */
+/*! Version : 1.09 beta */
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -171,7 +171,9 @@ td:first-child > input:first-child, #style_pledgie_id, #openid,
 #style_short_description, #example-url, #listing-url,
 #widget-title, #user_login, #password, #password_confirmation,
 #login-existing, #password-existing, #obsoleting-style-id,
-#edit-style-settings input:not([type]), #edit-style-settings input[type="text"] {
+#edit-style-settings input:not([type]), #edit-style-settings input[type="text"],
+#login-new, #email-new, #password-new, #password-new-confirm,
+#user_password, #user_password_confirmation {
 	background: #000 !important;
 	border: 1px solid #555 !important;
 	color: #ccc !important;
@@ -201,7 +203,9 @@ input.DateBox:focus, input.InputBox:focus, input.SmallInput:focus, #search_input
 textarea:focus, td:first-child > input:first-child:focus, #listing-url:focus,
 #widget-title:focus, #user_login:focus, #password:focus, #password_confirmation:focus,
 #login-existing:focus, #password-existing:focus, #obsoleting-style-id:focus,
-#edit-style-settings input:not([type]):focus, #edit-style-settings input[type="text"]:focus {
+#edit-style-settings input:not([type]):focus, #edit-style-settings input[type="text"]:focus,
+#login-new:focus, #email-new:focus, #password-new:focus, #password-new-confirm:focus,
+#user_password:focus, #user_password_confirmation:focus {
     background: #191919 !important;
 }
 
@@ -380,13 +384,13 @@ a.Small img {
 }
 
 .AlertMessage {
-    background: #fff8ce;
-    border: 1px solid #DEDDAF;
+    background: #fff8ce !important;
+    border: 1px solid #DEDDAF !important;
 }
 
 .WarningMessage {
-    background: #470700;
-    border: 1px solid #ff2518;
+    background: #470700 !important;
+    border: 1px solid #ff2518 !important;
 	color: #ddd !important;
 }
 
@@ -1022,8 +1026,8 @@ tr.CategoryHeading td {
 
 /* Upload Progress Bar */
 .UploadProgress {
-    color: #fff;
-    text-shadow: 0 1px 1px #333;
+    color: #333 !important;
+    text-shadow: 0 1px 1px #fff !important;
     border: 1px solid #0c3c7e;
 }
 
@@ -1059,73 +1063,74 @@ span.Incorrect {
     color: red;
 }
 
+/* need to verify these password strenght selectors */
 .PasswordStrength .Background {
-    background-color: #e8e8e8;
+    background-color: #000 !important;
   }
 
 .PasswordStrength .Strength {
-    background-color: #c81818;
+    background-color: #c81818 !important;
 }
 
 .PasswordStrength .Separator {
-    background-color: #fff;
+    background-color: #555 !important;
 }
 
 .PasswordStrength.Score-0 .StrengthText {
-    color: #888888;
+    color: #aaa !important;
 }
 
 .PasswordStrength.Score-1 .Strength {
-    background-color: #C81818;
-    width: 20%;
+    background-color: #C81818 !important;
+    width: 20% !important;
 }
 
 .PasswordStrength.Score-1 .StrengthText {
-    color: #C81818;
+    color: #C81818 !important;
 }
 
 .PasswordStrength.Score-2 .Strength {
-    background-color: #FF891D;
-    width: 40%;
+    background-color: #FF891D !important;
+    width: 40% !important;
 }
 
 .PasswordStrength.Score-2 .StrengthText {
-    color: #FF891D;
+    color: #FF891D !important;
 }
 
 .PasswordStrength.Score-3 .Strength {
-    background-color: #FFAC1D;
-    width: 60%;
+    background-color: #FFAC1D !important;
+    width: 60% !important;
 }
 
 .PasswordStrength.Score-3 .StrengthText {
-    color: #FFAC1D;
+    color: #FFAC1D !important;
 }
 
 .PasswordStrength.Score-4 .Strength {
-    background-color: #A6C060;
-    width: 80%;
+    background-color: #A6C060 !important;
+    width: 80% !important;
 }
 
 .PasswordStrength.Score-4 .StrengthText {
-    color: #A6C060;
+    color: #A6C060 !important;
 }
 
 .PasswordStrength.Score-5 .Strength {
-    background-color: #27B30F;
-    width: 100%;
+    background-color: #27B30F !important;
+    width: 100% !important;
 }
 
 .PasswordStrength.Score-5 .StrengthText {
-    color: #27B30F;
+    color: #27B30F !important;
 }
 
 /* Handshake */
 body#dashboard_entry_handshake ul.NewAccount {
-    float: left;
-    width: 315px;
-    margin-right: 44px;
-    border-right: 1px solid #A5D0E7;
+    float: left !important;
+    width: 315px !important;
+    margin-right: 44px !important;
+    border-right: 1px solid #A5D0E7 !important;
 }
 
 body#dashboard_entry_handshake .Info {
@@ -1140,10 +1145,12 @@ body#dashboard_entry_handshake #Content h2 {
 
 /* Leaving Page */
 .FinePrint {
-    color: #777;
+    color: #777 !important;
 }
-
-/* Do not customize these unless you enjoy pain. */
+/*
+Do not customize these unless you enjoy pain, or they dont work as nicely
+on a dark background like Userstyles Inspired Dark awesome theme.
+*/
 /* Error messages that get displayed on forms throughout the application. */
 .Errors ul {
     border: 1px solid #ff2518 !important;
@@ -1175,8 +1182,8 @@ div.Popup .Errors ul {
 /* Note: InformMessages are "growl" style messages that appear in a fixed
 position on the page to notify users of things like drafts being saved, etc. */
 .InformMessages .InformMessage {
-    color: #fff !important;
-    text-shadow: 0 1px 1px #fff !important;
+    color: #eee !important;
+    text-shadow: 0 1px 1px #000 !important;
     background: #191919 !important;
 	border: 1px solid #555 !important;
 	white-space: pre !important;
@@ -1228,16 +1235,15 @@ position on the page to notify users of things like drafts being saved, etc. */
 
 /* Inform Sprites */
 /* ====== Embedded Discussion & Comment Customizations ====== */
-/* Added color #c0c so that its obvious where this belongs when I come across it. */
 .EmbedCommentForm {
-    border-top: 1px solid #c0c !important;
+    border-top: 1px solid #555 !important;
 }
 
 .EmbedCommentForm .Author {
-    display: inline-block;
-    font-size: 11px;
-    color: #777;
-    padding: 0 8px 0 0;
+    display: inline-block !important;
+    font-size: 11px !important;
+    color: #777 !important;
+    padding: 0 8px 0 0 !important;
 }
 
 /* ======= Regarding ======== */
@@ -1245,7 +1251,7 @@ position on the page to notify users of things like drafts being saved, etc. */
 .RegardingEvent {
     padding: 10px !important;
     padding-left: 38px !important;
-    color: #fff !important;
+    color: #eee !important;
     text-shadow: 0 1px 1px #000 !important;
     background: #111 !important;
 }
@@ -1256,19 +1262,19 @@ position on the page to notify users of things like drafts being saved, etc. */
 }
 
 .RegardingEvent .RegardingTime {
-    font-size: 9px;
-    text-transform: uppercase;
-    color: #B1B1B1;
+    font-size: 9px !important;
+    text-transform: uppercase !important;
+    color: #B1B1B1 !important;
 }
 
 .RegardingActions .ActionButton {
-    color: #fff !important;
+    color: #eee !important;
     text-shadow: 0 1px 1px #000 !important;
     background: #111 !important;
 }
 
 .RegardingActions .ActionButton a {
-    color: #CFECFF;
+    color: #CFECFF !important;
 }
 
 .SpEditProfile {
@@ -1283,12 +1289,12 @@ position on the page to notify users of things like drafts being saved, etc. */
 
 /* Switch to the white icons when hovering over a menuitem sprite */
 .MenuItems a:hover .ReactSprite, .MenuItems a:hover .Sprite {
-    background-image: url('http://cdn.vanillaforums.com/images/sprites-14-fff.png');
+    background-image: url('http://cdn.vanillaforums.com/images/sprites-14-fff.png') !important;
 }
 
 /* Switch to bordered icons for user reaction overlays */
 .UserReactionWrap .ReactSprite {
-    background-image: url('http://cdn.vanillaforums.com/images/sprites-14-000-bordered.png');
+    background-image: url('http://cdn.vanillaforums.com/images/sprites-14-000-bordered.png') !important;
 }
 
 /* Embedded Video Preview Hide/Reveal */
@@ -1323,13 +1329,13 @@ li.token-input-token p {
 }
 
 li.token-input-token.not-allowed {
-    background-color: #FFC2C2;
-    color: #C91313;
-    border: 1px solid #FF3232;
+    background: #470700 !important;
+    border: 1px solid #ff2518 !important;
+    color: #ddd !important;
 }
 
 li.token-input-token.not-allowed span {
-    color: #C91313;
+    color: #C91313 !important;
 }
 
 li.token-input-selected-token {
@@ -1337,13 +1343,13 @@ li.token-input-selected-token {
 }
 
 li.token-input-selected-token.not-allowed {
-    background-color: red;
-    color: #ffffff;
-    border: 1px solid #FF3232;
+    background: #470700 !important;
+    border: 1px solid #ff2518 !important;
+    color: #ddd !important;
 }
 
 li.token-input-selected-token.not-allowed span {
-    color: #ffffff;
+    color: #ddd !important;
 }
 
 div.token-input-dropdown {
@@ -1371,26 +1377,26 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
  */
 .atwho-view {
     font: normal 14px/1.7em 'lucida grande', 'Lucida Sans Unicode', tahoma, sans-serif;
-    background: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background: #333 !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;;
 }
 
 .atwho-view .cur {
-    background: #1E79A7;
-    color: #fff;
+    background: #1875a5 !important;
+    color: #fff !important;
 }
 
 .atwho-view .cur small {
-    color: #fff;
+    color: #fff !important;
 }
 
 .atwho-view strong {
-    color: #1E79A7;
+    color: #1875a5 !important;
 }
 
 .atwho-view .cur strong {
-    color: #fff;
-    font-weight: bold;
+    color: #fff !important;
+    font-weight: bold !important;
 }
 
 .atwho-view ul li {
@@ -1398,42 +1404,41 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
 }
 
 .atwho-view small {
-    color: #777;
+    color: #fff !important;
 }
-/**
- * Socialcons
- */
+
+/* Socialcons*/
 .SocialIcon {
     color: #fff !important;
 }
 
 .SocialIcon .Text {
-    padding: 0 15px 0 10px;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 15px 0 10px !important;
+    border-left: 1px solid #555 !important;
 }
 
 .SocialIcon-Facebook, .SocialIcon-Facebook.HasText .Icon {
-    background-color: #36609e;
+    background-color: #36609e !important;
 }
 
 .SocialIcon-Facebook:hover {
-    background-color: #294978;
+    background-color: #294978 !important;
 }
 
 .SocialIcon-Twitter, .SocialIcon-Twitter.HasText .Icon {
-    background-color: #2aa8df;
+    background-color: #2aa8df !important;
 }
 
 .SocialIcon-Twitter:hover {
-    background-color: #1c8aba;
+    background-color: #1c8aba !important;
 }
 
 .SocialIcon-Google, .SocialIcon-Google.HasText .Icon {
-    background-color: #da5442;
+    background-color: #da5442 !important;
 }
 
 .SocialIcon-Google:hover {
-    background-color: #c33926;
+    background-color: #c33926 !important;
 }
 
 .SocialIcon-OpenID, .SocialIcon-OpenID.HasText .Icon {
@@ -1441,32 +1446,33 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
 }
 
 .SocialIcon-OpenID:hover {
-    background-color: #d87808;
+    background-color: #d87808 !important;
 }
 
 .SocialIcon-LinkedIn, .SocialIcon-LinkedIn.HasText .Icon {
-    background-color: #066c9a;
+    background-color: #066c9a !important;
 }
 
 .SocialIcon-LinkedIn:hover {
-    background-color: #044a69;
+    background-color: #044a69 !important;
 }
 
 .SocialIcon-Disqus, .SocialIcon-Disqus.HasText .Icon {
-    background-color: #2e9fff;
+    background-color: #2e9fff !important;
 }
 
 .SocialIcon-Disqus:hover {
-    background-color: #0087fa;
+    background-color: #0087fa !important;
 }
 
 .SocialIcon-GitHub, .SocialIcon-GitHub.HasText .Icon {
-    background-color: #6b9ecf;
+    background-color: #6b9ecf !important;
 }
 
 .SocialIcon-GitHub:hover {
-    background-color: #4485c3;
+    background-color: #4485c3 !important;
 }
+
 /*
 ## Alerts
 
@@ -1515,7 +1521,7 @@ Styleguide Alerts
 .item-attachment .alert-warning {
     color: #222 !important;
     background-color: #ffcc00 !important;
-    border-color: #ffcc00 !important;
+    border-color: #fce9a0 !important;
 }
 
 .item-attachment .alert-warning a {
@@ -1577,7 +1583,7 @@ div.setting_div > div > div {
 
 .title_setting {
 	color: #ccc !important;
-	font-weight: bold;
+	font-weight: bold !important;
 }
 
 .option-user-upload.upload_image_label {
@@ -1598,6 +1604,10 @@ select {
 .Attachment:hover .FileHover {
 	background: #333 !important;
 	border: 1px solid #555 !important;
+}
+
+.Attachment:hover .DeleteFile {
+	cursor: pointer !important;
 }
 }
 
@@ -2283,7 +2293,7 @@ a.selected {
 }
 
 .CodeMirror-scrollbar-filler {
-	background: hsl(0, 0%, 93%) !important;
+	background: #ededed !important;
 }
 
 .CodeMirror-code {
@@ -2429,6 +2439,12 @@ a.selected {
 
 .cm-tab-wrap-hack:after {
 	content: '' !important;
+}
+
+.CodeMirror-linewidget {
+  position: relative !important;
+  z-index: 2 !important;
+  padding: 0.1px !important; /* Force widget margins to stay inside of the container */
 }
 
 span.CodeMirror-selectedtext {
