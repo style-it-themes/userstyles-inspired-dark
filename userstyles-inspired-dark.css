@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles-Inspired-Dark */
-/*! Version : 1.10 beta */
+/*! Version : 1.11 beta */
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -1606,6 +1606,12 @@ To fix this introduced a .ShowDiscussionAuthor nowrap.
 	box-shadow: inset 0 -1px 0 0 #444 !important;
 }
 
+/* fix https://github.com/the-j0k3r/userstyles-inspired-dark/issues/2 */
+.style_card_long .screenshot_img {
+	width: 160px !important;
+	height: 88px !important;
+}
+
 .style_description_long {
 	color: #777 !important;
 }
@@ -2531,45 +2537,6 @@ a.selected {
 #rightFooter {
 	filter: contrast(80%) brightness(130%) !important;
 }
-
-/*
-ISSUE WITH MAIN SITE (default)  --no screenshot styles only--
-Navigate to  https://userstyles.org/categories/site
-If you browse e.g https://userstyles.org/styles/browse/digg
-You will see the stles withno screenshot is actually bigger,
-this is bcause the selector  in use is:
-
-.screenshot_img {
-	width: 220px;
-	height: 131px;
-}
-
-The portion below fixes this but breaks the vertical alignment in
-normal long view. so Im disabling the fix for now.
-
-#title_long {
-  margin-top: 40px !important;
-}
-
-.style_card_long {
-	width: 728px !important;
-	height: 131px !important;
-	box-shadow: inset 0 -1px 0 0 #444 !important;
-	padding: 21px 0px 21px 0px !important;
-	display: flex !important;
-	flex-direction: row !important;
-	justify-content: space-between !important;
-}
-
-.screenshot_img_long {
-	width: 220px !important;
-	height: 131px !important;
-	border-radius: 4px !important;
-	object-fit: cover !important;
-}
-
-END ISSUE WITH MAIN SITE (default)
-*/
 }
 
 @-moz-document domain("userstyles.org") {
