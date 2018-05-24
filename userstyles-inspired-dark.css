@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles-Inspired-Dark */
-/*! Version : 1.09 beta */
+/*! Version : 1.10 beta */
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -11,35 +11,6 @@ body, #nav-view {
 
 .header.button.no-select {
 	color: #ccc !important;
-}
-
-#navigation {
-	color: #ccc !important;
-    background: #222 !important;
-}
-
-.navigation_title {
-	color: #ccc !important;
-}
-
-.navigation_link:hover {
-	background: #444 !important;
-}
-
-#navigation .linksBox:first-child .logo_navigation_link,
-#navigation .linksBox:last-child .logo_navigation_link,
-div.linksBox:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1),
-div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1) {
-	filter: invert(100%) hue-rotate(180deg) !important;
-}
-
-.linksBox .navigation_link:last-child, #title_div {
-	box-shadow: 0 1px 0 0 #333;
-}
-
-.linksBox {
-	color: #ccc !important;
-	border-bottom: none !important
 }
 
 a {
@@ -63,107 +34,14 @@ a:hover, a.TextColor:hover, a:hover .TextColor {
 }
 /*
 .ConnectLabel.TextColor and  a .TextColor
-are smae selector but  without I keep seeing a red color
+are same selector but without I keep seeing a red color
 */
-.ConnectLabel.TextColor,
-a.TextColor, a .TextColor {
+.ConnectLabel.TextColor, a.TextColor, a .TextColor {
     color: #888 !important;
 }
 
-p, h1, h2, h3, p, .P {
+h1, h2, h3, h4, h5, h6, p, .P {
 	color: #aaa !important;
-}
-
-#title_long a, #title_long a:active,
-#title_long a:hover, #title_long a:visited,
-.style_author_long {
-	color: #aaa !important;
-}
-
-#title_long a:visited {
-  color: #9e9e9e !important;
-}
-
-.style_card_long {
-	box-shadow: inset 0 -1px 0 0 #444 !important;
-}
-
-.style_description_long {
-	color: #666 !important;
-}
-
-.screenshot_wrapper {
-	border-bottom: 1px solid #666 !important;
-}
-
-.view_details, .css_button {
-	background-color: #595b61 !important;
-	color: #3db1ff !important;
-}
-
-.view_details:hover, .css_button:hover {
-	background-color: #434549 !important;
-	color: #3498db !important;
-}
-
-.eye_image {
-	background: url("https://userstyles.org/ui/images/icons/eye.svg") !important;
-	filter: invert(80%) !important;
-}
-
-#send_feedback_button, .white_button, .customize_button {
-	box-shadow: 0 1px 2px 0 rgba(255, 255, 255, .2) !important;
-	background: #f9f9f9 !important;
-}
-
-#send_feedback_button:hover, .white_button:hover, .customize_button:hover {
-	box-shadow: 0 4px 5px 0 rgba(160, 160, 160, .77) !important;
-	background: #e9e9e9 !important;
-}
-
-.customize_button .customize_button_text {
-	color: #333 !important;
-}
-
-.see_more {
-	background-color: #404040 !important;
-	color: #3498db !important;
-}
-
-.see_more:hover {
-	background-color: #333 !important;
-}
-
-.style_category_card_wrapper {
-	background-color: #191919!important;
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
-}
-
-.style_category_card_wrapper:hover {
-	box-shadow: 0 12px 25px 0 rgba(255, 255, 255, .2);
-	transform: translate(0, -4px);
-}
-
-#category_style_card_title:hover, #category_style_card_title {
-	color: #ccc !important;
-}
-
-h4:first-child > a:first-child {
-	color: #888 !important;
-}
-
-h4:first-child > a:first-child:hover {
-	color: #ccc !important;
-}
-
-#search_input {
-	background-color: #000 !important;
-	border: none !important;
-}
-
-#input_text_search {
-	color: #ccc !important;
-	border: none !important;
 }
 
 #user_name, #user_email, #user_homepage, #user_paypal_email,
@@ -180,14 +58,14 @@ td:first-child > input:first-child, #style_pledgie_id, #openid,
 }
 
 input.DateBox, input.InputBox, input.SmallInput, textarea {
-    color: #eee !important;
-     background: #000 !important;
-    border: 1px solid #444 !important;
-    padding: 3px !important;
+	color: #eee !important;
+	background: #000 !important;
+	border: 1px solid #444 !important;
+	padding: 3px !important;
 }
 
 .ui-datepicker {
-    background: #222;
+    background: #222 !important;
     border: 1px solid #999 !important;
 }
 
@@ -337,16 +215,16 @@ a.Small img {
   that it renders in a div with this DismissMessage class. */
 /* Messages */
 .DismissMessage a.Dismiss {
-    color: #777;
+    color: #aaa !important;
 }
 
 .DismissMessage a.Dismiss:hover {
     background: #333 !important;
-    color: #fff !important;
+    color: #eee !important;
 }
 
 .DismissMessage {
-    color: #000;
+    color: #fff !important;
 }
 
 .DismissMessage.Info {
@@ -360,8 +238,8 @@ a.Small img {
 }
 
 .DismissMessage.Box {
-    background: #fff8ce;
-    border: 1px solid #c5bea4;
+    background: #fff8ce !important;
+    border: 1px solid #c5bea4 !important;
 }
 
 .CasualMessage {
@@ -379,8 +257,8 @@ a.Small img {
 }
 
 .InfoMessage {
-    background: #F6F6F6;
-    border: 1px solid #ddd;
+    background: #444 !important;
+    border: 1px solid #555 !important;
 }
 
 .AlertMessage {
@@ -397,6 +275,7 @@ a.Small img {
 /* ================= Header  =============== */
 #Head {
     background: #4f638b !important;
+	box-shadow: 0 7px 12px 0 rgba(22, 22, 22, .75), 1px 0 0 0 #222 !important;
 }
 
 #Head a {
@@ -417,11 +296,11 @@ a.Small img {
 
 /* Option (dropdown) Menus, Bookmark stars, admin checkboxes */
 .CategoryLink {
-    background: #CFECFF !important;
+    background: #333 !important;
 }
 
 div.Discussion .OptionsTitle, .Item .OptionsTitle {
-   filter: invert(50%) !important
+   filter: invert(50%) !important;
 }
 
 div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
@@ -443,8 +322,8 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 }
 
 .MenuItems {
-    border: 1px solid #777;
-    background: #222;
+    border: 1px solid #777 !important;
+    background: #222 !important;
 }
 
 .MenuItems a, .MenuItems a:link, .MenuItems a:visited, .MenuItems a:active {
@@ -466,8 +345,8 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 
 .MenuItems.Up:before, .MenuItems.Up:after {
     border-top: 7px solid #777 !important;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
+    border-left: 7px solid transparent !important;
+    border-right: 7px solid transparent !important;
 }
 
 .MenuItems.Up:after {
@@ -495,13 +374,29 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
     border-color: #000 transparent transparent transparent !important;
 }
 
+.Box {
+	margin: 10px 0 !important;
+    white-space: nowrap !important;
+}
+
+/*
+The  white-space: nowrap is a fix for the  Notification Preferences
+option is selected to prevent it from breaking the words, however
+this broke the private message  wraping of the
+Add People to this Conversation, so adding a hack to wrap that part
+*/
+
+.Box h4 {
+	white-space: pre-wrap !important;
+}
+
 .Box dl dt {
-    font-size: 12px;
-    float: left;
-    width: 80px;
-    color: #555;
-    overflow: hidden;
-    white-space: nowrap;
+    font-size: 12px !important;
+    float: left !important;
+    width: 80px !important;
+    color: #555 !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
 }
 
 /* Hiding until we figure out what to do with GuestWelcomeModule */
@@ -556,8 +451,8 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
     border-radius: 2px !important;
     -moz-border-radius: 2px !important;
     -webkit-border-radius: 2px !important;
-    background: #FF0 !important;
-    color: #000 !important;
+    background: #ffc400 !important;
+    color: #111 !important;
     font-size: 9px !important;
     font-weight: bold !important;
     padding: 3px !important;
@@ -572,9 +467,8 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
     padding: 2px 0 !important;
 }
 
-#Panel .FilterMenu .Active,
-.PanelInfo .Active {
-    background: rgba(51, 51, 51, .51) !important;
+#Panel .FilterMenu .Active, .PanelInfo .Active {
+    background: rgba(51, 51, 51, .69) !important;
     font-weight: bold !important;
 }
 
@@ -583,7 +477,11 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 }
 
 #Content .BoxFilter .Active a {
-    color: #000 !important;
+    color: #5c81ba !important;
+    border-bottom: 2px solid #555 !important;
+}
+
+#Content .FilterMenu li.Active a {
     border-bottom: 2px solid #555 !important;
 }
 
@@ -611,12 +509,17 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 .HasNew {
     background: #ffc800 !important;
     color: #000 !important;
-    padding-left: 3px !important;
-	padding-right: 3px !important;
+	/* top | right | bottom | left */
+	padding: 0px 4px 0px 3px !important;
+	border-radius: 2px !important;
 }
 
 .Item.Read {
     background: #292929 !important;
+}
+
+.Item.Read:hover {
+    filter: brightness(120%) !important;
 }
 
 .Item.Checked {
@@ -694,17 +597,29 @@ blockquote.Quote, blockQuote.UserQuote {
 }
 
 code, pre {
-    background: #6d5837 !important;
+    background: #523b17 !important;
 	color: #ddd !important;
 }
 
 pre code {
-    background: transparent !important;;
+    background: transparent !important;
+	white-space: pre-wrap !important;
 }
 
 code {
 	border: none !important;
 	outline: none !important;
+	white-space: nowrap !important;
+}
+
+/*
+the code blocks wrap when theres a code block just before
+the end of a sentence and its ugly and hard to read
+but adding nowrap when previwing a code block, it went out of bounds
+To counter this added athe .Preview code selector to prevent this issue, so we fix both.
+*/
+.Preview code {
+	white-space: pre-wrap !important;
 }
 
 pre {
@@ -780,6 +695,11 @@ table.PreferenceGroup th, table.PreferenceGroup td,
     display: none !important;
 }
 
+/* fix for  being to far up  this normally is 0 no breathing room */
+.ContentColumn {
+	margin-top: 10px !important;
+}
+
 dl.About dt {
     color: #666 !important;
     background: url('https://forum.userstyles.org/applications/dashboard/design/images/profile-sprites.png') 2px -139px no-repeat transparent !important;
@@ -816,7 +736,7 @@ dl.About dt {
 
 /* =========== CommentForm =========== */
 .Preview {
-    background: #222 !important;
+    background: none !important;
     color: #ccc !important;
 }
 
@@ -829,19 +749,6 @@ div.Popup .Body {
 
 a.Close {
     color: #000 !important;
-}
-
-/* =========== Footer =========== */
-#footer {
-	background-color: #191919 !important;
-}
-
-#copyrights {
-	color: #ddd;
-}
-
-#rightFooter {
-	filter: contrast(80%) brightness(130%) !important;
 }
 
 #Foot {
@@ -954,7 +861,11 @@ tr.CategoryHeading td {
 }
 
 .DiscussionForm label {
-    color: #666 !important;
+    color: #777 !important;
+}
+
+.P > label:first-child, .Category label:first-child, .List > label:first-child {
+	color: #aaa !important;
 }
 
 .FormWrapper {
@@ -1042,25 +953,25 @@ tr.CategoryHeading td {
 
 /* Tabs */
 ul.Tabs li a {
-    border: 1px solid #aaa;
-    background: #eee;
-    color: #888;
+    border: 1px solid #555 !important;
+    background: #333 !important;
+    color: #aaa !important;
 }
 
 ul.Tabs li a:hover {
-    background: #f5f5f5;
-    color: #444;
+    background: #444 !important;
+    color: #eee !important;
 }
 
 ul.Tabs li a.Active {
-    padding: 2px 8px;
-    background: #fff;
-    color: #000;
+    padding: 2px 8px !important;
+    background: #222 !important;
+    color: #eee !important;
 }
 
 /* ==== Entry Screens *==== */
 span.Incorrect {
-    color: red;
+    color: red !important;
 }
 
 /* need to verify these password strenght selectors */
@@ -1186,7 +1097,7 @@ position on the page to notify users of things like drafts being saved, etc. */
     text-shadow: 0 1px 1px #000 !important;
     background: #191919 !important;
 	border: 1px solid #555 !important;
-	white-space: pre !important;
+	white-space: pre-wrap !important;
 }
 
 .InformMessages .InformMessage:hover {
@@ -1306,7 +1217,7 @@ position on the page to notify users of things like drafts being saved, etc. */
 
 ul.token-input-list {
     border: 1px solid #444 !important;
-    color: #333 !important;
+    color: #eee !important;
     background-color: #191919 !important;
 }
 
@@ -1321,6 +1232,10 @@ li.token-input-input-token {
 li.token-input-token {
     border: 1px solid #777 !important;
     background-color: #444 !important;
+	color: #aaa !important;
+}
+
+li.token-input-token:hover {
 	color: #eee !important;
 }
 
@@ -1353,24 +1268,27 @@ li.token-input-selected-token.not-allowed span {
 }
 
 div.token-input-dropdown {
-    background-color: #444 !important;
+    background-color: #333 !important;
     border: 1px solid #777 !important;
 }
 
 div.token-input-dropdown ul li {
-    background-color: #444 !important;
+    background-color: #333 !important;
 }
 
 div.token-input-dropdown ul li.token-input-dropdown-item {
-    background-color: #444 !important;
+    background-color: #333 !important;
+	color: #999 !important;
 }
 
 div.token-input-dropdown ul li.token-input-dropdown-item2 {
-    background-color: #444 !important;
+    background-color: #333 !important;
+	color: #999 !important;
 }
 
 div.token-input-dropdown ul li.token-input-selected-dropdown-item {
-    background-color: #666 !important;
+    background-color: #555 !important;
+	color: #eee !important;
 }
 /**
  * At mentions in core, moved from advanced editor.
@@ -1609,6 +1527,65 @@ select {
 .Attachment:hover .DeleteFile {
 	cursor: pointer !important;
 }
+
+/*
+I dont really use mobile, but here is a couple of glaring issues.
+Enter the Mobile fixes
+*/
+.Banner ul li a {
+    font-weight: bold !important;
+    color: #ccc !important;
+    display: block !important;
+}
+
+.Banner ul li a:hover {
+    background: #6b9ae2 !important;
+}
+
+ul.Discussions {
+    background: #222 !important;
+}
+
+/* Fixes suggested by @Stonecrusher */
+time, .DateUpdated {
+	font-size: 0 !important;
+}
+
+/*
+The time/date changes introduce a author name wrapping author name looks ugly.
+the .ShowDiscussionAuthor nowrap. fix  also puts the time/date in a newline and
+that has a  margin causing the date/time text to not alignt left.
+To fix this introduced a margin-left: -6px for now.
+*/
+time:before, .DateUpdated:before  {
+	content: attr(title) !important;
+	font-size: 11px !important;
+	margin-left: -6px !important;
+}
+
+/*
+The time/date chages introduce a break in author name, affected are:
+categories/Style Reviews
+categories/Style Development
+categories/Stylish
+categories/userstyles.org
+
+To fix this introduced a .ShowDiscussionAuthor nowrap.
+*/
+.ShowDiscussionAuthor {
+	white-space: nowrap !important;
+}
+
+.MItem.Category:before {
+	content:'' !important;
+	width: 0 !important;
+	display: block !important;
+}
+
+.DataList > .Item {
+	padding-bottom: 2px !important;
+}
+
 }
 
 @-moz-document domain("userstyles.org") {
@@ -1616,15 +1593,187 @@ select {
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+#title_long a, #title_long a:active, #title_long a:hover,
+#title_long a:visited, #title_long a:visited {
+	color: #aaa !important;
+}
+
+.style_author_long {
+  color: #777 !important;
+}
+
+.style_card_long {
+	box-shadow: inset 0 -1px 0 0 #444 !important;
+}
+
+.style_description_long {
+	color: #777 !important;
+}
+
+.screenshot_wrapper {
+	border-bottom: 1px solid #666 !important;
+}
+
+h4:first-child > a:first-child {
+	color: #ccc !important;
+	font-weight: bold !important;
+}
+
+h4:first-child > a:first-child:hover {
+	color: #eee !important;
+}
+
+.view_details, .css_button, .see_more {
+	background-color: #595b61 !important;
+	color: #ddd !important;
+}
+
+.view_details:hover, .css_button:hover, .see_more:hover {
+	background-color: #434549 !important;
+	color: #bbb !important;
+}
+
+.eye_image {
+	background: url("https://userstyles.org/ui/images/icons/eye.svg") !important;
+	filter: invert(80%) !important;
+}
+
+#not_available_chrome {
+	color: #aaa !important;
+}
+
+#install_style_button {
+	background-color: #6b9ae2 !important;
+	border: 1px solid #8fbbff !important;
+	box-shadow: none !important;
+	color: #eee !important;
+}
+
+#install_style_button:hover {
+	background-color: #5c81ba !important;
+	border: 1px solid #6b9ae2 !important;
+	box-shadow: none !important;
+	color: #ddd !important;
+}
+
+#style_installed_button, #update_style_button {
+	background-color: #1b8b35 !important;
+	box-shadow: none !important;
+	border: solid 1px #27ba49 !important;
+	color: #ddd !important;
+}
+
+#style_installed_button:hover, #update_style_button:hover {
+	background-color: #19762f !important;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2) !important;
+	border: solid 1px #28a645 !important;
+	color: #bbb !important;
+}
+
+#archive_style_button {
+	box-shadow: none !important;
+	border: solid 1px #c14430 !important;
+	background: #56170e !important;
+	color: #eee !important;
+}
+
+#archive_style_button:hover {
+	border: solid 1px #913425 !important;
+	background: #50140b !important;
+	color: #ccc !important;
+}
+
+#send_feedback_button, .white_button, .customize_button {
+	background: #404040 !important;
+	border-color: #555 !important;
+	box-shadow: none !important;
+	color: #ddd !important;
+}
+
+#send_feedback_button:hover, .white_button:hover, .customize_button:hover {
+	box-shadow: none !important;
+	background: #323232 !important;
+	color: #bbb !important;
+}
+
+.customize_button .customize_button_text {
+	color: #ddd !important;
+}
+
+.customize_button .customize_button_text:hover {
+	color: #bbb !important;
+}
+
+#search_input {
+	background-color: #000 !important;
+	border: none !important;
+}
+
+#input_text_search {
+	color: #ccc !important;
+	border: none !important;
+}
+
+#navigation {
+    background: #222 !important;
+}
+
+.navigation_title {
+	color: #ccc !important;
+}
+
+.navigation_category {
+	color: #aaa !important;
+}
+
+.navigation_link:hover {
+	background: #363636 !important;
+	color: #ddd !important;
+}
+
+div.linksBox:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1),
+div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1),
+#navigation .linksBox:first-child .logo_navigation_link,
+#navigation .linksBox:last-child .logo_navigation_link {
+	filter: invert(100%) hue-rotate(180deg) !important;
+}
+
+.linksBox .navigation_link:last-child, #title_div {
+	box-shadow: 0 1px 0 0 #333 !important;
+}
+
+.linksBox {
+	color: #ccc !important;
+	border-bottom: none !important
+}
+
 #header {
-	background-color: #2e3e49 !important;
-	box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.13), 1px 0 0 0 #cfd6d9 !important;
-	border-bottom: 1px solid #222 !important;
+	background-color: #4f638b !important;
+	box-shadow: 0 7px 12px 0 rgba(22, 22, 22, .75), 1px 0 0 0 #222 !important;
 }
 
 #overlay-info {
 	background-color: rgba(36, 36, 36, .98) !important;
 	border-radius: 0px !important;
+}
+
+.style_category_card_wrapper {
+	background-color: #191919!important;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.style_category_card_wrapper:hover {
+	box-shadow: 0 12px 20px 0 rgba(255, 255, 255, .2);
+	transform: translate(0, -4px);
+}
+
+#category_style_card_title:hover, #category_style_card_title {
+	color: #ccc !important;
+	font-weight: bold !important;
+}
+
+#styles {
+	color: #777 !important;
 }
 
 #landing_page_div .top_landing_page_div{
@@ -1635,9 +1784,10 @@ select {
 	background-color: #1e1e1e !important;
 }
 /*
-Im almost tempted to fix this image and host it elsewhere only amateurs cant use  transparent gradients
+Nope I tried fixing the image and replacing the URL but does nothing here cached cleared or not.
+Gremlins or PEBCAK?
 */
-.phone_image_div {
+#landing_page_div .phone_image_div {
 	background: url("https://userstyles.org/ui/images/phone-image.png") !important;
 	filter: invert(90%) hue-rotate(180deg) contrast(110%) !important;
 }
@@ -1865,10 +2015,30 @@ a.btn-auth:visited {
 	color: #ccc !important;
 }
 
+#pages a, #pages a:active, #pages a:visited {
+	color: #bbb !important;
+	text-decoration: none !important;
+}
+
+.current {
+	border-radius: 4px !important;
+	background-color: #5c81ba !important;
+	color: #fff !important;
+}
+
+.arrow-icon {
+	filter: grayscale(100%) brightness(150%) !important
+}
+
 .div-arrow {
 	background-color: #444 !important;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08) !important;
 	border: solid 1px #555 !important;
+}
+
+.div-arrow:hover {
+	background-color: #555 !important;
+	border: solid 1px #666 !important;
 }
 
 .pageNumber {
@@ -2001,6 +2171,16 @@ a.btn-twitter:visited {
 	background: #333 !important;
 }
 
+.author-name a {
+	color: #5c81ba  !important;
+	font-size: 16px !important;
+}
+
+.author-name a:hover {
+	color: #6b9ae2   !important;
+	font-size: 16px !important;
+}
+
 #discussions .good-rating {
 	list-style-image: url(https://userstyles.org/assets/reviews/good-df758b70add644e2f557e9dc75a592b69deb03ca3136de7b2cc3b5f1695bcf09.gif) !important;
 }
@@ -2017,6 +2197,29 @@ a.btn-twitter:visited {
 	list-style-image: url(https://userstyles.org/assets/reviews/question-b26b16a0770515533db6ed7104e367c6de9c2fe4e66ecd2a7c6074451de055ae.png) !important;
 }
 
+#as_userscript a {
+	color: #5c81ba !important;
+	text-decoration: underline !important;
+}
+
+#as_userscript a:hover, #as_userscript a:visited, #as_userscript a:visited:hover {
+	color: #5a7fcb !important;
+	text-decoration: underline !important;
+}
+
+#discussion_author {
+	color: #5c81ba !important;
+}
+
+#discussion_author a:hover, #discussion_author a:visited:hover,
+#discussion_author a, #discussion_author a:visited {
+	color: #5a7fcb !important;
+}
+
+#discussion_date {
+	color: #aaa !important;
+}
+
 .more {
 	border-top: 1px solid #92b3e5 !important;
 }
@@ -2026,10 +2229,8 @@ a.btn-twitter:visited {
 	border-radius: 5px !important;
 }
 
-.style-brief-text > a,
-.style-brief-text > a:visited,
-.style-brief-text > a:active {
-	color: #3498db !important;
+.style-brief-text > a, .style-brief-text > a:visited, .style-brief-text > a:active {
+	color: #5c81ba !important;
 	text-decoration: none !important;
 }
 
@@ -2265,7 +2466,7 @@ a.selected {
 
 .tooltip_rating_long .tooltiptext_rating_long:after,
 .tooltip .tooltiptext::after, .tooltip_rating .tooltiptext_rating::after {
-	  border-color: #fff transparent transparent transparent;
+	  border-color: #fff transparent transparent transparent !important;
 }
 
 .tooltip_rating_long:hover .tooltiptext_rating_long,
@@ -2273,6 +2474,102 @@ a.selected {
 	visibility: visible !important;
 	opacity: 0.7 !important;
 }
+
+/* could be removed optionally in future */
+#top_android_button {
+	background-color: #222 !important;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.43) !important;
+	border: 1px solid #444 !important;
+}
+
+#top_android_button .android_button_text {
+	color: #ddd !important;
+}
+
+#top_android_button:hover, #top_android_button:active {
+	background-color: #111 !important;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.43) !important;
+	border: 1px solid #333 !important;
+}
+
+#create_new_style {
+	background:  #334666 !important;
+	border: solid 1px #6b9ae2 !important;
+}
+
+#create_new_style a {
+	color: #ddd !important;
+}
+
+#create_new_style:hover {
+	background:  #283751 !important;
+	border: solid 1px #5c85c3 !important;
+	color: #6b9ae2 !important;
+}
+
+/* =========== Footer =========== */
+#footer {
+	background-color: #191919 !important;
+}
+
+.footer_link a {
+	color: #5c81ba !important;
+}
+
+.footer_link a:hover {
+    color: #6b9ae2 !important;
+}
+
+#bottomLinks {
+	color: #5c81ba !important;
+}
+
+#copyrights {
+	color: #ddd;
+}
+
+#rightFooter {
+	filter: contrast(80%) brightness(130%) !important;
+}
+
+/*
+ISSUE WITH MAIN SITE (default)  --no screenshot styles only--
+Navigate to  https://userstyles.org/categories/site
+If you browse e.g https://userstyles.org/styles/browse/digg
+You will see the stles withno screenshot is actually bigger,
+this is bcause the selector  in use is:
+
+.screenshot_img {
+	width: 220px;
+	height: 131px;
+}
+
+The portion below fixes this but breaks the vertical alignment in
+normal long view. so Im disabling the fix for now.
+
+#title_long {
+  margin-top: 40px !important;
+}
+
+.style_card_long {
+	width: 728px !important;
+	height: 131px !important;
+	box-shadow: inset 0 -1px 0 0 #444 !important;
+	padding: 21px 0px 21px 0px !important;
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-between !important;
+}
+
+.screenshot_img_long {
+	width: 220px !important;
+	height: 131px !important;
+	border-radius: 4px !important;
+	object-fit: cover !important;
+}
+
+END ISSUE WITH MAIN SITE (default)
+*/
 }
 
 @-moz-document domain("userstyles.org") {
