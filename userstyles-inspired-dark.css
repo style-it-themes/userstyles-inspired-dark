@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles-Inspired-Dark */
-/*! Version : 1.11 beta */
+/*! Version : 1.12 beta */
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -299,6 +299,13 @@ a.Small img {
     background: #333 !important;
 }
 
+.category_title {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #ccc !important;
+  margin-top: 20px !important;
+}
+
 div.Discussion .OptionsTitle, .Item .OptionsTitle {
    filter: invert(50%) !important;
 }
@@ -385,6 +392,13 @@ option is selected to prevent it from breaking the words, however
 this broke the private message  wraping of the
 Add People to this Conversation, so adding a hack to wrap that part
 */
+.Box.GuestBox p, .ConnectLabel.TextColor {
+	white-space: pre-wrap !important;
+}
+
+.Box.GuestBox {
+	margin-top: -5px !important;
+}
 
 .Box h4 {
 	white-space: pre-wrap !important;
@@ -597,29 +611,21 @@ blockquote.Quote, blockQuote.UserQuote {
 }
 
 code, pre {
-    background: #523b17 !important;
+	background: #523b17 !important;
 	color: #ddd !important;
 }
 
 pre code {
-    background: transparent !important;
+	background: transparent !important;
 	white-space: pre-wrap !important;
 }
-
-code {
-	border: none !important;
-	outline: none !important;
-	white-space: nowrap !important;
-}
-
 /*
 the code blocks wrap when theres a code block just before
 the end of a sentence and its ugly and hard to read
-but adding nowrap when previwing a code block, it went out of bounds
-To counter this added athe .Preview code selector to prevent this issue, so we fix both.
 */
-.Preview code {
-	white-space: pre-wrap !important;
+code {
+	border: none !important;
+	padding: 2px 6px 2px 6px
 }
 
 pre {
@@ -628,7 +634,7 @@ pre {
 }
 
 mark {
-    background: #cf9900 !important;
+	background: #cf9900 !important;
 	color: #000 !important;
 }
 
@@ -939,7 +945,7 @@ tr.CategoryHeading td {
 .UploadProgress {
     color: #333 !important;
     text-shadow: 0 1px 1px #fff !important;
-    border: 1px solid #0c3c7e;
+    border: 1px solid #0c3c7e !important;
 }
 
 /* Container */
@@ -1585,6 +1591,13 @@ To fix this introduced a .ShowDiscussionAuthor nowrap.
 .DataList > .Item {
 	padding-bottom: 2px !important;
 }
+/* excerpts  are being pushed ontop of eash other
+fix line height and increase font size a bit. */
+.DataList .Excerpt {
+    font-size: 14px !important;
+    line-height: 1.9 !important;
+    margin: 5px 0 !important;
+}
 
 }
 
@@ -1616,8 +1629,23 @@ To fix this introduced a .ShowDiscussionAuthor nowrap.
 	color: #777 !important;
 }
 
-.screenshot_wrapper {
+.style_updated {
+	font-size: 13px !important;
+	color: #aaa !important;
+}
+
+.k {
+	font-size: 13px !important;
+	color: #aaa !important;
+	margin-right: 6px !important;
+}
+
+.screenshot_wrapper.downloads-icon {
 	border-bottom: 1px solid #666 !important;
+}
+
+.downloads-icon {
+	filter: grayscale(100%) brightness(130%) !important;
 }
 
 h4:first-child > a:first-child {
@@ -1741,7 +1769,7 @@ div.linksBox:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
 div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1),
 #navigation .linksBox:first-child .logo_navigation_link,
 #navigation .linksBox:last-child .logo_navigation_link {
-	filter: invert(100%) hue-rotate(180deg) !important;
+	filter: grayscale(100%) brightness(400%) !important;
 }
 
 .linksBox .navigation_link:last-child, #title_div {
@@ -2021,15 +2049,35 @@ a.btn-auth:visited {
 	color: #ccc !important;
 }
 
+/* More or less the main link color? no? :) */
+.rectangle_view_img, .view_mode_img {
+	filter: invert(20%) brightness(105%) !important
+}
+
 #pages a, #pages a:active, #pages a:visited {
 	color: #bbb !important;
 	text-decoration: none !important;
 }
 
-.current {
+/*
+Fix selector .current -> .pageNumber.current
+so not to add background when in user view
+*/
+.pageNumber.current {
 	border-radius: 4px !important;
 	background-color: #5c81ba !important;
 	color: #fff !important;
+}
+
+/*
+Now re-add one just to set the text color for user pages
+*/
+.current {
+	color: #fff !important;
+}
+
+.previous_page.disabled {
+	color: #eee !important
 }
 
 .arrow-icon {
@@ -2463,6 +2511,11 @@ a.selected {
 	background-color: #111 !important;
 }
 
+.installStyleButtonTooltip, .customizeButtonTooltip {
+	background-color: rgba(255, 255, 255, .5) !important;
+	color: #222 !important;
+}
+
 .tooltip_rating_long .tooltiptext_rating_long,
 .tooltip .tooltiptext, .tooltip_rating .tooltiptext_rating {
 	background-color: #fff !important;
@@ -2498,6 +2551,22 @@ a.selected {
 	border: 1px solid #333 !important;
 }
 
+.android_button_banner, .android_button_button {
+	background-color: #444 !important;
+}
+
+#landing_page_div .top_landing_page_div .coming_soon_div .get_it_now,
+.android_button_banner .android_button_banner_right .android_button_banner_cta {
+	background-color: #6b9ae2 !important;
+	box-shadow: none !important;
+}
+
+#landing_page_div .top_landing_page_div .coming_soon_div .get_it_now:hover,
+.android_button_banner .android_button_banner_right .android_button_banner_cta:hover {
+	background-color: #5c81ba !important;
+	box-shadow: none !important;
+}
+
 #create_new_style {
 	background:  #334666 !important;
 	border: solid 1px #6b9ae2 !important;
@@ -2523,7 +2592,7 @@ a.selected {
 }
 
 .footer_link a:hover {
-    color: #6b9ae2 !important;
+	color: #6b9ae2 !important;
 }
 
 #bottomLinks {
