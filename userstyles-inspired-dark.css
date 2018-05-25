@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles-Inspired-Dark */
-/*! Version : 1.12 beta */
+/*! Version : 1.13 beta */
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -104,8 +104,7 @@ textarea:focus, td:first-child > input:first-child:focus, #listing-url:focus,
     border-color: #777 !important;
 }
 
-.Button.Active, .ButtonGroup.Open .Button.Handle,
-.Button:focus, .Button:active {
+.Button.Active, .ButtonGroup.Open .Button.Handle, .Button:focus, .Button:active {
     border-color: #aaa !important;
     background: #555 !important;
     box-shadow: none !important;
@@ -143,8 +142,7 @@ table.form-controls, .form-controls > tbody > tr > td, textarea {
     background: #eee !important;
 }
 
-.NavButton.Handle .Sprite,
-.Button.Handle .Sprite {
+.NavButton.Handle .Sprite, .Button.Handle .Sprite {
     border-color: #fff transparent transparent transparent !important;
 }
 
@@ -157,8 +155,8 @@ table.form-controls, .form-controls > tbody > tr > td, textarea {
 }
 
 .Deleted {
-    background: #f5f5f5;
-    border: 1px solid #dddddd;
+    background: #333 !important;
+    border: 1px solid #555 !important;
 }
 
 /* Note: Warning, Alert & Info are simple boxes that can be used to wrap message
@@ -171,7 +169,7 @@ span.Warning, div.Warning {
 
 .Count {
     background: #444 !important;
-    color: #fff !important;
+    color: #eee !important;
 }
 
 .Alert {
@@ -228,13 +226,13 @@ a.Small img {
 }
 
 .DismissMessage.Info {
-    background: #f3f4f8;
-    border: 1px solid #ddd;
+    background: #444 !important;
+    border: 1px solid #aaa !important;
 }
 
 .DismissMessage.Warning {
-    background: #ffebe9;
-    border: 1px solid #FFCCC9;
+    background: #470700 !important;
+    border: 1px solid #ff2518 !important;
 }
 
 .DismissMessage.Box {
@@ -244,8 +242,8 @@ a.Small img {
 
 .CasualMessage {
     background: #01233a !important;
-    border: 1px solid #ABDAFB !important;
-    color: #ABDAFB !important;
+    border: 1px solid #6b9ae2 !important;
+    color: #5c81ba !important;
 }
 
 .CasualMessage a {
@@ -339,15 +337,15 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 
 .MenuItems a:hover {
     color: #eee !Important;
-    background-color: #004D9F !Important;
+    background-color: #4f638b !Important;
 }
 
 .MenuItems a:hover .Gloss {
-    color: #de2323 !important;
+    color: #ddd !important;
 }
 
 .MenuItems hr {
-    border-bottom: 1px solid #777 !important;
+    border-bottom: 1px solid #555 !important;
 }
 
 .MenuItems.Up:before, .MenuItems.Up:after {
@@ -374,6 +372,11 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 
 .FlyoutMenu a:hover {
     color: #6b9ae2 !important;
+}
+
+
+.FlyoutMenu li:hover {
+   background: #292929 !important;
 }
 
 .DropHandle {
@@ -415,17 +418,26 @@ Add People to this Conversation, so adding a hack to wrap that part
 
 /* Hiding until we figure out what to do with GuestWelcomeModule */
 .MeButton {
-	filter: invert(100%) !important;
     border: solid 1px transparent !important;
 }
 
 .MeButton:hover {
+    background: #444 !important;
+}
+/*
+targetting sprite instead of MeButton fixes:
+accidental inverted notification counter overlay
+*/
+.Sprite {
 	filter: invert(100%) !important;
-    background: #aaa !important;
+}
+
+.Sprite:hover {
+	filter: invert(100%) brightness(110%) !important;
 }
 
 .PanelActivity {
-    border-top: 1px solid #abdafb !important;
+    border-top: 1px solid #555 !important;
 }
 
 .PanelActivity li {
@@ -450,8 +462,8 @@ Add People to this Conversation, so adding a hack to wrap that part
     border-bottom: 1px solid #333 !important;
 }
 
- .PanelInfo li {
-    border-bottom: 2px solid #333 !important;
+ .PanelInfo li:first-child, .PanelInfo li:nth-child(5) {
+    border-bottom: 2px solid #454545 !important;
 }
 
 #Panel .FilterMenu li:first-child, .PanelInfo li:first-child {
@@ -537,7 +549,7 @@ Add People to this Conversation, so adding a hack to wrap that part
 }
 
 .Item.Checked {
-    background: #ffc !important;
+    background: #444 !important;
 }
 
 .DataList a.Delete {
@@ -545,8 +557,8 @@ Add People to this Conversation, so adding a hack to wrap that part
 }
 
 .DataList a.Delete:hover {
-    background: #333 !important;
-    color: #aaa !important;
+    background: #444 !important;
+    color: #eb0909 !important;
 }
 
 /* Condensed datalists make the main link & excerpt inline. */
@@ -564,7 +576,13 @@ Add People to this Conversation, so adding a hack to wrap that part
 }
 
 .PopList .Item {
-    border-bottom: 1px solid #555 !important;
+    border-bottom: 1px solid #444 !important;
+}
+
+/* fix both border and hover background its empty, decorate nothing */
+.PopList .Empty, .PopList .Empty:hover {
+	background: transparent !important;
+    border: none !important;
 }
 
 /* /me actions */
@@ -787,12 +805,25 @@ Note: The Vanilla Discussion List has the following classes applied to
   + Mine: the user created the discussion
   + New: there are new comments since the last viewed the discussion
 */
-a.Bookmark:hover, a.Bookmarked:hover, a.Bookmarking:hover {
-	filter: invert(100%) !important;
+a.Bookmark:hover {
+	filter: grayscale(100%) brightness(400%) !important;
 }
 
+a.Bookmarked {
+	filter: invert(100%) hue-rotate(15deg) contrast(20%) brightness(150%) !important;
+}
+
+a.Bookmarked:hover {
+	filter: grayscale(100%) invert(80%) !important;
+}
+
+a.Bookmarking, a.Bookmarking:hover {
+	filter: grayscale(100%) brightness(500%) !important;
+}
+
+/* I dug up the original  tag color 2A529A from the vanilla OSS repo */
 .Tag {
-    background: #2A529A !important;
+    background: #5c81ba !important;
     color: #eee !important;
 }
 
@@ -1569,6 +1600,13 @@ time:before, .DateUpdated:before  {
 	margin-left: -6px !important;
 }
 
+/* another bug caused by time/date changes when viewing
+e.g https://forum.userstyles.org/profile/194399/J0k3r */
+
+.Joined, .LastActive {
+	margin-right: 6px !important;
+}
+
 /*
 The time/date chages introduce a break in author name, affected are:
 categories/Style Reviews
@@ -1598,7 +1636,6 @@ fix line height and increase font size a bit. */
     line-height: 1.9 !important;
     margin: 5px 0 !important;
 }
-
 }
 
 @-moz-document domain("userstyles.org") {
@@ -1640,7 +1677,7 @@ fix line height and increase font size a bit. */
 	margin-right: 6px !important;
 }
 
-.screenshot_wrapper.downloads-icon {
+.screenshot_wrapper.downloads-icon, .screenshot_wrapper {
 	border-bottom: 1px solid #666 !important;
 }
 
@@ -1786,19 +1823,34 @@ div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1)
 	box-shadow: 0 7px 12px 0 rgba(22, 22, 22, .75), 1px 0 0 0 #222 !important;
 }
 
+#create_new_style {
+	background:  #334666 !important;
+	border: solid 1px #6b9ae2 !important;
+}
+
+#create_new_style a {
+	color: #ddd !important;
+}
+
+#create_new_style:hover {
+	background:  #283751 !important;
+	border: solid 1px #5c85c3 !important;
+	color: #6b9ae2 !important;
+}
+
 #overlay-info {
 	background-color: rgba(36, 36, 36, .98) !important;
 	border-radius: 0px !important;
 }
 
 .style_category_card_wrapper {
-	background-color: #191919!important;
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+	background-color: #191919 !important;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08) !important;
 }
 
 .style_category_card_wrapper:hover {
-	box-shadow: 0 12px 20px 0 rgba(255, 255, 255, .2);
-	transform: translate(0, -4px);
+	box-shadow: 0 12px 20px 0 rgba(255, 255, 255, .2) !important;
+	transform: translate(0, -4px) !important;
 }
 
 #category_style_card_title:hover, #category_style_card_title {
@@ -1808,41 +1860,6 @@ div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1)
 
 #styles {
 	color: #777 !important;
-}
-
-#landing_page_div .top_landing_page_div{
-	background-color: #222 !important;
-}
-
-#landing_page_div .bottom_landing_page_div {
-	background-color: #1e1e1e !important;
-}
-/*
-Nope I tried fixing the image and replacing the URL but does nothing here cached cleared or not.
-Gremlins or PEBCAK?
-*/
-#landing_page_div .phone_image_div {
-	background: url("https://userstyles.org/ui/images/phone-image.png") !important;
-	filter: invert(90%) hue-rotate(180deg) contrast(110%) !important;
-}
-
-#landing_page_div .overlay_background .typeform_container {
-	filter: invert(100%) hue-rotate(180deg) brightness(120%) !important;
-}
-
-#landing_page_div .overlay_background {
-	background-color: rgba(23, 23, 23, .9) !important;
-}
-
-#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_seperator {
-	border-bottom: solid 1px #555 !important;
-}
-
-#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_subtitle,
-#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_text,
-#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_helpus,
-.android_feature_title, div.android_feature_div > div > div {
-	color: #aaa !important;
 }
 
 .btn-auth {
@@ -2157,11 +2174,11 @@ table {
 }
 
 #left-sidebar > * {
-	background-color: #d1eeee !important;
+	background-color: #181818 !important;
 }
 
 #advanced-search {
-	border-bottom: 1px solid gray !important;
+	border-bottom: 1px solid #555 !important;
 }
 
 section#obsoletion-message {
@@ -2199,7 +2216,7 @@ label.rating:hover {
 }
 
 a.btn-facebook:visited, a.btn-google:visited {
-	color: white !important;
+	color: #fff !important;
 }
 
 a.btn-twitter:visited {
@@ -2213,7 +2230,7 @@ a.btn-twitter:visited {
 
 .btn-password {
 	border-color: #777 !important;
-	background: #000 !important;
+	background: #191919 !important;
 }
 
 .btn-password:hover, .btn-password:focus {
@@ -2275,7 +2292,7 @@ a.btn-twitter:visited {
 }
 
 .more {
-	border-top: 1px solid #92b3e5 !important;
+	border-top: 1px solid #555 !important;
 }
 
 .listing-no-screenshot {
@@ -2307,7 +2324,7 @@ a.btn-twitter:visited {
 }
 
 .style1 {
-	color: #cff !important;
+	color: #eee !important;
 }
 
 .install-bg {
@@ -2369,7 +2386,7 @@ a.btn-twitter:visited {
 
 	.style-brief, #browse-middle-ad {
 		padding-top: 15px !important;
-		border-bottom: 2px solid gray !important;
+		border-bottom: 2px solid #555 !important;
 		padding-bottom: 2em !important;
 	}
 
@@ -2431,19 +2448,15 @@ a.btn-twitter:visited {
 }
 
 .welcome-video-text {
-	color: #7e8890 !important;
+	color: #aaa !important;
 }
 
-.uninstall-main-text {
-	color: #4a4a4a !important;
-}
-
-.uninstall-additional-text {
-	color: #4a4a4a !important;
+.uninstall-main-text, .uninstall-additional-text {
+	color: #eee !important;
 }
 
 .uninstall-reinstall-button {
-	background-color: #3498db !important;
+	background-color: #5c81ba !important;
 }
 
 .uninstall-reinstall-button-text {
@@ -2456,16 +2469,16 @@ a.btn-twitter:visited {
 }
 
 .uninstall-link {
-	color: #3498db !important;
+	color: #5c81ba !important;
 }
 
 #uninstall-link a {
-	color: #3498db !important;
+	color: #5c81ba !important;
 	text-decoration: none !important;
 }
 
 a.selected {
-	color: white !important;
+	color: #eee !important;
 	z-index: 100 !important;
 }
 
@@ -2475,7 +2488,7 @@ a.selected {
 }
 
 .popup-message p, .popup-message.div {
-	border-bottom: 1px solid #efefef !important;
+	border-bottom: 1px solid #555 !important;
 }
 
 .contact-input {
@@ -2498,13 +2511,13 @@ a.selected {
 
 .contact-submit-button {
 	color: #eee !important;
-	background-color: #ffed84 !important;
+	/* background-color: #ffed84 !important; */
 	height: 30px !important;
 	margin-top: -3px !important;
 }
 
 .statistic table, th, td {
-	border: 1px solid grey !important;
+	border: 1px solid #555 !important;
 }
 
 .style_card {
@@ -2512,8 +2525,10 @@ a.selected {
 }
 
 .installStyleButtonTooltip, .customizeButtonTooltip {
-	background-color: rgba(255, 255, 255, .5) !important;
+	background-color: #fff !important;
 	color: #222 !important;
+	font-weight: normal !important;
+	opacity: 0.7 !important;
 }
 
 .tooltip_rating_long .tooltiptext_rating_long,
@@ -2555,6 +2570,41 @@ a.selected {
 	background-color: #444 !important;
 }
 
+#landing_page_div .top_landing_page_div{
+	background-color: #222 !important;
+}
+
+#landing_page_div .bottom_landing_page_div {
+	background-color: #1e1e1e !important;
+}
+/*
+Nope I tried fixing the image and replacing the URL but does nothing here cached cleared or not.
+Gremlins or PEBCAK?
+*/
+#landing_page_div .phone_image_div {
+	background: url("https://userstyles.org/ui/images/phone-image.png") !important;
+	filter: invert(90%) hue-rotate(180deg) contrast(110%) !important;
+}
+
+#landing_page_div .overlay_background .typeform_container {
+	filter: invert(100%) hue-rotate(180deg) brightness(120%) !important;
+}
+
+#landing_page_div .overlay_background {
+	background-color: rgba(23, 23, 23, .9) !important;
+}
+
+#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_seperator {
+	border-bottom: solid 1px #555 !important;
+}
+
+#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_subtitle,
+#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_text,
+#landing_page_div .top_landing_page_div .coming_soon_div .coming_soon_helpus,
+.android_feature_title, div.android_feature_div > div > div {
+	color: #aaa !important;
+}
+
 #landing_page_div .top_landing_page_div .coming_soon_div .get_it_now,
 .android_button_banner .android_button_banner_right .android_button_banner_cta {
 	background-color: #6b9ae2 !important;
@@ -2565,21 +2615,6 @@ a.selected {
 .android_button_banner .android_button_banner_right .android_button_banner_cta:hover {
 	background-color: #5c81ba !important;
 	box-shadow: none !important;
-}
-
-#create_new_style {
-	background:  #334666 !important;
-	border: solid 1px #6b9ae2 !important;
-}
-
-#create_new_style a {
-	color: #ddd !important;
-}
-
-#create_new_style:hover {
-	background:  #283751 !important;
-	border: solid 1px #5c85c3 !important;
-	color: #6b9ae2 !important;
 }
 
 /* =========== Footer =========== */
@@ -2600,7 +2635,7 @@ a.selected {
 }
 
 #copyrights {
-	color: #ddd;
+	color: #ddd !important;
 }
 
 #rightFooter {
