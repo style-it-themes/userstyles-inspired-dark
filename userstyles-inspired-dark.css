@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles-Inspired-Dark */
-/*! Version : 1.13 beta */
+/*! Version : 1.14 beta */
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -1838,10 +1838,76 @@ div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1)
 	color: #6b9ae2 !important;
 }
 
+/* ========== Caroussel ============ */
+
+#left-arrow-carousel, #right-arrow-carousel {
+	filter: invert(100%) brightness(230%) !important;
+	opacity: 0.7 !important;
+}
+
+#left-arrow-carousel:hover, #right-arrow-carousel:hover {
+	filter: invert(100%) contrast(80%) brightness(250%) !important;
+	opacity: 0.7 !important;
+}
+
 #overlay-info {
 	background-color: rgba(36, 36, 36, .98) !important;
 	border-radius: 0px !important;
 }
+
+#style-info-title-carousel {
+	color: #6b9ae2;
+}
+
+#style-info-title-carousel a {
+	color: #5c81ba !important;
+}
+
+#style-info-title-carousel a:visited {
+	color: #4f638b !important;
+}
+
+#style-info-title-carousel a:hover {
+	color: #6b9ae2 !important;
+}
+
+#style-info-title-carousel a:active {
+	color: #5c81ba !important;
+}
+
+#style-info-author-carousel {
+	color: #ddd !important;
+}
+
+#style-info-author-carousel a {
+	color: #bbb !important;
+}
+
+#style-info-author-carousel a:visited {
+	color: #aaa !important;
+}
+
+#style-info-author-carousel a:hover {
+	color: #ccc !important;
+	text-decoration: underline !important;
+}
+
+#style-info-author-carousel a:active {
+	color: #aaa !important;
+}
+
+.oval-active {
+	background-color: #6b9ae2;
+	box-shadow: 0 6px 16px 0 #6b9ae2;
+}
+
+.oval {
+	background-color: #ddd !important;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+
+/* ======== End Caroussel ======== */
 
 .style_category_card_wrapper {
 	background-color: #191919 !important;
