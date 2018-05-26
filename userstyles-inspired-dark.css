@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles-Inspired-Dark */
-/*! Version : 1.14 beta */
+/*! Version : 1.15 beta */
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -457,12 +457,11 @@ accidental inverted notification counter overlay
 }
 
 /* Compatibility for old custom themes that overrode this value */
-
 #Panel .FilterMenu li, .PanelInfo li {
     border-bottom: 1px solid #333 !important;
 }
 
- .PanelInfo li:first-child, .PanelInfo li:nth-child(5) {
+.BoxCategories .PanelInfo li:first-child, .BoxCategories .PanelInfo li:nth-child(5) {
     border-bottom: 2px solid #454545 !important;
 }
 
@@ -787,13 +786,36 @@ a.Close {
     color: #aaa !important;
 }
 
-/* ======== Vanilla ========= */
+/* ======== Vanilla Forums logo ========= */
 .PoweredByVanilla {
-	filter:	invert(90%) hue-rotate(180deg) brightness(150%) !important;
-	/*
-	background-image: url("https://open.vanillaforums.com/applications/dashboard/design/images/vanilla-black.svg") !important;
-	background-size: cover !important;
-	*/
+	filter: brightness(120%) !important;
+	background-image: url("https://cdn.rawgit.com/the-j0k3r/c7faf51a3076eea7e4ab0ae9dabea084/raw/aa794f5d843da1d876af2753531d8d5dfffb7a63/vanilla-forums.svg") !important;
+	height: 45px !important;
+	width: 75px !important;
+}
+
+/* Added shake that spice */
+@keyframes  shake-it {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+	10%, 20% {
+		transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+	}
+	30%, 50% ,70% ,90% {
+		transform: scale3d(1.1 ,1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	}
+	40%, 60%, 80% {
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	}
+	to {
+		transform: scale3d(1.1, 1.1 ,1.1) rotate3d(0, 0, 1, 4deg)
+	}
+}
+
+.PoweredByVanilla:hover {
+	animation-name: shake-it !important;
+	animation-duration: 1s !important;
 }
 
 /* ====== Discussions ======= */
@@ -2583,11 +2605,26 @@ a.selected {
 }
 
 .statistic table, th, td {
-	border: 1px solid #555 !important;
+	border: 1px solid #444 !important;
 }
 
+/*
+There is a purposeful margin mis-alignment of the style cards, its distracting.
+Make all margins 11px including the nth-child(3) to counter this.
+*/
 .style_card {
 	background-color: #111 !important;
+	margin: 11px 11px 11px !important;
+}
+
+.style_card:nth-child(3n) {
+	margin-right: 11px !important;
+}
+
+.style_card:hover {
+	box-shadow: 0 12px 25px 0 rgba(111, 111, 111, .2) !important;
+	transform: translate(0, -5px) !important;
+	filter: brightness(120%) !important;
 }
 
 .installStyleButtonTooltip, .customizeButtonTooltip {
