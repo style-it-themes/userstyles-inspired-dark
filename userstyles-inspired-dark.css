@@ -1,12 +1,13 @@
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles-Inspired-Dark */
-/*! Version : 1.15 beta */
+/*! Version : 1.16 beta */
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+/*! Type    : Forum */
 body, #nav-view {
-    color: #aaa !important;
-    background: #222 !important;
+	color: #aaa !important;
+	background: #222 !important;
 }
 
 .header.button.no-select {
@@ -18,7 +19,7 @@ a {
 }
 
 a:hover, a.TextColor:hover, a:hover .TextColor {
-    color: #6b9ae2 !important;
+	color: #6b9ae2 !important;
 }
 
 .text_style_page > a:visited {
@@ -34,14 +35,31 @@ a:hover, a.TextColor:hover, a:hover .TextColor {
 }
 /*
 .ConnectLabel.TextColor and  a .TextColor
-are same selector but without I keep seeing a red color
+are same selector but without I keep seeing a red color.
 */
 .ConnectLabel.TextColor, a.TextColor, a .TextColor {
-    color: #888 !important;
+	color: #888 !important;
 }
 
 h1, h2, h3, h4, h5, h6, p, .P {
 	color: #aaa !important;
+}
+
+input.DateBox, input.InputBox, input.SmallInput, textarea {
+	color: #eee !important;
+	background: #000 !important;
+	border: 1px solid #444 !important;
+	padding: 3px !important;
+}
+
+.ui-datepicker {
+	background: #222 !important;
+	border: 1px solid #999 !important;
+}
+
+#new-setting {
+	border: none !important;
+	box-shadow: none !important;
 }
 
 #user_name, #user_email, #user_homepage, #user_paypal_email,
@@ -57,59 +75,43 @@ td:first-child > input:first-child, #style_pledgie_id, #openid,
 	color: #ccc !important;
 }
 
-input.DateBox, input.InputBox, input.SmallInput, textarea {
-	color: #eee !important;
-	background: #000 !important;
-	border: 1px solid #444 !important;
-	padding: 3px !important;
-}
-
-.ui-datepicker {
-    background: #222 !important;
-    border: 1px solid #999 !important;
-}
-
-#new-setting {
-    border: none !important;
-	box-shadow: none !important;
-}
-
 #user_name:focus, #user_email:focus, #user_homepage:focus, #user_paypal_email:focus,
 #issue_full_name:focus, #issue_email:focus, #issue_user_name:focus, #openid:focus,
 #style_short_description:focus, #style_pledgie_id:focus, #example-url:focus,
-input.DateBox:focus, input.InputBox:focus, input.SmallInput:focus, #search_input:focus, #style_short_description:focus, input.SmallInput:focus, input.InputBox:focus,
-textarea:focus, td:first-child > input:first-child:focus, #listing-url:focus,
-#widget-title:focus, #user_login:focus, #password:focus, #password_confirmation:focus,
-#login-existing:focus, #password-existing:focus, #obsoleting-style-id:focus,
-#edit-style-settings input:not([type]):focus, #edit-style-settings input[type="text"]:focus,
-#login-new:focus, #email-new:focus, #password-new:focus, #password-new-confirm:focus,
-#user_password:focus, #user_password_confirmation:focus {
-    background: #191919 !important;
+input.DateBox:focus, input.InputBox:focus, input.SmallInput:focus, #style_short_description:focus,
+input.SmallInput:focus, input.InputBox:focus, textarea:focus, td:first-child > input:first-child:focus,
+#listing-url:focus, #widget-title:focus, #user_login:focus, #password:focus,
+#password_confirmation:focus, #login-existing:focus, #password-existing:focus,
+#obsoleting-style-id:focus, #edit-style-settings input:not([type]):focus,
+#edit-style-settings input[type="text"]:focus, #login-new:focus, #email-new:focus,
+#password-new:focus, #password-new-confirm:focus, #user_password:focus,
+#user_password_confirmation:focus {
+	background: #191919 !important;
 }
 
 .Button {
-    background: #333 !important;
-    border: 1px solid #ccc !important;
-    box-shadow:none !important;
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    border-color: #666 !important;
-    color: #ddd !important;
+	background: #333 !important;
+	border: 1px solid #ccc !important;
+	box-shadow:none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	border-color: #666 !important;
+	color: #ddd !important;
 	text-shadow: none !important;
 }
 
 .Button:hover {
-    background: #444 !important;
-    color: #ccc !important;
-    border-color: #777 !important;
+	background: #444 !important;
+	color: #ccc !important;
+	border-color: #777 !important;
 }
 
 .Button.Active, .ButtonGroup.Open .Button.Handle, .Button:focus, .Button:active {
-    border-color: #aaa !important;
-    background: #555 !important;
-    box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
+	border-color: #aaa !important;
+	background: #555 !important;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
 }
 
 input[type="reset"], input[type="button"], input[type="submit"] {
@@ -125,191 +127,197 @@ input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hove
 	background: #444 !important;
 }
 
-.form-controls > tbody > tr > th,
-table.form-controls, .form-controls > tbody > tr > td, textarea {
+.form-controls > tbody > tr > th, table.form-controls,
+.form-controls > tbody > tr > td, textarea {
 	border-color: #444 !important;
 }
 
 .NavButton {
-    color: #eee !important;
-    text-shadow: 0 0 1px #000 !important;
-    background: #444 !important;
-    border: 1px solid #555 !important;
-    box-shadow: 0 1px 1px #222 !important;
+	color: #eee !important;
+	text-shadow: 0 0 1px #000 !important;
+	background: #444 !important;
+	border: 1px solid #555 !important;
+	box-shadow: 0 1px 1px #222 !important;
 }
 
 .ButtonGroup.Open .NavButton.Handle {
-    background: #eee !important;
+	background: #eee !important;
 }
 
 .NavButton.Handle .Sprite, .Button.Handle .Sprite {
-    border-color: #fff transparent transparent transparent !important;
+	border-color: #fff transparent transparent transparent !important;
 }
 
 .ActivateSlider {
-    display: inline-block;
-    background: #bbb;
-    /*background: rgba(0, 0, 0, .2);*/
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .5) inset;
-    border: solid 1px #ccc;
+	display: inline-block;
+	background: #bbb;
+	/*background: rgba(0, 0, 0, .2);*/
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .5) inset;
+	border: solid 1px #ccc;
 }
 
 .Deleted {
-    background: #333 !important;
-    border: 1px solid #555 !important;
+	background: #333 !important;
+	border: 1px solid #555 !important;
 }
 
-/* Note: Warning, Alert & Info are simple boxes that can be used to wrap message
-   strings & imply importance. */
+/*
+Note: Warning, Alert & Info are simple boxes that can be used to wrap message
+strings & imply importance.
+*/
 span.Warning, div.Warning {
-    background: #470700 !important;
-    border: 1px solid #ff2518 !important;
-    color: #ddd !important;
+	background: #300 !important;
+	border: 1px solid #b00 !important;
+	color: #f44 !important;
 }
 
 .Count {
-    background: #444 !important;
-    color: #eee !important;
+	background: #444 !important;
+	color: #eee !important;
 }
 
 .Alert {
-    border: 1px solid #ff2518 !important;
-    background: #470700 !important;
-    color: #ddd !important;
+	background: #261d08 !important;
+	border: 1px solid #542 !important;
+	color: #ddd !important;
 }
 
 .Alert a {
-    color: #ddd !important;
+	color: #ffc000 !important;
 }
 
 .Alert a:hover {
-    text-decoration: underline;
+	text-decoration: underline !important;
 }
 
 .Info {
-    background: #222 !important;
-    border: 2px solid #555 !important;
-    color: #888 !important;
+	background: #292929 !important;
+	border: 1px solid #555 !important;
+	color: #aaa !important;
 }
 
 .Pager span {
-    color: #777 !important;
+	color: #777 !important;
 }
 
 .Pager .Highlight {
-    color: #eee !important;
+	color: #eee !important;
 }
 
 /* Small UserPhoto() images */
 a.Small:hover {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
 
 a.Small img {
-    background: #ddd !important;
+	background: #333 !important;
 }
 
-/* Note: The MessageModule (in /applications/dashboard/modules) wraps all messages
-  that it renders in a div with this DismissMessage class. */
-/* Messages */
+/* # Messages
+
+Note: The MessageModule (in /applications/dashboard/modules) wraps all messages
+that it renders in a div with this DismissMessage class.
+*/
 .DismissMessage a.Dismiss {
-    color: #aaa !important;
+	color: #aaa !important;
 }
 
 .DismissMessage a.Dismiss:hover {
-    background: #333 !important;
-    color: #eee !important;
+	background: #333 !important;
+	color: #eee !important;
 }
 
 .DismissMessage {
-    color: #fff !important;
+	color: #fff !important;
 }
 
 .DismissMessage.Info {
-    background: #444 !important;
-    border: 1px solid #aaa !important;
+	background: #444 !important;
+	border: 1px solid #aaa !important;
 }
 
 .DismissMessage.Warning {
-    background: #470700 !important;
-    border: 1px solid #ff2518 !important;
+	background: #300 !important;
+	border: 1px solid #b00 !important;
 }
 
 .DismissMessage.Box {
-    background: #fff8ce !important;
-    border: 1px solid #c5bea4 !important;
+	background: #fff8ce !important;
+	border: 1px solid #c5bea4 !important;
 }
 
 .CasualMessage {
-    background: #01233a !important;
-    border: 1px solid #6b9ae2 !important;
-    color: #5c81ba !important;
-}
-
-.CasualMessage a {
-    color: #5c81ba !important;
-}
-
-.CasualMessage a:hover {
-    color: #6b9ae2 !important;
-}
-
-.InfoMessage {
-    background: #444 !important;
-    border: 1px solid #555 !important;
-}
-
-.AlertMessage {
-    background: #fff8ce !important;
-    border: 1px solid #DEDDAF !important;
-}
-
-.WarningMessage {
-    background: #470700 !important;
-    border: 1px solid #ff2518 !important;
+	background: #182030 !important;
+	border: 1px solid #6b9ae2 !important;
 	color: #ddd !important;
 }
 
-/* ================= Header  =============== */
+.CasualMessage a {
+	color: #5c81ba !important;
+}
+
+.CasualMessage a:hover {
+	color: #6b9ae2 !important;
+}
+
+.InfoMessage {
+	background: #444 !important;
+	border: 1px solid #555 !important;
+}
+
+.AlertMessage {
+	background-color: #261d07 !important;
+	border-color: #542 !important;
+}
+
+.WarningMessage {
+	background: #300 !important;
+	border: 1px solid #b00 !important;
+	color: #ddd !important;
+}
+
+/* Header */
 #Head {
-    background: #4f638b !important;
+	background: #4f638b !important;
 	box-shadow: 0 7px 12px 0 rgba(22, 22, 22, .75), 1px 0 0 0 #222 !important;
 }
 
 #Head a {
-    color: #ccc !important;
+	color: #ccc !important;
 }
 
 .SiteSearch .Button {
-    background: url('https://forum.userstyles.org/applications/dashboard/design/images/sprites.png') 0 -196px no-repeat transparent !important;
-    top: 7px !important;
+	background: url('https://forum.userstyles.org/applications/dashboard/design/images/sprites.png') 0 -196px no-repeat transparent !important;
+	top: 7px !important;
 	filter: invert(100%) !important;
 	border: none !important;
 }
 
 .SiteSearch .Button:hover {
-    background: url('https://forum.userstyles.org/applications/dashboard/design/images/sprites.png') 0 -196px no-repeat transparent !important;
+	background: url('https://forum.userstyles.org/applications/dashboard/design/images/sprites.png') 0 -196px no-repeat transparent !important;
 	filter: invert(100%) brightness(150%) !important;
 }
 
-/* Option (dropdown) Menus, Bookmark stars, admin checkboxes */
+/*
+Option (dropdown) Menus, Bookmark stars, admin checkboxes.
+*/
 .CategoryLink {
-    background: #333 !important;
+	background: #333 !important;
 }
 
 .category_title {
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  color: #ccc !important;
-  margin-top: 20px !important;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	color: #ccc !important;
+	margin-top: 20px !important;
 }
 
 div.Discussion .OptionsTitle, .Item .OptionsTitle {
-   filter: invert(50%) !important;
+	filter: invert(50%) !important;
 }
 
 div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
-   filter: invert(70%) !important;
+	filter: invert(70%) !important;
 }
 
 .Open > .OptionsTitle {
@@ -317,83 +325,83 @@ div.Discussion:hover .OptionsTitle:hover, .Item:hover .OptionsTitle:hover {
 }
 
 .Flyout:before, .Flyout:after {
-    border-bottom: 7px solid #777 !important;
-    border-left: 7px solid transparent !important;
-    border-right: 7px solid transparent !important;
+	border-bottom: 7px solid #777 !important;
+	border-left: 7px solid transparent !important;
+	border-right: 7px solid transparent !important;
 }
 
 .Flyout:after {
-    border-bottom: 7px solid #222 !important;
+	border-bottom: 7px solid #222 !important;
 }
 
 .MenuItems {
-    border: 1px solid #777 !important;
-    background: #222 !important;
+	border: 1px solid #777 !important;
+	background: #222 !important;
 }
 
 .MenuItems a, .MenuItems a:link, .MenuItems a:visited, .MenuItems a:active {
-    color: #ccc !Important;
+	color: #ccc !Important;
 }
 
 .MenuItems a:hover {
-    color: #eee !Important;
-    background-color: #4f638b !Important;
+	color: #eee !Important;
+	background-color: #4f638b !Important;
 }
 
 .MenuItems a:hover .Gloss {
-    color: #ddd !important;
+	color: #ddd !important;
 }
 
-.MenuItems hr {
-    border-bottom: 1px solid #555 !important;
+.MenuItems hr, hr  {
+	border: 1px solid #444 !important;
 }
 
 .MenuItems.Up:before, .MenuItems.Up:after {
-    border-top: 7px solid #777 !important;
-    border-left: 7px solid transparent !important;
-    border-right: 7px solid transparent !important;
+	border-top: 7px solid #777 !important;
+	border-left: 7px solid transparent !important;
+	border-right: 7px solid transparent !important;
 }
 
 .MenuItems.Up:after {
-    border-top: 7px solid #999 !important;
-    bottom: -6px !important;
+	border-top: 7px solid #999 !important;
+	bottom: -6px !important;
 }
 
 .FlyoutMenu {
-    width: 300px !important;
-    background: #222 !important;
-    color: #ccc !important;
-    border: solid 1px #666 !important;
+	width: 300px !important;
+	background: #222 !important;
+	color: #ccc !important;
+	border: solid 1px #666 !important;
 }
 
 .FlyoutMenu a {
-    color: #5c81ba !important;
+	color: #5c81ba !important;
 }
 
 .FlyoutMenu a:hover {
-    color: #6b9ae2 !important;
+	color: #6b9ae2 !important;
 }
 
 
 .FlyoutMenu li:hover {
-   background: #292929 !important;
+	background: #292929 !important;
 }
 
 .DropHandle {
-    border-width: 4px !important;
-    border-color: #000 transparent transparent transparent !important;
+	border-width: 4px !important;
+	border-color: #000 transparent transparent transparent !important;
 }
 
 .Box {
 	margin: 10px 0 !important;
-    white-space: nowrap !important;
+	white-space: nowrap !important;
 }
 
 /*
-The  white-space: nowrap is a fix for the  Notification Preferences
-option is selected to prevent it from breaking the words, however
-this broke the private message  wraping of the
-Add People to this Conversation, so adding a hack to wrap that part
+The white-space: nowrap is a fix for the Notification Preferences
+when option is selected to prevent it from breaking the words, however
+this broke the private message wrapping of the Add People to this Conversation,
+so adding a hack to wrap that part
 */
 .Box.GuestBox p, .ConnectLabel.TextColor {
 	white-space: pre-wrap !important;
@@ -408,24 +416,24 @@ Add People to this Conversation, so adding a hack to wrap that part
 }
 
 .Box dl dt {
-    font-size: 12px !important;
-    float: left !important;
-    width: 80px !important;
-    color: #555 !important;
-    overflow: hidden !important;
-    white-space: nowrap !important;
+	font-size: 12px !important;
+	float: left !important;
+	width: 80px !important;
+	color: #555 !important;
+	overflow: hidden !important;
+	white-space: nowrap !important;
 }
 
 /* Hiding until we figure out what to do with GuestWelcomeModule */
 .MeButton {
-    border: solid 1px transparent !important;
+	border: solid 1px transparent !important;
 }
 
 .MeButton:hover {
-    background: #444 !important;
+	background: #444 !important;
 }
 /*
-targetting sprite instead of MeButton fixes:
+Targeting sprite instead of MeButton fixes:
 accidental inverted notification counter overlay
 */
 .Sprite {
@@ -437,172 +445,180 @@ accidental inverted notification counter overlay
 }
 
 .PanelActivity {
-    border-top: 1px solid #555 !important;
+	border-top: 1px solid #555 !important;
 }
 
 .PanelActivity li {
-    background: #333 !important;
-    border-bottom: 1px solid #555 !important;
-    color: #aaa !important;
+	background: #333 !important;
+	border-bottom: 1px solid #555 !important;
+	color: #aaa !important;
 }
 
 .PanelActivity li a {
-    font-size: 13px !important;
+	font-size: 13px !important;
 }
 
 .PanelActivity li em {
-    padding-left: 5px !important;
-    color: #777 !important;
-    font-size: 80% !important;
+	padding-left: 5px !important;
+	color: #777 !important;
+	font-size: 80% !important;
 }
 
-/* Compatibility for old custom themes that overrode this value */
+/*
+Compatibility for old custom themes that overrode this value.
+*/
 #Panel .FilterMenu li, .PanelInfo li {
-    border-bottom: 1px solid #333 !important;
+	border-bottom: 1px solid #333 !important;
 }
 
 .BoxCategories .PanelInfo li:first-child, .BoxCategories .PanelInfo li:nth-child(5) {
-    border-bottom: 2px solid #454545 !important;
+	border-bottom: 2px solid #454545 !important;
 }
 
 #Panel .FilterMenu li:first-child, .PanelInfo li:first-child {
-    border-top: 1px solid #333 !important;
+	border-top: 1px solid #333 !important;
 }
 
-/** Make standard items a bit more condensed when in the panel. **/
-
+/*
+Make standard items a bit more condensed when in the panel.
+*/
 .PanelInfo .Meta strong {
-    display: inline !important;
-    border-radius: 2px !important;
-    -moz-border-radius: 2px !important;
-    -webkit-border-radius: 2px !important;
-    background: #ffc400 !important;
-    color: #111 !important;
-    font-size: 9px !important;
-    font-weight: bold !important;
-    padding: 3px !important;
-    line-height: 1 !important;
+	display: inline !important;
+	border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	background: #ffc400 !important;
+	color: #111 !important;
+	font-size: 9px !important;
+	font-weight: bold !important;
+	padding: 3px !important;
+	line-height: 1 !important;
 }
 
 .PanelInfo .Parent {
-    text-align: left !important;
-    font-weight: bold !important;
-    background: none !important;
-    color: #333 !important;
-    padding: 2px 0 !important;
+	text-align: left !important;
+	font-weight: bold !important;
+	background: none !important;
+	color: #333 !important;
+	padding: 2px 0 !important;
 }
 
 #Panel .FilterMenu .Active, .PanelInfo .Active {
-    background: rgba(51, 51, 51, .69) !important;
-    font-weight: bold !important;
+	background: rgba(51, 51, 51, .69) !important;
+	font-weight: bold !important;
 }
 
 #Content .FilterMenu li.Active a {
-    border-bottom: 2px solid #555 !important;
+	border-bottom: 2px solid #555 !important;
 }
 
 #Content .BoxFilter .Active a {
-    color: #5c81ba !important;
-    border-bottom: 2px solid #555 !important;
+	color: #5c81ba !important;
+	border-bottom: 2px solid #555 !important;
 }
 
 #Content .FilterMenu li.Active a {
-    border-bottom: 2px solid #555 !important;
+	border-bottom: 2px solid #555 !important;
 }
 
 .Icons img {
-    background: #c4cde0 !important;
-    color: #c4cde0 !important;
-    text-indent: 50px !important;
+	background: #c4cde0 !important;
+	color: #c4cde0 !important;
+	text-indent: 50px !important;
 }
 
-/* ======= DataList  ===========*/
-/* Note: DataList is used in search results, vanilla discussions & drafts */
+/* # DataList
+
+Note: DataList is used in search results, vanilla discussions & drafts.
+*/
 .SearchForm .InputBox {
-    border: solid 1px #666 !important;
+	border: solid 1px #666 !important;
 }
 
-.DataList, .DataList .Item, .NarrowList .Item {
-	border-bottom: 1px solid #333 !important;
+.DataList .Item, .NarrowList .Item {
+	border-bottom: 1px solid #444 !important;
 }
 
 .ItemDiscussion .Meta,
 .DataList .Meta {
-    color: #888 !important;
+	color: #888 !important;
 }
 
 .HasNew {
-    background: #ffc800 !important;
-    color: #000 !important;
+	background: #ffc800 !important;
+	color: #000 !important;
 	/* top | right | bottom | left */
 	padding: 0px 4px 0px 3px !important;
 	border-radius: 2px !important;
 }
 
 .Item.Read {
-    background: #292929 !important;
+	background: #292929 !important;
 }
 
 .Item.Read:hover {
-    filter: brightness(120%) !important;
+	filter: brightness(120%) !important;
 }
 
 .Item.Checked {
-    background: #444 !important;
+	background: #444 !important;
 }
 
 .DataList a.Delete {
-    color: #c01f1f !important;
+	color: #c01f1f !important;
 }
 
 .DataList a.Delete:hover {
-    background: #444 !important;
-    color: #eb0909 !important;
+	background: #444 !important;
+	color: #eb0909 !important;
 }
 
-/* Condensed datalists make the main link & excerpt inline. */
+/*
+Condensed datalists make the main link & excerpt inline.
+*/
 .DataList .Unfollow {
-    background: #444 !important;
+	background: #444 !important;
 }
 
 .DataList .Unfollow a {
-    color: #888 !important;
+	color: #888 !important;
 }
 
 .Item .Inset {
-    border-top: 1px solid #bec8cc !important;
-    padding: 5px 0 !important;
+	border-top: 1px solid #bec8cc !important;
+	padding: 5px 0 !important;
 }
 
 .PopList .Item {
-    border-bottom: 1px solid #444 !important;
+	border-bottom: 1px solid #444 !important;
 }
-
-/* fix both border and hover background its empty, decorate nothing */
+/*
+Fix both border and hover background its empty, decorate nothing.
+*/
 .PopList .Empty, .PopList .Empty:hover {
 	background: transparent !important;
-    border: none !important;
+	border: none !important;
 }
 
 /* /me actions */
 .Hero {
-    background: #333 !important;
+	background: #333 !important;
 }
 
 .Activities li.Condensed .Excerpt {
-    color: #eee !important;
+	color: #eee !important;
 }
 
 .Activities .DataList li {
-    background: #333 !important;
-    margin-bottom: 2px !important;
-    padding: 6px !important;
+	background: #333 !important;
+	margin-bottom: 2px !important;
+	padding: 6px !important;
 }
 
 .Activities a.CommentLink, .Activities a.CommentLink:hover {
-    background: #222 !important;
-    color: #bbb !important;
-    border: 1px solid #aaa !important;
+	background: #222 !important;
+	color: #bbb !important;
+	border: 1px solid #aaa !important;
 }
 
 .Comment {
@@ -610,21 +626,22 @@ accidental inverted notification counter overlay
 }
 
 body.Post .Popup a.Close {
-    color: #1e79a7 !important;
+	color: #aaa !important;
 }
 
 .emoji {
-    margin-top: -2px;
-    margin-bottom: -3px; /* account for image padding */
+	margin-top: -2px;
+	margin-bottom: -3px;
+	/* account for image padding */
 }
 
 blockquote.Quote, blockQuote.UserQuote {
-    background: #313131 !important;
-    border-left: 4px solid #666 !important;
+	background: #313131 !important;
+	border-left: 4px solid #666 !important;
 }
 
 .Message small {
-    color: #777 !important;
+	color: #aaa !important;
 }
 
 code, pre {
@@ -637,8 +654,8 @@ pre code {
 	white-space: pre-wrap !important;
 }
 /*
-the code blocks wrap when theres a code block just before
-the end of a sentence and its ugly and hard to read
+The code blocks wrap when theres a code block just before
+The end of a sentence and its ugly and hard to read.
 */
 code {
 	border: none !important;
@@ -655,37 +672,37 @@ mark {
 	color: #000 !important;
 }
 
-/* ========== Categories =========== */
+/* Categories */
 .ChildCategories {
-    border-top: 1px dotted #666 !important;
-    display: block !important;
+	border-top: 1px dotted #666 !important;
+	display: block !important;
 }
 
 .RssButton {
-    color: transparent !important;
+	color: transparent !important;
 }
 
-/* ========== Profile Page =========== */
+/* Profile Page */
 .PhotoWrap:hover a.ChangePicture {
-    display: block !important;
+	display: block !important;
 }
 
 a.ChangePicture {
-    background: #333 !important;
-    color: #ddd !important;
+	background: #333 !important;
+	color: #ddd !important;
 }
 /*
 Fix typo in selector from the default css
 a.ChangePicuture:hover -> a.ChangePicture:hover
 */
 a.ChangePicture:hover {
-    color: #eee !important;
-    text-decoration: underline !important;
+	color: #eee !important;
+	text-decoration: underline !important;
 }
 
 /* BGColor on profile forms */
 body.Profile.EditMode #Content form {
-    background: #202020 !important;
+	background: #202020 !important;
 }
 
 .PreferenceGroup > thead > tr > td {
@@ -693,7 +710,7 @@ body.Profile.EditMode #Content form {
 	color: #ccc !important;
 }
 
-/* Iinclude nvitations Form and fix .PreferenceGroup hover */
+/* Include invitations Form and fix .PreferenceGroup hover */
 .PreferenceGroup > tbody > tr:hover > td,
 #Form_Invitation table th:hover {
 	background-color: #333 !important;
@@ -703,7 +720,7 @@ body.Profile.EditMode #Content form {
 table.PreferenceGroup th, table.PreferenceGroup td,
 #Form_Invitation th, #Form_Invitation td {
 	background-color: #202020 !important;
-    border-bottom: 1px solid #333 !important;
+	border-bottom: 1px solid #333 !important;
 	border-top: none !important;
 	border-right: none !important;
 	border-left: none !important;
@@ -715,78 +732,84 @@ table.PreferenceGroup th, table.PreferenceGroup td,
 
 /* About in content area */
 .ContentColumn .About h2 {
-    display: none !important;
+	display: none !important;
 }
-
-/* fix for  being to far up  this normally is 0 no breathing room */
+/*
+Fix for  being too far up this normally is 0px no breathing room.
+*/
 .ContentColumn {
 	margin-top: 10px !important;
 }
 
 dl.About dt {
-    color: #666 !important;
-    background: url('https://forum.userstyles.org/applications/dashboard/design/images/profile-sprites.png') 2px -139px no-repeat transparent !important;
+	color: #666 !important;
+	background: url('https://forum.userstyles.org/applications/dashboard/design/images/profile-sprites.png') 2px -139px no-repeat transparent !important;
 }
 
-/* ========= Thumbnail Cropper  =========== */
+/* Thumbnail Cropper */
 .jcropper-holder {
-    border: 1px black solid !important;
+	border: 1px black solid !important;
 }
 
 .jcrop-vline, .jcrop-hline {
-    font-size: 0 !important;
-    position: absolute !important;
-    background: white url('https://forum.userstyles.org/applications/dashboard/design/images/jcrop.gif') top left repeat !important;
+	font-size: 0 !important;
+	position: absolute !important;
+	background: #fff url('https://forum.userstyles.org/applications/dashboard/design/images/jcrop.gif') top left repeat !important;
 }
 
 .jcrop-handle {
-    border: 1px #eee solid !important;
-    background-color: #333 !important;
+	border: 1px #eee solid !important;
+	background-color: #333 !important;
 }
 
 .jcrop-tracker {
-    *background-color: #cd1313 !important;
+	*background-color: #cd1313 !important;
 }
 
 .custom .jcrop-vline, .custom .jcrop-hline {
-    background: yellow !important;
+	background: #ff0 !important;
 }
 
 .custom .jcrop-handle {
-    border-color: black !important;
-    background-color: #C7BB00 !important;
+	border-color: black !important;
+	background-color: #C7BB00 !important;
 }
 
-/* =========== CommentForm =========== */
+/* CommentForm */
 .Preview {
-    background: none !important;
-    color: #ccc !important;
+	background: none !important;
+	color: #ccc !important;
 }
 
-/* ============= Popups =========== */
+/* Popups */
 div.Popup .Body {
-    background: #333 !important;
-    padding: 10px !important;
-    float: left !important; /* Put this here b/c background of form was not descending to bottom of popup. */
+	background: #191919 !important;
+	padding: 10px !important;
+	float: left !important;
+	/* Put this here b/c background of form was not descending to bottom of popup. */
 }
 
 a.Close {
-    color: #000 !important;
+	color: #aaa !important;
+}
+
+a.Close:hover {
+	color: #ccc !important;
 }
 
 #Foot {
-    color: #ddd !important;
+	color: #ddd !important;
 }
 
 #Foot a {
-    color: #ccc !important;
+	color: #ccc !important;
 }
 
 #Foot a:hover {
-    color: #aaa !important;
+	color: #aaa !important;
 }
 
-/* ======== Vanilla Forums logo ========= */
+/* Vanilla Forums logo */
 .PoweredByVanilla {
 	filter: brightness(120%) !important;
 	background-image: url("https://cdn.rawgit.com/the-j0k3r/c7faf51a3076eea7e4ab0ae9dabea084/raw/aa794f5d843da1d876af2753531d8d5dfffb7a63/vanilla-forums.svg") !important;
@@ -795,19 +818,23 @@ a.Close {
 }
 
 /* Added shake that spice */
-@keyframes  shake-it {
+@keyframes shake-it {
 	from {
 		transform: scale3d(1, 1, 1);
 	}
+
 	10%, 20% {
 		transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
 	}
+
 	30%, 50% ,70% ,90% {
 		transform: scale3d(1.1 ,1.1, 1.1) rotate3d(0, 0, 1, 3deg);
 	}
+
 	40%, 60%, 80% {
 		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
 	}
+
 	to {
 		transform: scale3d(1.1, 1.1 ,1.1) rotate3d(0, 0, 1, 4deg)
 	}
@@ -818,14 +845,14 @@ a.Close {
 	animation-duration: 1s !important;
 }
 
-/* ====== Discussions ======= */
-/*
+/* # Discussions
+
 Note: The Vanilla Discussion List has the following classes applied to
-  individual list elements and can be styled:
-  + Bookmarked: the user has bookmarked that topic
-  + Announcement: the discussion has been announced
-  + Mine: the user created the discussion
-  + New: there are new comments since the last viewed the discussion
+      individual list elements and can be styled:
+      + Bookmarked: the user has bookmarked that topic
+      + Announcement: the discussion has been announced
+      + Mine: the user created the discussion
+      + New: there are new comments since the last viewed the discussion
 */
 a.Bookmark:hover {
 	filter: grayscale(100%) brightness(400%) !important;
@@ -843,68 +870,67 @@ a.Bookmarking, a.Bookmarking:hover {
 	filter: grayscale(100%) brightness(500%) !important;
 }
 
-/* I dug up the original  tag color 2A529A from the vanilla OSS repo */
+/* Match the style base color */
 .Tag {
-    background: #5c81ba !important;
-    color: #eee !important;
+	background: #5c81ba !important;
+	color: #eee !important;
 }
 
 .Tag a {
-    color: #eee !important;
+	color: #eee !important;
 }
 
 .Tag.Closed, .Tag.Tag-Closed {
-    background: #315d80 !important;
+	background: #315d80 !important;
 }
 
 .Tag.Category {
-    background: #726b3e !important;
-    font-weight: normal !important;
+	background: #726b3e !important;
+	font-weight: normal !important;
 }
 
 .Tag.Category a {
-    color: #ddd !important;
+	color: #ddd !important;
 }
 
 .Tag.Tag-Banned {
-    background-color: #780000 !important;
+	background-color: #780000 !important;
 }
 
-/* =========== Category & Discussions Table Views =========== */
+/* Category & Discussions Table Views */
 .DataTable {
 	background: #292929 !important;
 }
 
 .DataTable td {
-    border-bottom: 1px solid #ddd !important;
+	border-bottom: 1px solid #ddd !important;
 }
 
 .MiniPager {
-    display: inline-block !important;
-    margin-left: 3px !important;
-    font-size: 11px !important;
-    color: #eee !important;
+	display: inline-block !important;
+	margin-left: 3px !important;
+	font-size: 11px !important;
+	color: #eee !important;
 }
 
 tr.CategoryHeading td {
-    font-weight: bold !important;
-    background: #222 !important;
+	font-weight: bold !important;
+	background: #222 !important;
 }
 
 /* Discussion Sorter */
-
 .DiscussionSorter:hover {
-    cursor: pointer !important;
-    background: #444 !important;
+	cursor: pointer !important;
+	background: #444 !important;
 }
 
 .DiscussionSorter .Selected {
-    border: 1px solid rgba(169, 38, 38, 0) !important;
+	border: 1px solid rgba(169, 38, 38, 0) !important;
 }
 
 .DiscussionSorter .Open .Selected {
-    border: 1px solid #999 !important;
-    border-bottom: none !important;
+	border: 1px solid #999 !important;
+	border-bottom: none !important;
 }
 
 #single_discussion {
@@ -912,15 +938,15 @@ tr.CategoryHeading td {
 }
 
 .SpRSS {
-    background: url("https://forum.userstyles.org/applications/dashboard/design/images/sprites.png") no-repeat -27px -46px transparent !important;
-    display: inline-block !important;
-    height: 14px !important;
-    vertical-align: middle !important;
-    width: 14px !important;
+	background: url("https://forum.userstyles.org/applications/dashboard/design/images/sprites.png") no-repeat -27px -46px transparent !important;
+	display: inline-block !important;
+	height: 14px !important;
+	vertical-align: middle !important;
+	width: 14px !important;
 }
 
 .DiscussionForm label {
-    color: #777 !important;
+	color: #777 !important;
 }
 
 .P > label:first-child, .Category label:first-child, .List > label:first-child {
@@ -928,360 +954,368 @@ tr.CategoryHeading td {
 }
 
 .FormWrapper {
-    background: #191919 !important;
+	background: #191919 !important;
 	border: 1px solid #444 !important;
 }
 
 .StructuredForm input.hasDatepicker, .StructuredForm input.hasDatepicker:focus {
-    background-image: url('https://forum.userstyles.org/applications/dashboard/design/images/calendar.png') !important;
-    background-repeat: no-repeat !important;
-    background-position: center right !important;
-    padding-right: 24px !important;
+	background-image: url('https://forum.userstyles.org/applications/dashboard/design/images/calendar.png') !important;
+	background-repeat: no-repeat !important;
+	background-position: center right !important;
+	padding-right: 24px !important;
 }
 
-/* ======== Conversations ======== */
+/* Conversations */
 .ac_results {
-    padding: 0 !important;
-    border: 1px solid #555 !important;
-    border-top: 0 !important;
-    background-color: #333 !important;
-    overflow: hidden !important;
-    z-index: 99999 !important;
+	padding: 0 !important;
+	border: 1px solid #555 !important;
+	border-top: 0 !important;
+	background-color: #333 !important;
+	overflow: hidden !important;
+	z-index: 99999 !important;
 }
 
 .ac_results li {
-    margin: 0 !important;
-    padding: 5px !important;
-    cursor: default !important;
-    display: block !important;
-    /*
-   if width will be 100% horizontal scrollbar will apear
-   when scroll mode will be used
+	margin: 0 !important;
+	padding: 5px !important;
+	cursor: default !important;
+	display: block !important;
+	/*
+   If width will be 100% horizontal scrollbar will appear
+   when scroll mode will be used.
    */
-    /*width: 100%;*/
-    font-size: 12px !important;
-    /*
-   it is very important, if line-height not setted or setted
-   in relative units scroll will be broken in firefox
+	/*width: 100%;*/
+	font-size: 12px !important;
+	/*
+   It is very important, if line-height is not set or set
+   in relative units scroll will be broken in Firefox.
    */
-    line-height: 16px !important;
-    overflow: hidden !important;
-    border-bottom: 1px solid #555 !important;
-    text-align: left !important;
+	line-height: 16px !important;
+	overflow: hidden !important;
+	border-bottom: 1px solid #555 !important;
+	text-align: left !important;
 }
 
 .ac_lastitem {
-    border-bottom: 0 !important;
+	border-bottom: 0 !important;
 }
 
 .ac_results strong {
-    font-weight: bold !important;
-    background: #c7e2ff !important;
+	font-weight: bold !important;
+	background: #333 !important;
 }
 
 .ac_over strong {
-    font-weight: bold;
-    background: #216ebf;
+	font-weight: bold !important;
+	background: #216ebf !important;
 }
 
 .ac_over {
-    background: #004D9F;
-    color: #fff;
+	background: #004D9F !important;
+	color: #eee !important;
 }
 
-/* ========= New Conversation Form ========= */
+/* New Conversation Form */
 #ConversationForm label {
-    color: #999 !important;
+	color: #999 !important;
 }
 
 /* Upload Progress Bar */
 .UploadProgress {
-    color: #333 !important;
-    text-shadow: 0 1px 1px #fff !important;
-    border: 1px solid #0c3c7e !important;
+	color: #333 !important;
+	text-shadow: 0 1px 1px #fff !important;
+	border: 1px solid #0c3c7e !important;
 }
 
 /* Container */
 .Border {
-    border-radius: 8px;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    background: #222 !important;
-    padding: 10px;
+	border-radius: 8px !important;
+	-moz-border-radius: 8px !important;
+	-webkit-border-radius: 8px !important;
+	background: #333 !important;
+	padding: 10px !important;
 }
 
 /* Tabs */
 ul.Tabs li a {
-    border: 1px solid #555 !important;
-    background: #333 !important;
-    color: #aaa !important;
+	border: 1px solid #555 !important;
+	background: #333 !important;
+	color: #aaa !important;
 }
 
 ul.Tabs li a:hover {
-    background: #444 !important;
-    color: #eee !important;
+	background: #444 !important;
+	color: #eee !important;
 }
 
 ul.Tabs li a.Active {
-    padding: 2px 8px !important;
-    background: #222 !important;
-    color: #eee !important;
+	padding: 2px 8px !important;
+	background: #222 !important;
+	color: #eee !important;
 }
 
-/* ==== Entry Screens *==== */
+/* Entry Screens */
 span.Incorrect {
-    color: red !important;
+	color: #c81818 !important;
 }
 
-/* need to verify these password strenght selectors */
+/*
+Reminder: need to verify these password strength selectors
+*/
 .PasswordStrength .Background {
-    background-color: #000 !important;
+	background-color: #000 !important;
   }
 
 .PasswordStrength .Strength {
-    background-color: #c81818 !important;
+	background-color: #c81818 !important;
 }
 
 .PasswordStrength .Separator {
-    background-color: #555 !important;
+	background-color: #555 !important;
 }
 
 .PasswordStrength.Score-0 .StrengthText {
-    color: #aaa !important;
+	color: #aaa !important;
 }
 
 .PasswordStrength.Score-1 .Strength {
-    background-color: #C81818 !important;
-    width: 20% !important;
+	background-color: #C81818 !important;
+	width: 20% !important;
 }
 
 .PasswordStrength.Score-1 .StrengthText {
-    color: #C81818 !important;
+	color: #C81818 !important;
 }
 
 .PasswordStrength.Score-2 .Strength {
-    background-color: #FF891D !important;
-    width: 40% !important;
+	background-color: #FF891D !important;
+	width: 40% !important;
 }
 
 .PasswordStrength.Score-2 .StrengthText {
-    color: #FF891D !important;
+	color: #FF891D !important;
 }
 
 .PasswordStrength.Score-3 .Strength {
-    background-color: #FFAC1D !important;
-    width: 60% !important;
+	background-color: #FFAC1D !important;
+	width: 60% !important;
 }
 
 .PasswordStrength.Score-3 .StrengthText {
-    color: #FFAC1D !important;
+	color: #FFAC1D !important;
 }
 
 .PasswordStrength.Score-4 .Strength {
-    background-color: #A6C060 !important;
-    width: 80% !important;
+	background-color: #A6C060 !important;
+	width: 80% !important;
 }
 
 .PasswordStrength.Score-4 .StrengthText {
-    color: #A6C060 !important;
+	color: #A6C060 !important;
 }
 
 .PasswordStrength.Score-5 .Strength {
-    background-color: #27B30F !important;
-    width: 100% !important;
+	background-color: #27B30F !important;
+	width: 100% !important;
 }
 
 .PasswordStrength.Score-5 .StrengthText {
-    color: #27B30F !important;
+	color: #27B30F !important;
 }
 
 /* Handshake */
 body#dashboard_entry_handshake ul.NewAccount {
-    float: left !important;
-    width: 315px !important;
-    margin-right: 44px !important;
-    border-right: 1px solid #A5D0E7 !important;
+	float: left !important;
+	width: 315px !important;
+	margin-right: 44px !important;
+	border-right: 1px solid #555 !important;
 }
 
 body#dashboard_entry_handshake .Info {
-    border: 1px solid #A5D0E7 !important;
-    background: #D3F0FF !important;
-    color: #02475A !important;
+	border: 1px solid #555 !important;
+	background: #333 !important;
+	color: #ccc !important;
 }
 
 body#dashboard_entry_handshake #Content h2 {
-    color: #02475A !important;
+	color: #ccc !important;
 }
 
 /* Leaving Page */
 .FinePrint {
-    color: #777 !important;
+	color: #ccc !important;
 }
 /*
-Do not customize these unless you enjoy pain, or they dont work as nicely
-on a dark background like Userstyles Inspired Dark awesome theme.
+Do not customize these unless you enjoy pain, or they don't work as nicely
+on a dark background like Userstyles Inspired Dark (awesome) theme.
+
+Error messages that get displayed on forms throughout the application.
 */
-/* Error messages that get displayed on forms throughout the application. */
 .Errors ul {
-    border: 1px solid #ff2518 !important;
-    background: #470700 !important;
+	background: #300 !important;
+	border: 1px solid #b00 !important;
 }
 
 .Errors a {
-    color: #ddd !important;
+	color: #ddd !important;
 }
 
 .error {
-	color: #ff2518 !important;
+	color: #f44 !important;
 }
 
 .Errors ul li {
-    color: #ddd !important;
-    background: #470700 !important;
+	color: #ddd !important;
+	background: #300 !important;
 }
 
 div.Popup .Errors ul {
-    border: 1px solid #ff2518 !important;
+	border: 1px solid #f44 !important;
 }
 
 .Errors pre, .Errors pre * {
-    background: #949000 !important;
-    color: #333 !important;
+	background: #949000 !important;
+	color: #333 !important;
 }
-
-/* Note: InformMessages are "growl" style messages that appear in a fixed
-position on the page to notify users of things like drafts being saved, etc. */
+/*
+Note: InformMessages are "growl" style messages that appear in a fixed
+position on the page to notify users of things like drafts being saved, etc.
+*/
 .InformMessages .InformMessage {
-    color: #eee !important;
-    text-shadow: 0 1px 1px #000 !important;
-    background: #191919 !important;
+	color: #eee !important;
+	text-shadow: 0 1px 1px #000 !important;
+	background: #191919 !important;
 	border: 1px solid #555 !important;
 	white-space: pre-wrap !important;
 }
 
 .InformMessages .InformMessage:hover {
-    background: #292929 !important;
+	background: #292929 !important;
 }
 
 .InformMessages .InformMessage a {
-    color: #eee !important;
+	color: #eee !important;
 }
 
 .InformMessages .InformMessage a:hover {
-    color: #fff !important;
-    text-decoration: underline !important;
+	color: #fff !important;
+	text-decoration: underline !important;
 }
 
 .InformMessages .InformMessage a.Close {
-    background: transparent !important;
-    color: #ddd !important;
+	background: transparent !important;
+	color: #ddd !important;
 }
 
 .InformMessages .InformMessage a.Close span {
-    display: inline !important;
+	display: inline !important;
 }
 
 .InformMessages .InformMessage a.Close:hover {
-    background: #292929 !important;
-    color: #fff !important;
+	background: #292929 !important;
+	color: #fff !important;
 }
 
-/* ====== iPad/iPhone  ====== */
+/* iPad/iPhone */
 @media only screen and (device-width: 768px), only screen and (max-device-width: 480px) {
-    .InformMessages .InformMessage a.Close {
-        color: #eee !important;
-        display: block !important;
-    }
+	.InformMessages .InformMessage a.Close {
+		color: #eee !important;
+		display: block !important;
+	}
 
-    .Item .OptionsTitle {
-        visibility: visible !important;
-    }
+	.Item .OptionsTitle {
+		visibility: visible !important;
+	}
 }
 
 /* Small screens */
 .InformMessages .Actions a.CancelAction {
-    color: #aaa !important;
+	color: #aaa !important;
 }
 
-/* Inform Sprites */
-/* ====== Embedded Discussion & Comment Customizations ====== */
+/* # Inform Sprites
+
+Embedded Discussion & Comment Customizations
+*/
 .EmbedCommentForm {
-    border-top: 1px solid #555 !important;
+	border-top: 1px solid #555 !important;
 }
 
 .EmbedCommentForm .Author {
-    display: inline-block !important;
-    font-size: 11px !important;
-    color: #777 !important;
-    padding: 0 8px 0 0 !important;
+	display: inline-block !important;
+	font-size: 11px !important;
+	color: #777 !important;
+	padding: 0 8px 0 0 !important;
 }
 
-/* ======= Regarding ======== */
+/* Regarding */
 
 .RegardingEvent {
-    padding: 10px !important;
-    padding-left: 38px !important;
-    color: #eee !important;
-    text-shadow: 0 1px 1px #000 !important;
-    background: #111 !important;
+	padding: 10px !important;
+	padding-left: 38px !important;
+	color: #eee !important;
+	text-shadow: 0 1px 1px #000 !important;
+	background: #111 !important;
 }
 
 .RegardingEvent a.ReportedUser,
 .RegardingEvent a.ReportingUser {
-    color: #CFECFF !important;
+	color: #eee !important;
 }
 
 .RegardingEvent .RegardingTime {
-    font-size: 9px !important;
-    text-transform: uppercase !important;
-    color: #B1B1B1 !important;
+	font-size: 9px !important;
+	text-transform: uppercase !important;
+	color: #B1B1B1 !important;
 }
 
 .RegardingActions .ActionButton {
-    color: #eee !important;
-    text-shadow: 0 1px 1px #000 !important;
-    background: #111 !important;
+	color: #eee !important;
+	text-shadow: 0 1px 1px #000 !important;
+	background: #111 !important;
 }
 
 .RegardingActions .ActionButton a {
-    color: #CFECFF !important;
+	color: #eee !important;
 }
 
 .SpEditProfile {
 	filter: invert(100%) !important;
 }
 
-/* === Reaction Sprites === */
+/* Reaction Sprites */
 .ReactSprite {
-    background-image: url("http://cdn.vanillaforums.com/images/sprites-14-000000.png") !important;
+	background-image: url("http://cdn.vanillaforums.com/images/sprites-14-000000.png") !important;
 	filter: invert(100%) !important;
  }
-
-/* Switch to the white icons when hovering over a menuitem sprite */
+/*
+Switch to the white icons when hovering over a menuitem sprite.
+*/
 .MenuItems a:hover .ReactSprite, .MenuItems a:hover .Sprite {
-    background-image: url('http://cdn.vanillaforums.com/images/sprites-14-fff.png') !important;
+	background-image: url('http://cdn.vanillaforums.com/images/sprites-14-fff.png') !important;
 }
-
-/* Switch to bordered icons for user reaction overlays */
+/*
+Switch to bordered icons for user reaction overlays.
+*/
 .UserReactionWrap .ReactSprite {
-    background-image: url('http://cdn.vanillaforums.com/images/sprites-14-000-bordered.png') !important;
+	background-image: url('http://cdn.vanillaforums.com/images/sprites-14-000-bordered.png') !important;
 }
-
-/* Embedded Video Preview Hide/Reveal */
+/*
+Embedded Video Preview Hide/Reveal.
+*/
 .Video.YouTube .VideoPreview:after {
-    background: url('http://cdn.vanillaforums.com/images/youtube-overlay-button.png') 0 -44px no-repeat transparent !important;
+	background: url('http://cdn.vanillaforums.com/images/youtube-overlay-button.png') 0 -44px no-repeat transparent !important;
 }
 
 /* Token input */
-
 ul.token-input-list {
-    border: 1px solid #444 !important;
-    color: #eee !important;
-    background-color: #191919 !important;
+	border: 1px solid #444 !important;
+	color: #eee !important;
+	background-color: #191919 !important;
 }
 
 ul.token-input-list-focus, ul.token-input-list-focus input {
-    background: #dc1a1a !important;
+	background: #dc1a1a !important;
 }
 
 li.token-input-input-token {
@@ -1289,8 +1323,8 @@ li.token-input-input-token {
 }
 
 li.token-input-token {
-    border: 1px solid #777 !important;
-    background-color: #444 !important;
+	border: 1px solid #777 !important;
+	background-color: #444 !important;
 	color: #aaa !important;
 }
 
@@ -1303,155 +1337,154 @@ li.token-input-token p {
 }
 
 li.token-input-token.not-allowed {
-    background: #470700 !important;
-    border: 1px solid #ff2518 !important;
-    color: #ddd !important;
+	background: #300 !important;
+	border: 1px solid #b00 !important;
+	color: #ddd !important;
 }
 
 li.token-input-token.not-allowed span {
-    color: #C91313 !important;
+	color: #C91313 !important;
 }
 
 li.token-input-selected-token {
-    background-color: #777 !important;
+	background-color: #777 !important;
 }
 
 li.token-input-selected-token.not-allowed {
-    background: #470700 !important;
-    border: 1px solid #ff2518 !important;
-    color: #ddd !important;
+	background: #300 !important;
+	border: 1px solid #b00 !important;
+	color: #ddd !important;
 }
 
 li.token-input-selected-token.not-allowed span {
-    color: #ddd !important;
+	color: #ddd !important;
 }
 
 div.token-input-dropdown {
-    background-color: #333 !important;
-    border: 1px solid #777 !important;
+	background-color: #333 !important;
+	border: 1px solid #777 !important;
 }
 
 div.token-input-dropdown ul li {
-    background-color: #333 !important;
+	background-color: #333 !important;
 }
 
 div.token-input-dropdown ul li.token-input-dropdown-item {
-    background-color: #333 !important;
+	background-color: #333 !important;
 	color: #999 !important;
 }
 
 div.token-input-dropdown ul li.token-input-dropdown-item2 {
-    background-color: #333 !important;
+	background-color: #333 !important;
 	color: #999 !important;
 }
 
 div.token-input-dropdown ul li.token-input-selected-dropdown-item {
-    background-color: #555 !important;
+	background-color: #555 !important;
 	color: #eee !important;
 }
-/**
- * At mentions in core, moved from advanced editor.
- */
+/*
+At mentions in core, moved from advanced editor.
+*/
 .atwho-view {
-    font: normal 14px/1.7em 'lucida grande', 'Lucida Sans Unicode', tahoma, sans-serif;
-    background: #333 !important;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;;
+	font: normal 14px/1.7em 'lucida grande', 'Lucida Sans Unicode', tahoma, sans-serif;
+	background: #333 !important;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;;
 }
 
 .atwho-view .cur {
-    background: #1875a5 !important;
-    color: #fff !important;
+	background: #5c81ba !important;
+	color: #fff !important;
 }
 
 .atwho-view .cur small {
-    color: #fff !important;
+	color: #fff !important;
 }
 
 .atwho-view strong {
-    color: #1875a5 !important;
+	color: #6b9ae2 !important;
 }
 
 .atwho-view .cur strong {
-    color: #fff !important;
-    font-weight: bold !important;
+	color: #fff !important;
+	font-weight: bold !important;
 }
 
 .atwho-view ul li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
 
 .atwho-view small {
-    color: #fff !important;
+	color: #fff !important;
 }
 
 /* Socialcons*/
 .SocialIcon {
-    color: #fff !important;
+	color: #fff !important;
 }
 
 .SocialIcon .Text {
-    padding: 0 15px 0 10px !important;
-    border-left: 1px solid #555 !important;
+	padding: 0 15px 0 10px !important;
+	border-left: 1px solid #555 !important;
 }
 
 .SocialIcon-Facebook, .SocialIcon-Facebook.HasText .Icon {
-    background-color: #36609e !important;
+	background-color: #36609e !important;
 }
 
 .SocialIcon-Facebook:hover {
-    background-color: #294978 !important;
+	background-color: #294978 !important;
 }
 
 .SocialIcon-Twitter, .SocialIcon-Twitter.HasText .Icon {
-    background-color: #2aa8df !important;
+	background-color: #2aa8df !important;
 }
 
 .SocialIcon-Twitter:hover {
-    background-color: #1c8aba !important;
+	background-color: #1c8aba !important;
 }
 
 .SocialIcon-Google, .SocialIcon-Google.HasText .Icon {
-    background-color: #da5442 !important;
+	background-color: #da5442 !important;
 }
 
 .SocialIcon-Google:hover {
-    background-color: #c33926 !important;
+	background-color: #c33926 !important;
 }
 
 .SocialIcon-OpenID, .SocialIcon-OpenID.HasText .Icon {
-    background-color: #f7921c !important;
+	background-color: #f7921c !important;
 }
 
 .SocialIcon-OpenID:hover {
-    background-color: #d87808 !important;
+	background-color: #d87808 !important;
 }
 
 .SocialIcon-LinkedIn, .SocialIcon-LinkedIn.HasText .Icon {
-    background-color: #066c9a !important;
+	background-color: #066c9a !important;
 }
 
 .SocialIcon-LinkedIn:hover {
-    background-color: #044a69 !important;
+	background-color: #044a69 !important;
 }
 
 .SocialIcon-Disqus, .SocialIcon-Disqus.HasText .Icon {
-    background-color: #2e9fff !important;
+	background-color: #2e9fff !important;
 }
 
 .SocialIcon-Disqus:hover {
-    background-color: #0087fa !important;
+	background-color: #0087fa !important;
 }
 
 .SocialIcon-GitHub, .SocialIcon-GitHub.HasText .Icon {
-    background-color: #6b9ecf !important;
+	background-color: #6b9ecf !important;
 }
 
 .SocialIcon-GitHub:hover {
-    background-color: #4485c3 !important;
+	background-color: #4485c3 !important;
 }
 
-/*
-## Alerts
+/* # Alerts
 
 .alert-info    - Informative alert
 .alert-warning - Warning alert
@@ -1460,78 +1493,71 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item {
 Styleguide Alerts
 */
 .item-attachment .alert {
-    color: #eee !important;
-    background-color: #414d56 !important;
-    border-color: #69869c !important;
+	background: #182030 !important;
+	border: 1px solid #6b9ae2 !important;
+	color: #ddd !important;
 }
 
 .item-attachment .alert a {
-    color: #eee !important;
+	color: #6b9ae2 !important;
 }
 
 .item-attachment .alert hr {
-    border-top-color: #69869c !important;
-}
-
-.item-attachment .alert a {
-    /*   font-weight: bold;*/
+	border-top-color: #6b9ae2 !important;
 }
 
 /* Informative alert */
-
 .item-attachment .alert-info {
-    color: #222 !important;
-    background-color: #f9edbe !important;
-    border-color: #f9edbe !important;
+	background-color: #261d08 !important;
+	border-color: #542 !important;
+	color: #ddd !important;
 }
 
 .item-attachment .alert-info a {
-    color: #090909 !important;
+	color: #ffc000 !important;
 }
 
 .item-attachment .alert-info hr {
-    border-top-color: #f7e7a7 !important;
+	border-top-color: #542 !important;
 }
 
 /* Warning alert */
-
 .item-attachment .alert-warning {
-    color: #222 !important;
-    background-color: #ffcc00 !important;
-    border-color: #fce9a0 !important;
+	background-color: #261d08 !important;
+	border-color: #542 !important;
+	color: #ddd !important;
 }
 
 .item-attachment .alert-warning a {
-    color: #090909 !important;
+	color: #ffc000 !important;
 }
 
 .item-attachment .alert-warning hr {
-    border-top-color: #e6b800 !important;
+	border-top-color: #542 !important;
 }
 
 /* Danger alert */
-
 .item-attachment .alert-danger {
-    color: #ddd !important;
-    background-color: #470700 !important;
-    border-color: #ff2518 !important;
+	background-color: #300 !important;
+	border-color: #b00 !important;
+	color: #ddd !important;
 }
 
 .item-attachment .alert-danger a {
-    color: #eee !important;
+	color: #f44 !important;
 }
 
 .item-attachment .alert-danger hr {
-    border-top-color: #a00000 !important;
+	border-top-color: #b00 !important;
 }
-/*
-## Base item
+/* # Base item
+
 Styleguide Item
 */
 .item-attachment .item-meta {
-    font-size: 12px !important;
-    line-height: 20px !important;
-    color: #999 !important;
+	font-size: 12px !important;
+	line-height: 20px !important;
+	color: #999 !important;
 }
 
 .advancedsettings_shown {
@@ -1588,32 +1614,34 @@ select {
 }
 
 /*
-I dont really use mobile, but here is a couple of glaring issues.
-Enter the Mobile fixes
+Note: I don't really use mobile, but here is a couple of glaring issues.
+Enter some Mobile fixes.
 */
 .Banner ul li a {
-    font-weight: bold !important;
-    color: #ccc !important;
-    display: block !important;
+	font-weight: bold !important;
+	color: #ccc !important;
+	display: block !important;
 }
 
 .Banner ul li a:hover {
-    background: #6b9ae2 !important;
+	background: #6b9ae2 !important;
 }
 
 ul.Discussions {
-    background: #222 !important;
+	background: #222 !important;
 }
 
-/* Fixes suggested by @Stonecrusher */
+/*
+Fixes suggested by @Stonecrusher
+*/
 time, .DateUpdated {
 	font-size: 0 !important;
 }
 
 /*
-The time/date changes introduce a author name wrapping author name looks ugly.
-the .ShowDiscussionAuthor nowrap. fix  also puts the time/date in a newline and
-that has a  margin causing the date/time text to not alignt left.
+The time/date changes introduce a author name wrapping which looks ugly.
+the .ShowDiscussionAuthor nowrap. This  also puts the time/date in a newline and
+that has a padding causing the date/time text to not align left properly.
 To fix this introduced a margin-left: -6px for now.
 */
 time:before, .DateUpdated:before  {
@@ -1621,16 +1649,15 @@ time:before, .DateUpdated:before  {
 	font-size: 11px !important;
 	margin-left: -6px !important;
 }
-
-/* another bug caused by time/date changes when viewing
-e.g https://forum.userstyles.org/profile/194399/J0k3r */
-
+/*
+another bug caused by time/date changes when viewing
+e.g https://forum.userstyles.org/profile/194399/J0k3r
+*/
 .Joined, .LastActive {
 	margin-right: 6px !important;
 }
-
 /*
-The time/date chages introduce a break in author name, affected are:
+The time/date changes introduce a break in author name, affected are:
 categories/Style Reviews
 categories/Style Development
 categories/Stylish
@@ -1651,12 +1678,14 @@ To fix this introduced a .ShowDiscussionAuthor nowrap.
 .DataList > .Item {
 	padding-bottom: 2px !important;
 }
-/* excerpts  are being pushed ontop of eash other
-fix line height and increase font size a bit. */
+/*
+Excerpts are being pushed ontop of each other
+fix line height and increase font size a bit.
+*/
 .DataList .Excerpt {
-    font-size: 14px !important;
-    line-height: 1.9 !important;
-    margin: 5px 0 !important;
+	font-size: 14px !important;
+	line-height: 1.9 !important;
+	margin: 5px 0 !important;
 }
 }
 
@@ -1665,6 +1694,7 @@ fix line height and increase font size a bit. */
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+/*! Type    : Website */
 #title_long a, #title_long a:active, #title_long a:hover,
 #title_long a:visited, #title_long a:visited {
 	color: #aaa !important;
@@ -1678,7 +1708,9 @@ fix line height and increase font size a bit. */
 	box-shadow: inset 0 -1px 0 0 #444 !important;
 }
 
-/* fix https://github.com/the-j0k3r/userstyles-inspired-dark/issues/2 */
+/*
+Fix https://github.com/the-j0k3r/userstyles-inspired-dark/issues/2
+*/
 .style_card_long .screenshot_img {
 	width: 160px !important;
 	height: 88px !important;
@@ -1797,18 +1829,8 @@ h4:first-child > a:first-child:hover {
 	color: #bbb !important;
 }
 
-#search_input {
-	background-color: #000 !important;
-	border: none !important;
-}
-
-#input_text_search {
-	color: #ccc !important;
-	border: none !important;
-}
-
 #navigation {
-    background: #222 !important;
+	background: #222 !important;
 }
 
 .navigation_title {
@@ -1845,6 +1867,24 @@ div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1)
 	box-shadow: 0 7px 12px 0 rgba(22, 22, 22, .75), 1px 0 0 0 #222 !important;
 }
 
+#input_text_search::-webkit-input-placeholder, #input_text_search:-moz-placeholder,
+#input_text_search::-moz-placeholder {
+	color: #ccc !important;
+}
+
+#search_input {
+	background-color: #111 !important;
+}
+
+#search_input input {
+	color: #aaa !important;
+	background-color: #111 !important;
+}
+
+#search_image_div {
+	filter: grayscale(40%) hue-rotate(30deg) brightness(90%) !important;
+}
+
 #create_new_style {
 	background:  #334666 !important;
 	border: solid 1px #6b9ae2 !important;
@@ -1860,8 +1900,7 @@ div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1)
 	color: #6b9ae2 !important;
 }
 
-/* ========== Caroussel ============ */
-
+/* Carousel */
 #left-arrow-carousel, #right-arrow-carousel {
 	filter: invert(100%) brightness(230%) !important;
 	opacity: 0.7 !important;
@@ -1919,17 +1958,15 @@ div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1)
 }
 
 .oval-active {
-	background-color: #6b9ae2;
-	box-shadow: 0 6px 16px 0 #6b9ae2;
+	background-color: #6b9ae2 !important;
+	box-shadow: 0 6px 16px 0 #6b9ae2 !important;
 }
 
 .oval {
 	background-color: #ddd !important;
-	border-radius: 4px;
-	margin-right: 10px;
+	border-radius: 4px !important;
+	margin-right: 10px !important;
 }
-
-/* ======== End Caroussel ======== */
 
 .style_category_card_wrapper {
 	background-color: #191919 !important;
@@ -2154,7 +2191,9 @@ a.btn-auth:visited {
 	color: #ccc !important;
 }
 
-/* More or less the main link color? no? :) */
+/*
+More or less the main link color? no? :)
+*/
 .rectangle_view_img, .view_mode_img {
 	filter: invert(20%) brightness(105%) !important
 }
@@ -2311,7 +2350,9 @@ a.btn-twitter:visited {
 	color: #327695 !important;
 }
 
-/* hack to center text, I know default style doesnt do this but hey */
+/*
+Hack to center text, I know default style doesn't do this but hey.
+*/
 .btn-password:before {
 	width: 2px !important;
 }
@@ -2331,38 +2372,38 @@ a.btn-twitter:visited {
 }
 
 .author-name a {
-	color: #5c81ba  !important;
+	color: #5c81ba !important;
 	font-size: 16px !important;
 }
 
 .author-name a:hover {
-	color: #6b9ae2   !important;
+	color: #6b9ae2 !important;
 	font-size: 16px !important;
 }
 
 #discussions .good-rating {
-	list-style-image: url(https://userstyles.org/assets/reviews/good-df758b70add644e2f557e9dc75a592b69deb03ca3136de7b2cc3b5f1695bcf09.gif) !important;
+	list-style-image: url("https://userstyles.org/assets/reviews/good-df758b70add644e2f557e9dc75a592b69deb03ca3136de7b2cc3b5f1695bcf09.gif") !important;
 }
 
 #discussions .bad-rating {
-	list-style-image: url(https://userstyles.org/assets/reviews/bad-3be76cde5b6257834ef094aa948693862feb4a608da7dad3fad7939ff628d66c.gif) !important;
+	list-style-image: url("https://userstyles.org/assets/reviews/bad-3be76cde5b6257834ef094aa948693862feb4a608da7dad3fad7939ff628d66c.gif") !important;
 }
 
 #discussions .ok-rating {
-	list-style-image: url(https://userstyles.org/assets/reviews/ok-126eec5cb6a11c6e195e55892a82630072ff46dc707f71b378b2b8d679f5ced0.png) !important;
+	list-style-image: url("https://userstyles.org/assets/reviews/ok-126eec5cb6a11c6e195e55892a82630072ff46dc707f71b378b2b8d679f5ced0.png") !important;
 }
 
 #discussions .no-rating {
-	list-style-image: url(https://userstyles.org/assets/reviews/question-b26b16a0770515533db6ed7104e367c6de9c2fe4e66ecd2a7c6074451de055ae.png) !important;
+	list-style-image: url("https://userstyles.org/assets/reviews/question-b26b16a0770515533db6ed7104e367c6de9c2fe4e66ecd2a7c6074451de055ae.png") !important;
 }
 
 #as_userscript a {
 	color: #5c81ba !important;
-	text-decoration: underline !important;
+	text-decoration: none !important;
 }
 
 #as_userscript a:hover, #as_userscript a:visited, #as_userscript a:visited:hover {
-	color: #5a7fcb !important;
+	color: #6b9ae2 !important;
 	text-decoration: underline !important;
 }
 
@@ -2403,8 +2444,8 @@ a.btn-twitter:visited {
 }
 
 .errorExplanation {
-    border: 1px solid #ff2518 !important;
-    background: #470700 !important;
+	border: 1px solid #b00 !important;
+	background: #300 !important;
 }
 
 .deletion-reason {
@@ -2524,7 +2565,7 @@ a.btn-twitter:visited {
 	height: 105px !important;
 	border-radius: 4px !important;
 	background-color: #2b7fb7 !important;
-	background-image: url(https://userstyles.org/assets/welcome-logo-43ae76249135f00c9fbc9cc7ba6d199f7bac494f89e45fdcc2ec30eaeb34d4e2.svg) !important;
+	background-image: url("https://userstyles.org/assets/welcome-logo-43ae76249135f00c9fbc9cc7ba6d199f7bac494f89e45fdcc2ec30eaeb34d4e2.svg") !important;
 }
 
 .welcome-logo-text {
@@ -2607,7 +2648,6 @@ a.selected {
 .statistic table, th, td {
 	border: 1px solid #444 !important;
 }
-
 /*
 There is a purposeful margin mis-alignment of the style cards, its distracting.
 Make all margins 11px including the nth-child(3) to counter this.
@@ -2651,8 +2691,9 @@ Make all margins 11px including the nth-child(3) to counter this.
 	visibility: visible !important;
 	opacity: 0.7 !important;
 }
-
-/* could be removed optionally in future */
+/*
+Could be removed optionally in future
+*/
 #top_android_button {
 	background-color: #222 !important;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.43) !important;
@@ -2673,7 +2714,7 @@ Make all margins 11px including the nth-child(3) to counter this.
 	background-color: #444 !important;
 }
 
-#landing_page_div .top_landing_page_div{
+#landing_page_div .top_landing_page_div {
 	background-color: #222 !important;
 }
 
@@ -2720,7 +2761,7 @@ Gremlins or PEBCAK?
 	box-shadow: none !important;
 }
 
-/* =========== Footer =========== */
+/* Footer */
 #footer {
 	background-color: #191919 !important;
 }
@@ -2913,9 +2954,10 @@ Gremlins or PEBCAK?
 }
 
 .CodeMirror-linewidget {
-  position: relative !important;
-  z-index: 2 !important;
-  padding: 0.1px !important; /* Force widget margins to stay inside of the container */
+	position: relative !important;
+	z-index: 2 !important;
+	padding: 0.1px !important;
+	/* Force widget margins to stay inside of the container */
 }
 
 span.CodeMirror-selectedtext {
