@@ -1,6 +1,6 @@
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles-Inspired-Dark */
-/*! Version : 1.16 beta */
+/*! Version : 1.17 beta */
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
@@ -2784,6 +2784,23 @@ Gremlins or PEBCAK?
 
 #rightFooter {
 	filter: contrast(80%) brightness(130%) !important;
+}
+
+.NotificationLine {
+	background: #182030 !important;
+	color: #ddd !important;
+	box-shadow: 0 6px 16px 0 rgba(92, 128, 185, .15) !important;
+}
+
+.NotificationLine-ActionButton {
+	background: #6b9ae2 !important;
+	border: 1px solid #74a7f7 !important;
+	color: #eee !important;
+}
+
+.NotificationLine-ActionButton:hover {
+	background: #5c81ba !important;
+	border: 1px solid #6b9ae2 !important;
 }
 }
 
