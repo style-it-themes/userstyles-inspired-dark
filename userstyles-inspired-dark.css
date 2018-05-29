@@ -1,10 +1,14 @@
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles-Inspired-Dark */
-/*! Version : 1.17 beta */
+/*! Version : 1.18 beta */
 /*! Author  : the-j0k3r */
 /*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
 /*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
 /*! Type    : Forum */
+* {
+	font-family: 'Roboto', sans-serif !important;
+}
+
 body, #nav-view {
 	color: #aaa !important;
 	background: #222 !important;
@@ -69,7 +73,7 @@ td:first-child > input:first-child, #style_pledgie_id, #openid,
 #login-existing, #password-existing, #obsoleting-style-id,
 #edit-style-settings input:not([type]), #edit-style-settings input[type="text"],
 #login-new, #email-new, #password-new, #password-new-confirm,
-#user_password, #user_password_confirmation {
+#user_password, #user_password_confirmation, .edit-option-value-url {
 	background: #000 !important;
 	border: 1px solid #555 !important;
 	color: #ccc !important;
@@ -85,7 +89,7 @@ input.SmallInput:focus, input.InputBox:focus, textarea:focus, td:first-child > i
 #obsoleting-style-id:focus, #edit-style-settings input:not([type]):focus,
 #edit-style-settings input[type="text"]:focus, #login-new:focus, #email-new:focus,
 #password-new:focus, #password-new-confirm:focus, #user_password:focus,
-#user_password_confirmation:focus {
+#user_password_confirmation:focus, .edit-option-value-url:focus {
 	background: #191919 !important;
 }
 
@@ -96,13 +100,13 @@ input.SmallInput:focus, input.InputBox:focus, textarea:focus, td:first-child > i
 	-moz-box-shadow: none !important;
 	-webkit-box-shadow: none !important;
 	border-color: #666 !important;
-	color: #ddd !important;
+	color: #ccc !important;
 	text-shadow: none !important;
 }
 
 .Button:hover {
 	background: #444 !important;
-	color: #ccc !important;
+	color: #eee !important;
 	border-color: #777 !important;
 }
 
@@ -113,18 +117,104 @@ input.SmallInput:focus, input.InputBox:focus, textarea:focus, td:first-child > i
 	-moz-box-shadow: none !important;
 	-webkit-box-shadow: none !important;
 }
+/*
+Fix widget listing.
+*/
+.form-controls td, .form-controls th {
+	border: none !important;
+}
+
+#Form_PostDiscussion, #Form_SaveDraft, #Form_Preview, #Form_SendMessage,
+#Form_PostComment, #Form_StartConversation {
+	height: 25px !important;
+	padding: 5px 6px 7px 6px !important;
+}
+
+#Form_Add {
+	height: 25px !important;
+	padding-top: 6px !important;
+	margin-right: -1px !important;
+}
+
+#Form_SaveComment {
+	height: 27px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	margin-right: -1px !important;
+}
+
+ #Form_Save {
+	height: 25px !important;
+	padding-top: 5px !important;
+	margin-left: -1px !important;
+}
+
+#Form_SavePreferences, #Form_Upload {
+	height: 25px !important;
+	padding-top: 3px !important;
+}
+
+.Button.Cancel {
+	height: auto !important;
+	padding: 5px 6px 5px 6px !important;
+}
+
+.Button.Primary.Okay, #password-login > input:nth-child(7) {
+	height: 25px !important;
+	padding: 0 6px 0 6px !important;
+}
+
+#Form_Go {
+	margin: 0 !important;
+	height: 16px !important;
+	width: 16px !important;
+}
+
+.remove-option, .edit-setting-buttons > input:nth-child(3) {
+	width: 28px !important;
+	height: 28px !important;
+	margin-right: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.move-setting-down, .move-setting-up,
+.move-option-up, .move-option-down {
+	width: 27px !important;
+	height: 27px !important;
+}
+
+.move-setting-down, .move-option-down {
+	font-weight: 900 !important;
+	font-stretch: condensed !important;
+}
+
+.move-setting-up, .move-option-up {
+	font-weight: 900 !important;
+}
 
 input[type="reset"], input[type="button"], input[type="submit"] {
 	color: #ccc !important;
-	padding: 3px 6px 6px 6px !important;
+	padding: 1px 6px 6px 6px !important;
 	background: #333 !important;
 	border: 1px solid #555 !important;
 	border-radius: 3px !important;
+	height: 30px !important;
+	margin: -2px 5px 8px 2px !important;
 }
 
 input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover {
 	color: #eee !important;
 	background: #444 !important;
+}
+
+input[type="reset"]:focus, input[type="button"]:focus, input[type="submit"]:focus {
+	color: #eee !important;
+	background: #444 !important;
+	border: 1px solid #555 !important;
+}
+
+.edit-option-value-url, #edit-style-settings textarea {
+	margin-bottom: 6px !important;
 }
 
 .form-controls > tbody > tr > th, table.form-controls,
@@ -177,13 +267,13 @@ span.Warning, div.Warning {
 }
 
 .Alert {
-	background: #261d08 !important;
-	border: 1px solid #542 !important;
+	background: #300 !important;
+	border: 1px solid #b00 !important;
 	color: #ddd !important;
 }
 
 .Alert a {
-	color: #ffc000 !important;
+	color: #f44 !important;
 }
 
 .Alert a:hover {
@@ -407,8 +497,16 @@ so adding a hack to wrap that part
 	white-space: pre-wrap !important;
 }
 
+.ConnectLabel.TextColor {
+	padding-bottom: 15px !important;
+}
+
 .Box.GuestBox {
 	margin-top: -5px !important;
+}
+
+.Box p {
+	margin-bottom: -10px !important;
 }
 
 .Box h4 {
@@ -634,6 +732,21 @@ body.Post .Popup a.Close {
 	margin-bottom: -3px;
 	/* account for image padding */
 }
+/* Fix the .EmotifyDropdown visibility/style/size IDK if its UHD resolution or what.*/
+.EmotifyDropdown {
+	filter: invert(100%) brightness(250%) !important;
+	width: 24px !important;
+	height: 16px !important;
+	margin-right: 4px !important;
+}
+/*
+Fix prevent the .EmotifyWrapper from showing inside the text area,
+If you type until the textarea end a portion of your text ends up behind
+the .EmotifyDropdown and you cant read it very well.
+*/
+.EmotifyWrapper {
+	top: -25px !important;
+}
 
 blockquote.Quote, blockQuote.UserQuote {
 	background: #313131 !important;
@@ -736,9 +849,13 @@ table.PreferenceGroup th, table.PreferenceGroup td,
 }
 /*
 Fix for  being too far up this normally is 0px no breathing room.
+Also the breadcrumbwrapper was removed by default, this causes mis-alingments.
 */
 .ContentColumn {
-	margin-top: 10px !important;
+	margin-top: 18px !important;
+}
+.UserBox .WhoIs {
+	margin-top: -10px !important;
 }
 
 dl.About dt {
@@ -1320,6 +1437,7 @@ ul.token-input-list-focus, ul.token-input-list-focus input {
 
 li.token-input-input-token {
 	filter: invert(90%) !important;
+	margin-top: -8px !important;
 }
 
 li.token-input-token {
@@ -1594,9 +1712,14 @@ div.setting_div > div > div {
 }
 
 select {
-	border-color: #999 !important;
-	background-color: #111 !important;
+	border: 1px solid #888 !important;
+	background-color: #000 !important;
+	color: #ccc !important;
+}
+
+option {
 	color: #eee !important;
+	background-color: #191919 !important;
 }
 
 #notes_textarea {
@@ -1886,18 +2009,17 @@ div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1)
 }
 
 #create_new_style {
-	background:  #334666 !important;
-	border: solid 1px #6b9ae2 !important;
+	background-color: #2b3955 !important;
+	border: 1px solid #5c81ba !important;
 }
 
 #create_new_style a {
-	color: #ddd !important;
+	color: #eee !important;
 }
 
 #create_new_style:hover {
-	background:  #283751 !important;
-	border: solid 1px #5c85c3 !important;
-	color: #6b9ae2 !important;
+	background: #182030 !important;
+	border: 1px solid #5c81ba !important;
 }
 
 /* Carousel */
