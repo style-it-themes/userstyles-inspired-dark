@@ -1,9 +1,9 @@
 @-moz-document domain("userstyles.org") {
-/*! Name    : Userstyles-Inspired-Dark */
-/*! Version : 1.18 beta */
-/*! Author  : the-j0k3r */
-/*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
-/*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+/*! Name    : Userstyles Inspired Dark */
+/*! Version : 1.19 beta */
+/*! Author  : Style-it Themes by: the-j0k3r */
+/*! Repo    : https://github.com/style-it-themes/userstyles-inspired-dark */
+/*! License : CC-BY-SA-4.0 https://github.com/style-it-themes/userstyles-inspired-dark/LICENSE */
 /*! Type    : Forum */
 * {
 	font-family: 'Roboto', sans-serif !important;
@@ -124,7 +124,7 @@ Fix widget listing.
 	border: none !important;
 }
 
-#Form_PostDiscussion, #Form_SaveDraft, #Form_Preview, #Form_SendMessage,
+#Form_PostDiscussion, #Form_SaveDraft, #Form_Preview,
 #Form_PostComment, #Form_StartConversation {
 	height: 25px !important;
 	padding: 5px 6px 7px 6px !important;
@@ -136,7 +136,7 @@ Fix widget listing.
 	margin-right: -1px !important;
 }
 
-#Form_SaveComment {
+#Form_Flagthis, #Form_SaveComment, #Form_SendMessage {
 	height: 27px !important;
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
@@ -164,7 +164,7 @@ Fix widget listing.
 	padding: 0 6px 0 6px !important;
 }
 
-#Form_Go {
+#Form_Search1, #Form_Go {
 	margin: 0 !important;
 	height: 16px !important;
 	width: 16px !important;
@@ -1813,10 +1813,10 @@ fix line height and increase font size a bit.
 }
 
 @-moz-document domain("userstyles.org") {
-/*! Name    : Userstyles-Inspired-Dark */
-/*! Author  : the-j0k3r */
-/*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
-/*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+/*! Name    : Userstyles Inspired Dark */
+/*! Author  : Style-it Themes by: the-j0k3r */
+/*! Repo    : https://github.com/style-it-themes/userstyles-inspired-dark */
+/*! License : CC-BY-SA-4.0 https://github.com/style-it-themes/userstyles-inspired-dark/LICENSE */
 /*! Type    : Website */
 #title_long a, #title_long a:active, #title_long a:hover,
 #title_long a:visited, #title_long a:visited {
@@ -1824,7 +1824,7 @@ fix line height and increase font size a bit.
 }
 
 .style_author_long {
-  color: #777 !important;
+	color: #777 !important;
 }
 
 .style_card_long {
@@ -2924,14 +2924,20 @@ Gremlins or PEBCAK?
 	background: #5c81ba !important;
 	border: 1px solid #6b9ae2 !important;
 }
+/*
+Fix canvas for stats viewing, numbers are brighter and collumns more subtle.
+*/
+canvas {
+	filter: invert(70%)  contrast(50%) !important;
+}
 }
 
 @-moz-document domain("userstyles.org") {
-/*! Name    : Userstyles-Inspired-Dark */
-/*! Author  : the-j0k3r */
-/*! Repo    : https://github.com/the-j0k3r/userstyles-inspired-dark */
+/*! Name    : Userstyles Inspired Dark */
+/*! Author  : Style-it Themes by: the-j0k3r */
+/*! Repo    : https://github.com/style-it-themes/userstyles-inspired-dark */
 /*! Remix   : https://github.com/StylishThemes/GitHub-Dark/blob/master/themes/codemirror/twilight.min.css */
-/*! License : CC-BY-SA-4.0 https://github.com/the-j0k3r/userstyles-inspired-dark/LICENSE */
+/*! License : CC-BY-SA-4.0 https://github.com/style-it-themes/userstyles-inspired-dark/LICENSE */
 /*! Type    : CodeMirror Twilight Theme */
 .CodeMirror {
 	background: #141414 !important;
