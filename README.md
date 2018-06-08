@@ -1,4 +1,8 @@
-<h1 align="center"><strong>Userstyles Inspired Dark</strong></h1>
+<p align="center">
+  <img alt="style-it-themes-logo" src="https://cdn.rawgit.com/style-it-themes/style-it-themes-logos/master/style-it-themes-logo-full.svg" width="580">
+</p>
+<br>
+<h2 align="center"><strong>Userstyles Inspired Dark</strong></h2>
 
 ## About
 
