@@ -1,13 +1,10 @@
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles Inspired Dark */
-/*! Version : 1.19 beta */
-/*! Author  : Style-it Themes by: the-j0k3r */
-/*! Repo    : https://github.com/style-it-themes/userstyles-inspired-dark */
-/*! License : CC-BY-SA-4.0 https://github.com/style-it-themes/userstyles-inspired-dark/LICENSE */
+/*! Version : 1.20 beta */
+/*! Author  : Style-it by: the-j0k3r */
+/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
+/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
 /*! Type    : Forum */
-* {
-	font-family: 'Roboto', sans-serif !important;
-}
 
 body, #nav-view {
 	color: #aaa !important;
@@ -880,7 +877,7 @@ dl.About dt {
 }
 
 .jcrop-tracker {
-	*background-color: #cd1313 !important;
+	background-color: #cd1313 !important;
 }
 
 .custom .jcrop-vline, .custom .jcrop-hline {
@@ -1507,7 +1504,7 @@ At mentions in core, moved from advanced editor.
 .atwho-view {
 	font: normal 14px/1.7em 'lucida grande', 'Lucida Sans Unicode', tahoma, sans-serif;
 	background: #333 !important;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;
 }
 
 .atwho-view .cur {
@@ -1814,9 +1811,9 @@ fix line height and increase font size a bit.
 
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles Inspired Dark */
-/*! Author  : Style-it Themes by: the-j0k3r */
-/*! Repo    : https://github.com/style-it-themes/userstyles-inspired-dark */
-/*! License : CC-BY-SA-4.0 https://github.com/style-it-themes/userstyles-inspired-dark/LICENSE */
+/*! Author  : Style-it by: the-j0k3r */
+/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
+/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
 /*! Type    : Website */
 #title_long a, #title_long a:active, #title_long a:hover,
 #title_long a:visited, #title_long a:visited {
@@ -2735,7 +2732,7 @@ a.selected {
 
 .popup-message {
 	background-color: #333 !important;
-	border: 1px solid #444 !important;;
+	border: 1px solid #444 !important;
 }
 
 .popup-message p, .popup-message.div {
@@ -2934,10 +2931,10 @@ canvas {
 
 @-moz-document domain("userstyles.org") {
 /*! Name    : Userstyles Inspired Dark */
-/*! Author  : Style-it Themes by: the-j0k3r */
-/*! Repo    : https://github.com/style-it-themes/userstyles-inspired-dark */
+/*! Author  : Style-it by: the-j0k3r */
+/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
 /*! Remix   : https://github.com/StylishThemes/GitHub-Dark/blob/master/themes/codemirror/twilight.min.css */
-/*! License : CC-BY-SA-4.0 https://github.com/style-it-themes/userstyles-inspired-dark/LICENSE */
+/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
 /*! Type    : CodeMirror Twilight Theme */
 .CodeMirror {
 	background: #141414 !important;
