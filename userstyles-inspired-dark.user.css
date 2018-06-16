@@ -2,7 +2,7 @@
 @name         Userstyles Inspired Dark
 @namespace    Style-it Themes
 @homepageURL  https://github.com/style-it/userstyles-inspired-dark
-@version      1.2.0
+@version      1.2.1
 @updateURL    https://raw.githubusercontent.com/style-it-themes/userstyles-inspired-dark/master/userstyles-inspired-dark.user.css
 @description  A userstyles website/forums dark style, that attempts refine styling throughout the website and forums.
 @author       Style-it Themes by: the-j0k3r
@@ -11,8 +11,8 @@
 
 @-moz-document domain("userstyles.org") {
 	/*! Name    : Userstyles Inspired Dark */
-	/*! Version : 1.2.0 beta */
-	/*! Author  : Style-it by: the-j0k3r */
+	/*! Version : 1.2.1 beta */
+	/*! Author  : Style-it Themes by: the-j0k3r */
 	/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
 	/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
 	/*! Type    : Forum */
@@ -208,6 +208,7 @@
 		border-radius: 3px !important;
 		height: 30px !important;
 		margin: -2px 5px 8px 2px !important;
+		font-family: sans-serif !important;
 	}
 
 	input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover {
@@ -873,7 +874,7 @@
 
 	/* Thumbnail Cropper */
 	.jcropper-holder {
-		border: 1px black solid !important;
+		border: 1px #fff solid !important;
 	}
 
 	.jcrop-vline, .jcrop-hline {
@@ -883,12 +884,13 @@
 	}
 
 	.jcrop-handle {
-		border: 1px #eee solid !important;
+		border: 1px #fff solid !important;
 		background-color: #333 !important;
 	}
 
 	.jcrop-tracker {
-		background-color: #cd1313 !important;
+		background-color: #000 !important;
+		opacity: .1 !important;
 	}
 
 	.custom .jcrop-vline, .custom .jcrop-hline {
@@ -1822,7 +1824,7 @@
 
 @-moz-document domain("userstyles.org") {
 	/*! Name    : Userstyles Inspired Dark */
-	/*! Author  : Style-it by: the-j0k3r */
+	/*! Author  : Style-it Themes by: the-j0k3r */
 	/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
 	/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
 	/*! Type    : Website */
@@ -2942,7 +2944,7 @@
 
 @-moz-document domain("userstyles.org") {
 	/*! Name    : Userstyles Inspired Dark */
-	/*! Author  : Style-it by: the-j0k3r */
+	/*! Author  : Style-it Themes by: the-j0k3r */
 	/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
 	/*! Remix   : https://github.com/StylishThemes/GitHub-Dark/blob/master/themes/codemirror/twilight.min.css */
 	/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
