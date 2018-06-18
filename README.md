@@ -16,7 +16,7 @@ A userstyles website/forums dark style, that attempts refine styling throughout 
 | [Userstyles forum](https://forum.userstyles.org/)   |                    | :heavy_check_mark: |
 
 
-:asterisk: Full coverage entails that both are fully covered, its not bug free,  
+:asterisk: Full coverage entails that both are fully covered, its not bug free,
 there are elements that were likely missed.
 
 ## I Found a Bug
@@ -36,39 +36,39 @@ You will need to ideally:
 * Limit to the [K&R (KNF variation style)](https://en.wikipedia.org/wiki/Indentation_style#Variant:_BSD_KNF), and **1 TAB INDENTATION** (not more, and not less than 1 tab).
 
   * K&R - KNF Variation Example:
-    ```css
-    element[attr='value'] {
-    -property: value;
-    }
-    ```
+	```css
+	element[attr='value'] {
+	-property: value;
+	}
+	```
 
   * **Not Allman**
-    ```css
-    element[property='value']
-    {
-    -property: value;
-    }
-    ```
+	```css
+	element[property='value']
+	{
+	-property: value;
+	}
+	```
 
   * Strict space between the `selector` and the `{`:
-    ```css
-    /* good */
-    element[attr='value'] { }
+	```css
+	/* good */
+	element[attr='value'] { }
 
-    /* bad */
-    element[attr='value']{ }
-    ```
+	/* bad */
+	element[attr='value']{ }
+	```
 
   * 1 tab indentation
-    ```css
-    /* good */
-    -property: value;
+	```css
+	/* good */
+	-property: value;
 
-    /* bad */
-    ····property: value;
-    ----property: value;
-    ·property: value;
-    ```
+	/* bad */
+	····property: value;
+	----property: value;
+	·property: value;
+	```
 
 :asterisk: Try to wrap lines at around 80 characters.
 
@@ -83,12 +83,12 @@ You will need to ideally:
 * If you're using a browser extension:
   * Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
   * Stylish - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
-  * FreeStyler is available for [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca).  
+  * FreeStyler is available for [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca).
   * Then install this style using:
-    * [userstyles.org](https://userstyles.org/styles/160223/)
+	* [userstyles.org](https://userstyles.org/styles/160223/)
 <!--
-    * or, add it [manually](https://raw.githubusercontent.com/style-it-themes/userstyles-inspired-dark/master/userstyles-inspired-dark.css) into the editor.
-      * Please refer to the [installation documentation](https://github.com/style-it-themes/userstyles-inspired-dark/wiki/Install) for more details.
+	* or, add it [manually](https://raw.githubusercontent.com/style-it-themes/userstyles-inspired-dark/master/userstyles-inspired-dark.css) into the editor.
+	  * Please refer to the [installation documentation](https://github.com/style-it-themes/userstyles-inspired-dark/wiki/Install) for more details.
 -->
 * Or, **[install directly](https://raw.githubusercontent.com/style-it-themes/userstyles-inspired-dark/master/userstyles-inspired-dark.user.css)** from this repository by opening the user.css file; only available using Stylus or FreeStyler (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
 
