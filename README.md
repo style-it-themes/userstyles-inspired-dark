@@ -19,6 +19,24 @@ A userstyles website/forums dark style, that attempts refine styling throughout 
 :asterisk: Full coverage entails that both are fully covered, its not bug free,
 there are elements that were likely missed.
 
+## Installing
+
+#### Using a browser extension:
+* Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
+* Stylish - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
+* FreeStyler is available for [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca).  
+#### Then install this style:  
+[![INSTALL USING - USERSTYLES.ORG Stylus](https://img.shields.io/badge/Install_using-userstyles.org-orange.svg?longCache=true&style=for-the-badge)](https://userstyles.org/styles/160223/)
+>Takes you to userstyles.org.
+
+[![INSTALL DIRECTLY WITH - STYLUS Stylus](https://img.shields.io/badge/Install_directly_with-Stylus-21d1d0.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/style-it-themes/userstyles-inspired-dark/master/userstyles-inspired-dark.user.css)
+  >Installs directly from this repository.  
+  >This is only available using Stylus or FreeStyler (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
+
+[![INSTALL - MANUALLY Stylus](https://img.shields.io/badge/Install-manually-green.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/style-it-themes/gitter-inspired-dark/master/gitter-inspired-dark.css)
+  >You install it into the editor.  
+  >Please refer to the [installation documentation](https://github.com/style-it-themes/gitter-inspired-dark/wiki/Install) for more details.
+
 ## I Found a Bug
 
 At the first instance of finding a bug, have a look if there is already an open issue, if so add the required information as described in the [issue template](.github/ISSUE_TEMPLATE.md).
@@ -78,19 +96,4 @@ You will need to ideally:
 
 ![userstyles forum](/screens/userstyles-inspired-dark-forum.png)
 
-## Installing
-
-* If you're using a browser extension:
-  * Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
-  * Stylish - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
-  * FreeStyler is available for [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca).
-  * Then install this style using:
-	* [userstyles.org](https://userstyles.org/styles/160223/)
-<!--
-	* or, add it [manually](https://raw.githubusercontent.com/style-it-themes/userstyles-inspired-dark/master/userstyles-inspired-dark.css) into the editor.
-	  * Please refer to the [installation documentation](https://github.com/style-it-themes/userstyles-inspired-dark/wiki/Install) for more details.
--->
-* Or, **[install directly](https://raw.githubusercontent.com/style-it-themes/userstyles-inspired-dark/master/userstyles-inspired-dark.user.css)** from this repository by opening the user.css file; only available using Stylus or FreeStyler (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
-
-
-[![CC--BY--SA--4.0](https://img.shields.io/badge/License-%20CC--BY--SA--4.0%20-blue.svg)](LICENSE)
+[![CC-BY-SA-4.0](https://img.shields.io/badge/License-CC--BY--SA--4.0-blue.svg?longCache=true&style=for-the-badge)](LICENSE)
