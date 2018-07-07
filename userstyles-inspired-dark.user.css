@@ -8,11 +8,10 @@
 @author       Style-it Themes by: the-j0k3r
 @license      CC-BY-SA-4.0
 ==/UserStyle== */
-
 @-moz-document domain("userstyles.org") {
 	/*! Name    : Userstyles Inspired Dark */
-	/*! Version : 1.2.1 beta */
 	/*! Author  : Style-it Themes by: the-j0k3r */
+	/*! Version : 1.2.2 beta */
 	/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
 	/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
 	/*! Type    : Forum */
@@ -32,6 +31,7 @@
 
 	a:hover, a.TextColor:hover, a:hover .TextColor {
 		color: #6b9ae2 !important;
+		cursor: pointer !important;
 	}
 
 	.text_style_page > a:visited {
@@ -79,25 +79,30 @@
 	#style_short_description, #example-url, #listing-url,
 	#widget-title, #user_login, #password, #password_confirmation,
 	#login-existing, #password-existing, #obsoleting-style-id,
-	#edit-style-settings input:not([type]), #edit-style-settings input[type="text"],
-	#login-new, #email-new, #password-new, #password-new-confirm,
-	#user_password, #user_password_confirmation, .edit-option-value-url {
+	#edit-style-settings input:not([type]),
+	#edit-style-settings input[type="text"], #login-new, #email-new,
+	#password-new, #password-new-confirm, #user_password,
+	#user_password_confirmation, .edit-option-value-url {
 		background: #000 !important;
 		border: 1px solid #555 !important;
 		color: #ccc !important;
 	}
 
-	#user_name:focus, #user_email:focus, #user_homepage:focus, #user_paypal_email:focus,
-	#issue_full_name:focus, #issue_email:focus, #issue_user_name:focus, #openid:focus,
-	#style_short_description:focus, #style_pledgie_id:focus, #example-url:focus,
-	input.DateBox:focus, input.InputBox:focus, input.SmallInput:focus, #style_short_description:focus,
-	input.SmallInput:focus, input.InputBox:focus, textarea:focus, td:first-child > input:first-child:focus,
-	#listing-url:focus, #widget-title:focus, #user_login:focus, #password:focus,
-	#password_confirmation:focus, #login-existing:focus, #password-existing:focus,
-	#obsoleting-style-id:focus, #edit-style-settings input:not([type]):focus,
-	#edit-style-settings input[type="text"]:focus, #login-new:focus, #email-new:focus,
-	#password-new:focus, #password-new-confirm:focus, #user_password:focus,
-	#user_password_confirmation:focus, .edit-option-value-url:focus {
+	#user_name:focus, #user_email:focus, #user_homepage:focus,
+	#user_paypal_email:focus, #issue_full_name:focus, #issue_email:focus,
+	#issue_user_name:focus, #openid:focus, #style_short_description:focus,
+	#style_pledgie_id:focus, #example-url:focus, input.DateBox:focus,
+	input.InputBox:focus, input.SmallInput:focus, #style_short_description:focus,
+	input.SmallInput:focus, input.InputBox:focus, textarea:focus,
+	td:first-child > input:first-child:focus, #listing-url:focus,
+	#widget-title:focus, #user_login:focus, #password:focus,
+	#password_confirmation:focus, #login-existing:focus,
+	#password-existing:focus, #obsoleting-style-id:focus,
+	#edit-style-settings input:not([type]):focus,
+	#edit-style-settings input[type="text"]:focus, #login-new:focus,
+	#email-new:focus, #password-new:focus, #password-new-confirm:focus,
+	#user_password:focus, #user_password_confirmation:focus,
+	.edit-option-value-url:focus {
 		background: #191919 !important;
 	}
 
@@ -118,7 +123,8 @@
 		border-color: #777 !important;
 	}
 
-	.Button.Active, .ButtonGroup.Open .Button.Handle, .Button:focus, .Button:active {
+	.Button.Active, .ButtonGroup.Open .Button.Handle,
+	.Button:focus, .Button:active {
 		border-color: #aaa !important;
 		background: #555 !important;
 		box-shadow: none !important;
@@ -211,12 +217,14 @@
 		font-family: sans-serif !important;
 	}
 
-	input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover {
+	input[type="reset"]:hover, input[type="button"]:hover,
+	input[type="submit"]:hover {
 		color: #eee !important;
 		background: #444 !important;
 	}
 
-	input[type="reset"]:focus, input[type="button"]:focus, input[type="submit"]:focus {
+	input[type="reset"]:focus, input[type="button"]:focus,
+	input[type="submit"]:focus {
 		color: #eee !important;
 		background: #444 !important;
 		border: 1px solid #555 !important;
@@ -1900,11 +1908,27 @@
 		color: #aaa !important;
 	}
 
+	#install_button {
+		background-color: #4f638b !important;
+		border: solid 1px #5c81ba !important;
+		box-shadow: none !important;
+		color: #ddd !important;
+		margin-left: auto !important;
+	}
+
+	#install_button:hover, #install_button:active {
+		background-color: #4f638b !important;
+		border: solid 1px #5c81ba !important;
+		filter: brightness(88%) !important;
+		box-shadow: none !important;
+	}
+
 	#install_style_button {
 		background-color: #6b9ae2 !important;
 		border: 1px solid #8fbbff !important;
 		box-shadow: none !important;
 		color: #eee !important;
+		margin-left: auto !important;
 	}
 
 	#install_style_button:hover {
@@ -1919,6 +1943,8 @@
 		box-shadow: none !important;
 		border: solid 1px #27ba49 !important;
 		color: #ddd !important;
+		margin-right: 11px !important;
+		margin-left: auto !important;
 	}
 
 	#style_installed_button:hover, #update_style_button:hover {
@@ -1939,6 +1965,14 @@
 		border: solid 1px #913425 !important;
 		background: #50140b !important;
 		color: #ccc !important;
+	}
+
+	[href$="/edit"] .white_button, .customize_button, #donation_button {
+		margin-right: 11px !important;
+	}
+
+	.customize_button {
+		margin-left: auto !important;
 	}
 
 	#send_feedback_button, .white_button, .customize_button {
@@ -2327,7 +2361,8 @@
 	More or less the main link color? no? :)
 	*/
 	.rectangle_view_img, .view_mode_img {
-		filter: invert(20%) brightness(105%) !important
+		/*filter: invert(20%) brightness(105%) !important*/
+		filter: grayscale(100%) Brightness(130%) !important;
 	}
 
 	#pages a, #pages a:active, #pages a:visited {
