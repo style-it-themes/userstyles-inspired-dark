@@ -10,20 +10,20 @@ A userstyles website/forums dark style, that attempts refine styling throughout 
 
 ## Sites Covered
 
-| Site Name                                           | Partial            | Full               |
-| --------------------------------------------------- | ------------------ | ------------------ |
-| [Userstyles](https://userstyles.org)                |                    | :heavy_check_mark: |
-| [Userstyles forum](https://forum.userstyles.org/)   |                    | :heavy_check_mark: |
-
+| Site Name                                           | Partial              | Full                 |
+| --------------------------------------------------- | :------------------: | :------------------: |
+| [Userstyles](https://userstyles.org)                |                      |  :heavy_check_mark:  |
+| [Userstyles forum](https://forum.userstyles.org/)   |  :heavy_check_mark:  |                      |
 
 :asterisk: Full coverage entails that both are fully covered, its not bug free,
 there are elements that were likely missed.
+Know not covered parts are the admin/moderator forums portions for lack of access.
+Help improve coverage by [contributing](#CONTRIBUTING) detailed issues or pull requests.
 
 ## Installing
 
 #### Using a browser extension:
 * Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
-* Stylish - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
 * FreeStyler is available for [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca).  
 #### Then install this style:  
 [![INSTALL USING - USERSTYLES.ORG Stylus](https://img.shields.io/badge/Install_using-userstyles.org-orange.svg?longCache=true&style=for-the-badge)](https://userstyles.org/styles/160223/)
