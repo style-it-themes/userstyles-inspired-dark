@@ -24,14 +24,14 @@ Help improve coverage by [contributing](#CONTRIBUTING) detailed issues or pull r
 
 #### Using a browser extension:
 * Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
-* FreeStyler is available for [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca).  
+
 #### Then install this style:  
 [![INSTALL USING - USERSTYLES.ORG Stylus](https://img.shields.io/badge/Install_using-userstyles.org-orange.svg?longCache=true&style=for-the-badge)](https://userstyles.org/styles/160223/)
 >Takes you to userstyles.org.
 
 [![INSTALL DIRECTLY WITH - STYLUS Stylus](https://img.shields.io/badge/Install_directly_with-Stylus-21d1d0.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/style-it-themes/userstyles-inspired-dark/master/userstyles-inspired-dark.user.css)
   >Installs directly from this repository.  
-  >This is only available using Stylus or FreeStyler (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
+  >This is only available using Stylus (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
 
 [![INSTALL - MANUALLY Stylus](https://img.shields.io/badge/Install-manually-green.svg?longCache=true&style=for-the-badge)](https://raw.githubusercontent.com/style-it-themes/gitter-inspired-dark/master/gitter-inspired-dark.css)
   >You install it into the editor.  
@@ -45,7 +45,7 @@ If your issue is new, please [open an issue](https://github.com/style-it-themes/
 
 ## Contributing
 
-At this time any help is appreciated, so if you can help fix a bug or improve the Userstyles Inspired Dark theme, just open a pull request to start the ball rolling.
+At this time any help is appreciated, so if you can help fix a bug or improve the *Userstyles Inspired Dark theme*, just open a pull request to start the ball rolling.
 
 You will need to ideally:
 
