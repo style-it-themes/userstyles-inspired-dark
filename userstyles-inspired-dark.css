@@ -1,7 +1,7 @@
 @-moz-document domain("userstyles.org") {
 	/*! Name    : Userstyles Inspired Dark */
 	/*! Author  : Style-it Themes by: the-j0k3r */
-	/*! Version : 1.2.2 beta */
+	/*! Version : 1.2.3 beta */
 	/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
 	/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
 	/*! Type    : Forum */
@@ -1913,7 +1913,7 @@
 		box-shadow: none !important;
 	}
 
-	#install_style_button {
+	#install_style_button, #install_button_homepage {
 		background-color: #6b9ae2 !important;
 		border: 1px solid #8fbbff !important;
 		box-shadow: none !important;
@@ -1921,7 +1921,7 @@
 		margin-left: auto !important;
 	}
 
-	#install_style_button:hover {
+	#install_style_button:hover, #install_button_homepage:hover {
 		background-color: #5c81ba !important;
 		border: 1px solid #6b9ae2 !important;
 		box-shadow: none !important;
@@ -2003,6 +2003,12 @@
 		color: #ddd !important;
 	}
 
+	/* fix broken capitaliztion of brand name */
+	a[href$="/bbc"] .navigation_title {
+		text-transform: uppercase !important;
+		font-size: 14px !important;
+	}
+
 	div.linksBox:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1),
 	div.linksBox:nth-child(5) > a:nth-child(2) > div:nth-child(1) > img:nth-child(1),
 	#navigation .linksBox:first-child .logo_navigation_link,
@@ -2039,7 +2045,7 @@
 	}
 
 	#search_image_div {
-		filter: grayscale(40%) hue-rotate(30deg) brightness(90%) !important;
+		filter: grayscale(100%) !important;
 	}
 
 	#create_new_style {
@@ -2977,11 +2983,11 @@
 	.CodeMirror {
 		background: #141414 !important;
 		color: #ccc !important;
-		border: 1px solid  #444 !important;
+		border: 1px solid #444 !important;
 	}
 
 	.CodeMirror-focused {
-		border: 1px solid  #888 !important;
+		border: 1px solid #888 !important;
 	}
 
 	.CodeMirror-scrollbar-filler {
