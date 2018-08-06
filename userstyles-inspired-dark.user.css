@@ -2,7 +2,7 @@
 @name         Userstyles Inspired Dark
 @namespace    Style-it Themes
 @homepageURL  https://github.com/style-it/userstyles-inspired-dark
-@version      1.2.3
+@version      1.2.4
 @updateURL    https://raw.githubusercontent.com/style-it-themes/userstyles-inspired-dark/master/userstyles-inspired-dark.user.css
 @description  A userstyles website/forums dark style, that attempts refine styling throughout the website and forums.
 @author       Style-it Themes by: the-j0k3r
@@ -11,7 +11,7 @@
 @-moz-document domain("userstyles.org") {
 	/*! Name    : Userstyles Inspired Dark */
 	/*! Author  : Style-it Themes by: the-j0k3r */
-	/*! Version : 1.2.3 beta */
+	/*! Version : 1.2.4 beta */
 	/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
 	/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
 	/*! Type    : Forum */
@@ -46,7 +46,7 @@
 		color: #ddd !important;
 	}
 	/*
-	.ConnectLabel.TextColor and  a .TextColor
+	.ConnectLabel.TextColor and a .TextColor
 	are same selector but without I keep seeing a red color.
 	*/
 	.ConnectLabel.TextColor, a.TextColor, a .TextColor {
@@ -157,7 +157,7 @@
 		margin-right: -1px !important;
 	}
 
-	 #Form_Save {
+	#Form_Save {
 		height: 25px !important;
 		padding-top: 5px !important;
 		margin-left: -1px !important;
@@ -459,7 +459,7 @@
 		color: #ddd !important;
 	}
 
-	.MenuItems hr, hr  {
+	.MenuItems hr, hr {
 		border: 1px solid #444 !important;
 	}
 
@@ -756,13 +756,31 @@
 		height: 16px !important;
 		margin-right: 4px !important;
 	}
+
+	.EmotifyDropdown {
+		transform: scale(1.1) !important;
+	}
 	/*
 	Fix prevent the .EmotifyWrapper from showing inside the text area,
 	If you type until the textarea end a portion of your text ends up behind
 	the .EmotifyDropdown and you cant read it very well.
 	*/
 	.EmotifyWrapper {
-		top: -25px !important;
+		top: -27px !important;
+	}
+
+	.EmoticonContainer, .EmoticonBox {
+		background-color: #222 !important;
+		border: 1px solid #555 !important;
+		box-shadow: none !important;
+		-moz-box-shadow: none !important;
+		-webkit-box-shadow: none !important;
+		padding: 3px !important
+	}
+
+	.Emoticon:hover {
+		transform: scale(1.2) !important;
+		image-rendering: crisp-edges !important;
 	}
 
 	blockquote.Quote, blockQuote.UserQuote {
@@ -865,7 +883,7 @@
 		display: none !important;
 	}
 	/*
-	Fix for  being too far up this normally is 0px no breathing room.
+	Fix for being too far up this normally is 0px no breathing room.
 	Also the breadcrumbwrapper was removed by default, this causes mis-alingments.
 	*/
 	.ContentColumn {
@@ -1116,15 +1134,15 @@
 		cursor: default !important;
 		display: block !important;
 		/*
-	   If width will be 100% horizontal scrollbar will appear
-	   when scroll mode will be used.
-	   */
+		If width will be 100% horizontal scrollbar will appear
+		when scroll mode will be used.
+		*/
 		/*width: 100%;*/
 		font-size: 12px !important;
 		/*
-	   It is very important, if line-height is not set or set
-	   in relative units scroll will be broken in Firefox.
-	   */
+		It is very important, if line-height is not set or set
+		in relative units scroll will be broken in Firefox.
+		*/
 		line-height: 16px !important;
 		overflow: hidden !important;
 		border-bottom: 1px solid #555 !important;
@@ -1199,7 +1217,7 @@
 	*/
 	.PasswordStrength .Background {
 		background-color: #000 !important;
-	  }
+	}
 
 	.PasswordStrength .Strength {
 		background-color: #c81818 !important;
@@ -1422,7 +1440,7 @@
 	.ReactSprite {
 		background-image: url("http://cdn.vanillaforums.com/images/sprites-14-000000.png") !important;
 		filter: invert(100%) !important;
-	 }
+	}
 	/*
 	Switch to the white icons when hovering over a menuitem sprite.
 	*/
@@ -2856,7 +2874,7 @@
 
 	.tooltip_rating_long .tooltiptext_rating_long:after,
 	.tooltip .tooltiptext::after, .tooltip_rating .tooltiptext_rating::after {
-		  border-color: #fff transparent transparent transparent !important;
+		border-color: #fff transparent transparent transparent !important;
 	}
 
 	.tooltip_rating_long:hover .tooltiptext_rating_long,
@@ -2979,7 +2997,7 @@
 	Fix canvas for stats viewing, numbers are brighter and collumns more subtle.
 	*/
 	canvas {
-		filter: invert(70%)  contrast(50%) !important;
+		filter: invert(70%) contrast(50%) !important;
 	}
 }
 
@@ -3589,12 +3607,12 @@
 	}
 
 	.cm-string-2 {
-		color: #bd6b18  !important;
+		color: #bd6b18 !important;
 	}
 
 	.cm-meta {
 		background-color: #141414 !important;
-		color: #f7f7f7  !important;
+		color: #f7f7f7 !important;
 	}
 
 	.cm-builtin {
