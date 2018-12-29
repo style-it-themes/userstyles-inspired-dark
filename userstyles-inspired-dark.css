@@ -2004,25 +2004,34 @@
 		color: #bbb !important;
 	}
 
-	#navigation {
+	#navigation, .navigation {
 		background: #222 !important;
+		border-color: #000 !important;
 	}
 
-	.navigation_title {
+	.navigation-title {
 		color: #ccc !important;
 	}
 
-	.navigation_category {
+	.navigation-category {
 		color: #aaa !important;
 	}
 
-	.navigation_link:hover {
+	.navigation-link:hover {
 		background: #363636 !important;
 		color: #ddd !important;
 	}
 
+	.navigation .links-box .navigation-link {
+    	box-shadow: 0 -1px 0 0 #555, 0 0 0 0 #555 !important;
+	}
+
+	.navigation .links-box {
+		box-shadow: 0 -1px 0 0 #555, 0 1px 0 0 #555 !important;
+	}
+
 	/* fix broken capitaliztion of brand name */
-	a[href$="/bbc"] .navigation_title {
+	a[href$="/bbc"] .navigation-title {
 		text-transform: uppercase !important;
 		font-size: 14px !important;
 	}
@@ -2034,11 +2043,11 @@
 		filter: grayscale(100%) brightness(400%) !important;
 	}
 
-	.linksBox .navigation_link:last-child, #title_div {
+	.links-box .navigation-link:last-child, #title_div {
 		box-shadow: 0 1px 0 0 #333 !important;
 	}
 
-	.linksBox {
+	.links-box {
 		color: #ccc !important;
 		border-bottom: none !important
 	}
