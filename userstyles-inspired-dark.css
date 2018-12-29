@@ -746,10 +746,6 @@
 		height: 16px !important;
 		margin-right: 4px !important;
 	}
-
-	.EmotifyDropdown {
-		transform: scale(1.1) !important;
-	}
 	/*
 	Fix prevent the .EmotifyWrapper from showing inside the text area,
 	If you type until the textarea end a portion of your text ends up behind
@@ -757,6 +753,10 @@
 	*/
 	.EmotifyWrapper {
 		top: -27px !important;
+	}
+
+	.EmotifyDropdown {
+		transform: scale(1.1) !important;
 	}
 
 	.EmoticonContainer, .EmoticonBox {
@@ -1167,7 +1167,7 @@
 	.UploadProgress {
 		color: #333 !important;
 		text-shadow: 0 1px 1px #fff !important;
-		border: 1px solid #0c3c7e !important;
+		border: 1px solid #5c81ba !important;
 	}
 
 	/* Container */
@@ -1704,39 +1704,6 @@
 		color: #999 !important;
 	}
 
-	.advancedsettings_shown {
-		background-color: #292929 !important;
-		color: #ccc !important;
-	}
-
-	/* Base color scheme bg */
-	div.setting_div > div > div {
-		background: #333 !important;
-	}
-
-	.text_setting_input, .option-user-url {
-		background: #111 !important;
-		border: 1px solid #555 !important;
-		color: #ccc !important;
-	}
-
-	.style-setting-option {
-		border: 1px solid #aaa !important;
-	}
-
-	.edit-setting {
-		background-color: #191919 !important;
-	}
-
-	.title_setting {
-		color: #ccc !important;
-		font-weight: bold !important;
-	}
-
-	.option-user-upload.upload_image_label {
-		color: #ccc !important;
-	}
-
 	select {
 		border: 1px solid #888 !important;
 		background-color: #000 !important;
@@ -1905,6 +1872,39 @@
 	.view_details:hover, .css_button:hover, .see_more:hover {
 		background-color: #434549 !important;
 		color: #bbb !important;
+	}
+
+	.advancedsettings_shown {
+		background-color: #292929 !important;
+		color: #ccc !important;
+	}
+
+	/* Base color scheme bg */
+	.setting_div > div > div {
+		background: #292929 !important;
+	}
+
+	.text_setting_input, .option-user-url {
+		background: #111 !important;
+		border: 1px solid #555 !important;
+		color: #ccc !important;
+	}
+
+	.style-setting-option {
+		border: 1px solid #aaa !important;
+	}
+
+	.edit-setting {
+		background-color: #191919 !important;
+	}
+
+	.title_setting {
+		color: #ccc !important;
+		font-weight: bold !important;
+	}
+
+	.option-user-upload.upload_image_label {
+		color: #ccc !important;
 	}
 
 	.eye_image {
