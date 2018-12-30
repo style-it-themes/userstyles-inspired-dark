@@ -18,7 +18,8 @@
 
 	body, #nav-view, #root .us-center-items-horizontally,
 	.us-category--stylecard-short.us-category--narrow,
-	.us-category--stylecard-long.us-category--narrow, .init_loader {
+	.us-category--stylecard-long.us-category--narrow, .init_loader,
+	#view-responsive {
 		color: #aaa !important;
 		background: #222 !important;
 	}
