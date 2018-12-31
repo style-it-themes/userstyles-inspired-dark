@@ -5,17 +5,9 @@
 	/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
 	/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
 	/*! Type    : Forum */
-
-	body, #nav-view, #root .us-center-items-horizontally,
-	.us-category--stylecard-short.us-category--narrow,
-	.us-category--stylecard-long.us-category--narrow, .init_loader,
-	#view-responsive {
+	body, #nav-view-responsive {
 		color: #aaa !important;
 		background: #222 !important;
-	}
-
-	.adStyle {
-		display: none !important;
 	}
 
 	.header.button.no-select {
@@ -1831,10 +1823,6 @@
 	/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
 	/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
 	/*! Type    : Website */
-	.overlay_background .overlay_container .overlay_flex_div {
-		display: none ;
-	}
-
 	#title_long a, #title_long a:active, #title_long a:hover,
 	#title_long a:visited, #title_long a:visited {
 		color: #aaa !important;
@@ -1844,14 +1832,32 @@
 		color: #ccc !important;
 	}
 
+	.us-stylecard--short .us-stencil {
+		background-color: #181818 !important;
+		box-shadow: 0 1px 0 0 #444 !important;
+	}
+
 	.us-stylecard--long, .us-stylecard--short {
-		box-shadow: inset 0 -1px 0 0 #444 !important;
-		background: #333 !important;
-		outline: 1px solid #444 !important;
+		box-shadow: none !important;
+		background: #181818 !important;
+		outline: 1px solid #383838 !important;
+		border-radius: 0 !important;
 	}
 
 	.us-container .us-updated {
 		color: #eee !important;
+	}
+
+	.us-container .ckfDBv, .us-stencil .fzKkUK {
+		background-color: #555 !important;
+		color: #eee !important;
+	}
+
+	.us-stencil .fzKkUK {
+		border-radius: 2px !important;
+		font-size: 0.8em !important;
+		height: 16px !important;
+		border: 0 !important;
 	}
 
 	.us-container .us-downloads, .us-container .us-rating,
@@ -1861,10 +1867,6 @@
 
 	.us-container .us-title a {
 		color: #5c81ba !important;
-	}
-
-	.fallbackDiv .fallbackImg  {
-		display: none !important;
 	}
 
 	.k {
@@ -2782,12 +2784,13 @@
 		background: #333 !important;
 	}
 
-	.author-name a {
+	.author-name a, .style_author a {
 		color: #5c81ba !important;
 		font-size: 16px !important;
 	}
 
-	.author-name a:hover {
+	.author-name a:hover, .style_author a:active,
+	.style_author a:visited {
 		color: #6b9ae2 !important;
 		font-size: 16px !important;
 	}
@@ -3059,48 +3062,51 @@
 	.statistic table, th, td {
 		border: 1px solid #444 !important;
 	}
-	/*
-	There is a purposeful margin mis-alignment of the style cards, its distracting.
-	Make all margins 11px including the nth-child(3) to counter this.
-	*/
-	.style_card {
-		background-color: #111 !important;
-		margin: 11px 11px 11px !important;
-	}
 
-	.style_card:nth-child(3n) {
-		margin-right: 11px !important;
-	}
-
-	.style_card:hover {
-		box-shadow: 0 12px 25px 0 rgba(111, 111, 111, .2) !important;
-		transform: translate(0, -5px) !important;
+	.us-stylecard--short:hover {
+		box-shadow: 0 2px 5px 0 rgba(111, 111, 111, .2) !important;
 		filter: brightness(120%) !important;
 	}
 
-	.installStyleButtonTooltip, .customizeButtonTooltip {
-		background-color: #fff !important;
-		color: #222 !important;
+	.installStyleButtonTooltip, .customizeButtonTooltip,
+	.__react_component_tooltip.type-dark {
+		background-color: #333 !important;
+		color: #eee !important;
 		font-weight: normal !important;
-		opacity: 0.7 !important;
+		opacity: 0.8 !important;
+	}
+	/*
+	fix .installStyleButtonTooltip display coordinates uso devs are numb.
+	*/
+	.__react_component_tooltip.show {
+		left: auto !important;
+		top: 100% !important;
 	}
 
-	.tooltip_rating_long .tooltiptext_rating_long,
-	.tooltip .tooltiptext, .tooltip_rating .tooltiptext_rating {
-		background-color: #fff !important;
-		color: #222 !important;
+	.us-tooltip-downloads .text,
+	.us-tooltip-ratings .text,
+	.us-tooltip .text {
+		background-color: #333 !important;
+		color: #eee !important;
 		border-radius: 2px !important;
 	}
 
-	.tooltip_rating_long .tooltiptext_rating_long:after,
-	.tooltip .tooltiptext::after, .tooltip_rating .tooltiptext_rating::after {
-		border-color: #fff transparent transparent transparent !important;
+	.us-tooltip-downloads .text:after,
+	.us-tooltip-ratings .text:after,
+	.us-tooltip .text:after {
+		border-color: #333 transparent transparent transparent !important;
 	}
 
-	.tooltip_rating_long:hover .tooltiptext_rating_long,
-	.tooltip:hover .tooltiptext, .tooltip_rating:hover .tooltiptext_rating {
+	.__react_component_tooltip.type-dark.place-bottom:after {
+		border-bottom-color: #333 !important;
+		opacity: 0.9 !important;
+	}
+
+	.us-tooltip-downloads:hover .text,
+	.us-tooltip-ratings:hover .text,
+	.us-tooltip:hover .text {
 		visibility: visible !important;
-		opacity: 0.7 !important;
+		opacity: 0.8 !important;
 	}
 	/*
 	Could be removed optionally in future
@@ -3121,8 +3127,13 @@
 		border: 1px solid #333 !important;
 	}
 
-	.android_button_banner, .android_button_button {
+	.android_button_banner, .android_button_button, .walking {
 		background-color: #444 !important;
+		display: none !important;
+	}
+
+	.overlay_background, .fallbackDiv .fallbackImg, .flags {
+		display: none !important;
 	}
 
 	#landing_page_div .top_landing_page_div {
