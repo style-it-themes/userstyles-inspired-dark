@@ -1,7 +1,7 @@
 @-moz-document domain("userstyles.org") {
 	/*! Name    : Userstyles Inspired Dark */
 	/*! Author  : Style-it Themes by: the-j0k3r */
-	/*! Version : 1.2.6 beta */
+	/*! Version : 1.2.7 beta */
 	/*! Repo    : https://github.com/style-it/userstyles-inspired-dark */
 	/*! License : CC-BY-SA-4.0 https://github.com/style-it/userstyles-inspired-dark/LICENSE */
 	/*! Type    : Forum */
@@ -1468,9 +1468,18 @@
 		background: #dc1a1a !important;
 	}
 
-	li.token-input-input-token {
-		filter: invert(90%) !important;
-		margin-top: -8px !important;
+	li.token-input-input-token, .token-input-highlighted-token {
+		outline: none !important;
+	}
+
+	input {
+		-moz-appearance: none !important;
+		-webkit-appearance: none !important;
+		border: none !important;
+		background-color: #191919 !important;
+		color: #eee !important;
+		box-shadow: none !important;
+
 	}
 
 	li.token-input-token {
@@ -1759,44 +1768,6 @@
 		background: #222 !important;
 	}
 
-	/*
-	Fixes suggested by @Stonecrusher
-	*/
-	time, .DateUpdated {
-		font-size: 0 !important;
-	}
-
-	/*
-	The time/date changes introduce a author name wrapping which looks ugly.
-	the .ShowDiscussionAuthor nowrap. This  also puts the time/date in a newline and
-	that has a padding causing the date/time text to not align left properly.
-	To fix this introduced a margin-left: -6px for now.
-	*/
-	time:before, .DateUpdated:before  {
-		content: attr(title) !important;
-		font-size: 11px !important;
-		margin-left: -6px !important;
-	}
-	/*
-	another bug caused by time/date changes when viewing
-	e.g https://forum.userstyles.org/profile/194399/J0k3r
-	*/
-	.Joined, .LastActive {
-		margin-right: 6px !important;
-	}
-	/*
-	The time/date changes introduce a break in author name, affected are:
-	categories/Style Reviews
-	categories/Style Development
-	categories/Stylish
-	categories/userstyles.org
-
-	To fix this introduced a .ShowDiscussionAuthor nowrap.
-	*/
-	.ShowDiscussionAuthor {
-		white-space: nowrap !important;
-	}
-
 	.MItem.Category:before {
 		content:'' !important;
 		width: 0 !important;
@@ -1828,8 +1799,20 @@
 		color: #aaa !important;
 	}
 
-	.us-stylecard--long .us-username {
+	.us-stylecard--long .us-username, .us-stylecard--short .us-username {
 		color: #ccc !important;
+	}
+
+	.us-stylecard--long .us-username a:before, .us-stylecard--short .us-username a:before {
+		content: ": " !important;
+		color: #ccc !important;
+		margin-left: -2px !important;
+	}
+
+	.us-stylecard--long .us-username a, .us-stylecard--short .us-username a {
+		color: #5c81ba !important;
+		filter: brightness(120%) !important;
+		font-weight: 700 !important;
 	}
 
 	.us-stylecard--short .us-stencil {
@@ -1893,12 +1876,15 @@
 	}
 
 	.view_details, .css_button, .see_more {
-		background-color: #595b61 !important;
+		background-color: #444 !important;
+		border: 1px solid #555 !important;
 		color: #ddd !important;
 	}
 
 	.view_details:hover, .css_button:hover, .see_more:hover {
-		background-color: #434549 !important;
+		background-color: #444 !important;
+		border: 1px solid #555 !important;
+		filter: brightness(95%) !important;
 		color: #bbb !important;
 	}
 
@@ -2170,7 +2156,7 @@
 	#send_feedback_button, .white_button, .customize_button,
 	.android_editor .bottom_buttons .button.resetButton {
 		background: #404040 !important;
-		border-color: #555 !important;
+		border: 1px solid #555 !important;
 		box-shadow: none !important;
 		color: #ddd !important;
 	}
@@ -3173,6 +3159,11 @@
 	.android_button_banner .android_button_banner_right .android_button_banner_cta:hover {
 		background-color: #5c81ba !important;
 		box-shadow: none !important;
+	}
+
+	img[src$="lp_1.svg"], img[src$="lp_2.svg"], img[src$="lp_3.svg"],
+	img[src$="globe.svg"], img[src$="screen.svg"] {
+		filter: grayscale(100%) brightness(130%) !important;
 	}
 
 	/* Footer */
